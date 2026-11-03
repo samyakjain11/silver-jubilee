@@ -253,7 +253,8 @@
     var slides = deck.children, dots = dotsEl.children, cur = 0, timer = null;
 
     function go(i) {
-      i = (i + slides.length) % slides.length;
+      if (i < 0 || i >= slides.length) return;
+      if (timer && i === slides.length - 1) togglePlay();
       slides[cur].classList.remove("active"); dots[cur].classList.remove("on");
       cur = i;
       slides[cur].classList.add("active"); dots[cur].classList.add("on");
