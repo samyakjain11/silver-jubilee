@@ -20,6 +20,24 @@ window.SHOW = {
       note: "27 November 2026",
     },
 
+    // ── PART 1: each of them on their own ──
+    { type: "chapter", number: "Part One", title: "Before They Were Us", subtitle: "Two stories that started separately" },
+
+    { type: "chapter", number: "Meet", title: "Dad", subtitle: "Add a sweet one-liner about Dad" },
+    { type: "photo", photo: "", caption: "Little Dad", detail: "A childhood photo and where he grew up." },
+    { type: "photo", photo: "", caption: "Young Dad", detail: "College days, first job, or a favourite memory." },
+    { type: "photo", photo: "", caption: "Dad as we know him", detail: "What makes him, him." },
+    { type: "chapter", number: "A dance for Dad", title: "O Jaane Jaa", subtitle: "Performed by: add names" },
+
+    { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
+    { type: "photo", photo: "", caption: "Little Mom", detail: "A childhood photo and where she grew up." },
+    { type: "photo", photo: "", caption: "Young Mom", detail: "College days, first job, or a favourite memory." },
+    { type: "photo", photo: "", caption: "Mom as we know her", detail: "What makes her, her." },
+    { type: "chapter", number: "A dance for Mom", title: "Yai Re Yai Re", subtitle: "Performed by: add names" },
+
+    // ── PART 2: together ──
+    { type: "chapter", number: "Part Two", title: "Then Came Us", subtitle: "Twenty-five years together" },
+
     { type: "chapter", number: "Chapter 1", title: "The Match", subtitle: "Two families, one very good idea" },
     { type: "photo", photo: "", caption: "The first meeting", detail: "Who was more nervous? We'll find out in the shoe game." },
     { type: "photo", photo: "", caption: "The engagement", detail: "Add the year and a sweet line here." },
