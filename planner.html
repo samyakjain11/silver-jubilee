@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Planner · 25 Years of Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #fbf6f0; --ink: #3b3340; --soft: #8a7f8c;
+    --blush: #e9a8b4; --blush-deep: #c96f83; --blush-pale: #f7e6ea;
+    --silver: #b9bcc4; --silver-deep: #8d919c; --line: #eee4e7; --card: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--paper); color: var(--ink); font-family: "Inter", system-ui, sans-serif; line-height: 1.5; min-height: 100vh; }
+  .bg {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(60vmax 50vmax at 10% 10%, #f7dfe4 0%, transparent 60%),
+      radial-gradient(60vmax 50vmax at 90% 90%, #e6e8ee 0%, transparent 60%);
+  }
+  .wrap { position: relative; z-index: 1; }
+  a.home { position: fixed; top: 16px; left: 16px; z-index: 2; text-decoration: none; color: var(--ink); background: rgba(255,255,255,.85); border: 1px solid #e8dfe3; border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 500; }
+  a.home:hover { background: #fff; }
+
+  /* lock screen */
+  .lock { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .lock form { background: var(--card); border-radius: 22px; padding: 44px 36px; width: 100%; max-width: 400px; text-align: center; box-shadow: 0 20px 50px rgba(59, 51, 64, .12); }
+  .lock .icon { width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; background: var(--blush-pale); color: var(--blush-deep); }
+  .lock h1 { font-family: "Fraunces", serif; font-weight: 600; font-size: 34px; }
+  .lock p { color: var(--soft); margin-top: 4px; }
+  .lock input { margin-top: 24px; width: 100%; font: 16px "Inter", sans-serif; padding: 12px 16px; border: 1px solid #e3d8dc; border-radius: 12px; background: #fdfbfa; color: var(--ink); }
+  .lock input:focus { outline: 2px solid var(--blush); border-color: transparent; }
+  .lock button { margin-top: 12px; width: 100%; font: 600 15px "Inter", sans-serif; padding: 12px; border: 0; border-radius: 12px; background: var(--blush-deep); color: #fff; cursor: pointer; }
+  .lock button:hover { filter: brightness(1.05); }
+  .lock .err { color: var(--blush-deep); font-size: 14px; margin-top: 12px; min-height: 1.5em; }
+  .shake { animation: shake .4s; }
+  @keyframes shake { 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
+
+  /* planner */
+  .planner { max-width: 1040px; margin: 0 auto; padding: 72px 24px 80px; }
+  header.top { text-align: center; margin-bottom: 36px; }
+  .eyebrow { font-family: "Caveat", cursive; font-size: 30px; color: var(--blush-deep); }
+  header.top h1 { font-family: "Fraunces", serif; font-weight: 600; font-size: clamp(38px, 6vw, 64px); line-height: 1.05; }
+  header.top .summary { color: var(--soft); max-width: 680px; margin: 14px auto 0; font-size: 17px; }
+
+  .tabs { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 28px; position: sticky; top: 0; padding: 12px 0; z-index: 1; background: linear-gradient(var(--paper) 70%, transparent); }
+  .tabs button { font: 500 14px "Inter", sans-serif; padding: 8px 16px; border-radius: 999px; border: 1px solid #e8dfe3; background: rgba(255,255,255,.85); color: var(--ink); cursor: pointer; }
+  .tabs button.on { background: var(--blush-deep); border-color: var(--blush-deep); color: #fff; }
+
+  section.panel { background: var(--card); border-radius: 20px; padding: 28px; box-shadow: 0 14px 40px rgba(59, 51, 64, .08); margin-bottom: 22px; }
+  section.panel h2 { font-family: "Fraunces", serif; font-weight: 600; font-size: 28px; margin-bottom: 14px; }
+  .glance { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .glance div { background: var(--blush-pale); border-radius: 14px; padding: 16px; }
+  .glance b { display: block; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--blush-deep); margin-bottom: 4px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th { text-align: left; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--silver-deep); font-weight: 600; padding: 8px 12px; border-bottom: 2px solid var(--line); }
+  td { padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  td.time { white-space: nowrap; font-weight: 600; color: var(--blush-deep); }
+  td.seg { font-weight: 600; }
+  td.len, td.who { white-space: nowrap; color: var(--soft); }
+  .tbd { color: var(--silver-deep); font-style: italic; }
+  .film { color: var(--soft); font-size: 13px; }
+
+  ul.todo { list-style: none; }
+  ul.todo li { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  ul.todo li:last-child { border-bottom: 0; }
+  ul.todo .box { flex: 0 0 22px; height: 22px; border-radius: 6px; border: 2px solid var(--silver); display: grid; place-items: center; color: #fff; font-size: 14px; margin-top: 1px; }
+  ul.todo li.done .box { background: var(--blush-deep); border-color: var(--blush-deep); }
+  ul.todo li.done .task { color: var(--soft); text-decoration: line-through; }
+  ul.todo .by { font-weight: 600; white-space: nowrap; min-width: 84px; }
+
+  .table-scroll { overflow-x: auto; }
+  .hidden { display: none !important; }
+  .foot { text-align: center; margin-top: 28px; }
+  .foot button { font: 500 13px "Inter", sans-serif; background: none; border: 0; color: var(--soft); text-decoration: underline; cursor: pointer; }
+
+  @media (max-width: 640px) {
+    section.panel { padding: 20px 16px; }
+    td, th { padding: 10px 8px; }
+  }
+  @media print {
+    .bg, a.home, .tabs, .foot { display: none !important; }
+    section.panel { box-shadow: none; border: 1px solid var(--line); break-inside: avoid; }
+    section.panel.hidden { display: block !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <a class="home" href="./">⌂ Home</a>
+
+  <div class="wrap">
+    <div class="lock" id="lock">
+      <form id="lockForm" autocomplete="off">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <h1>Planner</h1>
+        <p>Enter the password to see the plan.</p>
+        <input type="password" id="pw" placeholder="Password" aria-label="Password" autofocus>
+        <button type="submit">Open planner</button>
+        <div class="err" id="err" role="alert"></div>
+      </form>
+    </div>
+
+    <div class="planner hidden" id="planner"></div>
+  </div>
+
+  <script>
+  (function () {
+    // SHA-256 of the planner password. To change the password, put the new
+    // password's SHA-256 here (any online "SHA-256 generator" will make one).
+    var PASSWORD_HASH = "376dd4dc4aab86266b7b870bcad52f9d8177b0345c4cd6d1eedf48f7b6240d34";
+    var KEY = "sj-planner-unlocked";
+
+    var lock = document.getElementById("lock");
+    var form = document.getElementById("lockForm");
+    var pw = document.getElementById("pw");
+    var err = document.getElementById("err");
+    var out = document.getElementById("planner");
+
+    function sha256(text) {
+      return crypto.subtle.digest("SHA-256", new TextEncoder().encode(text)).then(function (buf) {
+        return Array.prototype.map.call(new Uint8Array(buf), function (b) {
+          return ("0" + b.toString(16)).slice(-2);
+        }).join("");
+      });
+    }
+
+    function esc(s) {
+      return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+      });
+    }
+    function val(s) { return /^\s*(tbd)?\s*$/i.test(s || "") ? '<span class="tbd">TBD</span>' : esc(s); }
+
+    function unlock() {
+      // The plan is only downloaded after the right password is entered.
+      var s = document.createElement("script");
+      s.src = "planner.js";
+      s.onload = function () { lock.classList.add("hidden"); out.classList.remove("hidden"); render(window.PLAN); };
+      s.onerror = function () { err.textContent = "Couldn't load the plan. Try refreshing."; };
+      document.body.appendChild(s);
+    }
+
+    var sections = [
+      { id: "overview", label: "Overview" },
+      { id: "run", label: "Run of show" },
+      { id: "perf", label: "Performances" },
+      { id: "music", label: "Music cues" },
+      { id: "roles", label: "Who does what" },
+      { id: "todo", label: "Prep timeline" },
+    ];
+
+    function render(p) {
+      var html = '<header class="top"><p class="eyebrow">' + esc(p.date) + '</p><h1>' + esc(p.title) + '</h1>' +
+        '<p class="summary">' + esc(p.summary) + '</p></header>';
+
+      html += '<nav class="tabs" id="tabs"><button data-tab="all" class="on">Everything</button>' +
+        sections.map(function (s) { return '<button data-tab="' + s.id + '">' + s.label + '</button>'; }).join("") + '</nav>';
+
+      html += panel("overview", "At a glance",
+        '<div class="glance">' + (p.glance || []).map(function (g) {
+          return '<div><b>' + esc(g.label) + '</b>' + esc(g.text) + '</div>';
+        }).join("") + '</div>');
+
+      html += panel("run", "Run of show", table(["Time", "Segment", "What happens", "Length"], p.runOfShow, function (r) {
+        return '<td class="time">' + esc(r.time) + '</td><td class="seg">' + esc(r.segment) + '</td><td>' + esc(r.what) + '</td><td class="len">' + esc(r.length) + '</td>';
+      }));
+
+      html += panel("perf", "Performances", table(["Act", "Song", "Performed by", "When"], p.performances, function (r) {
+        return '<td class="seg">' + esc(r.act) + '</td><td>' + val(r.song) + (r.film ? '<div class="film">' + esc(r.film) + '</div>' : "") +
+          '</td><td class="who">' + val(r.who) + '</td><td>' + esc(r.when) + '</td>';
+      }));
+
+      html += panel("music", "Music cues", table(["Cue", "Track", "Notes"], p.music, function (r) {
+        return '<td class="seg">' + esc(r.cue) + '</td><td>' + val(r.track) + '</td><td class="film">' + esc(r.note) + '</td>';
+      }));
+
+      html += panel("roles", "Who does what", table(["Role", "Responsibilities", "Who"], p.roles, function (r) {
+        return '<td class="seg">' + esc(r.role) + '</td><td>' + esc(r.does) + '</td><td class="who">' + val(r.who) + '</td>';
+      }));
+
+      html += panel("todo", "Prep timeline", '<ul class="todo">' + (p.timeline || []).map(function (t) {
+        return '<li class="' + (t.done ? "done" : "") + '"><span class="box">' + (t.done ? "✓" : "") + '</span>' +
+          '<span class="by">' + esc(t.by) + '</span><span class="task">' + esc(t.task) + '</span></li>';
+      }).join("") + '</ul>');
+
+      html += '<div class="foot"><button id="lockAgain">Lock the planner</button></div>';
+      out.innerHTML = html;
+
+      document.getElementById("tabs").addEventListener("click", function (e) {
+        var b = e.target.closest("button"); if (!b) return;
+        var tab = b.getAttribute("data-tab");
+        Array.prototype.forEach.call(this.children, function (x) { x.classList.toggle("on", x === b); });
+        Array.prototype.forEach.call(out.querySelectorAll("section.panel"), function (s) {
+          s.classList.toggle("hidden", tab !== "all" && s.id !== tab);
+        });
+      });
+      document.getElementById("lockAgain").onclick = function () {
+        try { sessionStorage.removeItem(KEY); } catch (e) {}
+        location.reload();
+      };
+    }
+
+    function panel(id, title, body) { return '<section class="panel" id="' + id + '"><h2>' + esc(title) + '</h2>' + body + '</section>'; }
+    function table(heads, rows, row) {
+      return '<div class="table-scroll"><table><thead><tr>' + heads.map(function (h) { return '<th>' + h + '</th>'; }).join("") +
+        '</tr></thead><tbody>' + (rows || []).map(function (r) { return '<tr>' + row(r) + '</tr>'; }).join("") + '</tbody></table></div>';
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      err.textContent = "";
+      if (!window.crypto || !crypto.subtle) { err.textContent = "Please open this page over https."; return; }
+      sha256(pw.value.trim()).then(function (h) {
+        if (h === PASSWORD_HASH) {
+          try { sessionStorage.setItem(KEY, "1"); } catch (e) {}
+          unlock();
+        } else {
+          err.textContent = "That's not it. Try again!";
+          form.classList.remove("shake"); void form.offsetWidth; form.classList.add("shake");
+          pw.select();
+        }
+      });
+    });
+
+    var remembered = false;
+    try { remembered = sessionStorage.getItem(KEY) === "1"; } catch (e) {}
+    if (remembered) unlock();
+  })();
+  </script>
+</body>
+</html>

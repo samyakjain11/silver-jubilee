@@ -10,63 +10,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --paper: #fbf6f0;
-    --ink: #3b3340;
-    --soft: #8a7f8c;
-    --blush: #e9a8b4;
-    --blush-deep: #c96f83;
-    --silver: #b9bcc4;
-    --silver-deep: #8d919c;
-    --card: #ffffff;
+    --paper: #fbf6f0; --ink: #3b3340; --soft: #8a7f8c;
+    --blush: #e9a8b4; --blush-deep: #c96f83;
+    --silver: #b9bcc4; --silver-deep: #8d919c; --card: #ffffff;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { height: 100%; }
+  html, body { min-height: 100%; }
   body {
-    background: var(--paper);
-    color: var(--ink);
+    background: var(--paper); color: var(--ink);
     font-family: "Inter", system-ui, sans-serif;
-    overflow: hidden;
-    user-select: none;
-    cursor: default;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 6vh 6vw; overflow-x: hidden;
   }
-
-  /* soft background glow + floating hearts */
   .bg {
     position: fixed; inset: 0; z-index: 0; pointer-events: none;
     background:
       radial-gradient(60vmax 50vmax at 10% 10%, #f7dfe4 0%, transparent 60%),
       radial-gradient(60vmax 50vmax at 90% 90%, #e6e8ee 0%, transparent 60%);
   }
-  .heart {
-    position: fixed; bottom: -40px; z-index: 0; pointer-events: none;
-    color: var(--blush); opacity: .35;
-    animation: float linear infinite;
-  }
-  @keyframes float {
-    to { transform: translateY(-115vh) rotate(25deg); }
-  }
+  .heart { position: fixed; bottom: -40px; z-index: 0; pointer-events: none; color: var(--blush); opacity: .35; animation: float linear infinite; }
+  @keyframes float { to { transform: translateY(-115vh) rotate(25deg); } }
 
-  /* slides */
-  .deck { position: relative; z-index: 1; height: 100%; }
-  .slide {
-    position: absolute; inset: 0;
-    display: flex; align-items: center; justify-content: center;
-    padding: 6vh 6vw 10vh;
-    opacity: 0; visibility: hidden;
-    transform: scale(.98);
-    transition: opacity .9s ease, transform .9s ease, visibility .9s;
-  }
-  .slide.active { opacity: 1; visibility: visible; transform: none; }
-
-  .center { text-align: center; max-width: 1100px; }
-  .eyebrow {
-    font-family: "Caveat", cursive; font-size: clamp(22px, 3.2vw, 44px);
-    color: var(--blush-deep);
-  }
+  main { position: relative; z-index: 1; text-align: center; max-width: 960px; width: 100%; }
+  .rings svg { width: 96px; height: 60px; }
   h1 {
     font-family: "Fraunces", serif; font-weight: 600;
-    font-size: clamp(44px, 8.5vw, 132px); line-height: 1.02;
-    letter-spacing: -0.02em;
+    font-size: clamp(44px, 8vw, 110px); line-height: 1.02; letter-spacing: -0.02em;
   }
   h1 .silver {
     background: linear-gradient(100deg, var(--silver-deep), #e9eaee 45%, var(--silver-deep) 90%);
@@ -75,253 +44,55 @@
     animation: shine 6s ease-in-out infinite;
   }
   @keyframes shine { 50% { background-position: 100% 0; } }
-  h2 {
-    font-family: "Fraunces", serif; font-weight: 600;
-    font-size: clamp(36px, 6.5vw, 96px); line-height: 1.05;
-  }
-  .sub {
-    font-family: "Fraunces", serif; font-style: italic;
-    font-size: clamp(18px, 2.4vw, 34px); color: var(--soft); margin-top: .6em;
-  }
-  .note {
-    margin-top: 2em; font-size: clamp(13px, 1.3vw, 18px);
-    letter-spacing: .25em; text-transform: uppercase; color: var(--silver-deep);
-  }
-  .rings { font-size: clamp(36px, 5vw, 70px); margin-bottom: .2em; }
-  .rings svg { width: 1.6em; height: 1em; }
+  .sub { font-family: "Fraunces", serif; font-style: italic; font-size: clamp(18px, 2.2vw, 28px); color: var(--soft); margin-top: .5em; }
 
-  .divider {
-    width: 120px; height: 2px; margin: 1.2em auto 0;
-    background: linear-gradient(90deg, transparent, var(--silver), transparent);
+  .choices { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 7vh; }
+  .choice {
+    display: block; text-decoration: none; color: var(--ink);
+    background: var(--card); border-radius: 22px; padding: 36px 28px;
+    box-shadow: 0 20px 50px rgba(59, 51, 64, .12);
+    transition: transform .25s ease, box-shadow .25s ease;
   }
+  .choice:hover, .choice:focus-visible { transform: translateY(-4px); box-shadow: 0 26px 60px rgba(59, 51, 64, .18); outline: none; }
+  .choice .icon { width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; background: #f7e6ea; color: var(--blush-deep); }
+  .choice .icon svg { width: 26px; height: 26px; }
+  .choice h2 { font-family: "Fraunces", serif; font-weight: 600; font-size: clamp(28px, 3.2vw, 40px); }
+  .choice p { color: var(--soft); margin-top: .5em; line-height: 1.5; }
+  .choice .tag { display: inline-block; margin-top: 14px; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--silver-deep); }
+  .note { margin-top: 5vh; font-size: 13px; letter-spacing: .25em; text-transform: uppercase; color: var(--silver-deep); }
 
-  /* photo slide: a polaroid */
-  .photo-wrap { display: flex; align-items: center; gap: 5vw; max-width: 1400px; width: 100%; justify-content: center; }
-  .polaroid {
-    background: var(--card);
-    padding: 16px 16px 70px;
-    box-shadow: 0 20px 50px rgba(59, 51, 64, .18), 0 2px 6px rgba(59, 51, 64, .08);
-    transform: rotate(-2.5deg);
-    position: relative;
-    flex: 0 0 auto;
-  }
-  .slide:nth-child(even) .polaroid { transform: rotate(2deg); }
-  .polaroid img, .polaroid .ph {
-    display: block;
-    height: min(62vh, 640px); width: auto; max-width: 52vw;
-    object-fit: cover;
-  }
-  .polaroid .ph {
-    aspect-ratio: 4 / 5;
-    background:
-      repeating-linear-gradient(45deg, #f4eef0 0 14px, #faf6f7 14px 28px);
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    color: var(--soft); font-family: "Caveat", cursive; font-size: 30px; gap: 8px;
-  }
-  .polaroid .ph svg { width: 56px; height: 56px; color: var(--blush); }
-  .polaroid .scrawl {
-    position: absolute; left: 0; right: 0; bottom: 16px; text-align: center;
-    font-family: "Caveat", cursive; font-size: 30px; color: var(--ink);
-  }
-  .tape {
-    position: absolute; top: -14px; left: 50%; width: 110px; height: 30px;
-    transform: translateX(-50%) rotate(-3deg);
-    background: rgba(233, 168, 180, .55);
-  }
-  .photo-text { max-width: 440px; }
-  .photo-text h3 {
-    font-family: "Fraunces", serif; font-weight: 600;
-    font-size: clamp(30px, 4vw, 60px); line-height: 1.1;
-  }
-  .photo-text p { font-size: clamp(16px, 1.7vw, 24px); color: var(--soft); margin-top: .7em; line-height: 1.5; }
-
-  /* quote + message */
-  blockquote {
-    font-family: "Fraunces", serif; font-style: italic;
-    font-size: clamp(30px, 4.6vw, 70px); line-height: 1.2; max-width: 1100px;
-  }
-  .by { font-family: "Caveat", cursive; font-size: clamp(24px, 3vw, 42px); color: var(--blush-deep); margin-top: .8em; }
-  .card {
-    background: var(--card); border-radius: 22px; padding: clamp(28px, 5vw, 70px);
-    max-width: 960px; box-shadow: 0 20px 50px rgba(59, 51, 64, .12);
-    position: relative; text-align: center;
-  }
-  .card .msg { font-family: "Caveat", cursive; font-size: clamp(30px, 4vw, 58px); line-height: 1.25; }
-  .card .from { margin-top: 1em; letter-spacing: .2em; text-transform: uppercase; font-size: clamp(12px, 1.2vw, 16px); color: var(--silver-deep); }
-  .card .mark { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); background: var(--blush); color: #fff; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; }
-
-  /* controls */
-  .bar {
-    position: fixed; left: 0; right: 0; bottom: 0; z-index: 3;
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    padding: 14px 22px; opacity: 0; transition: opacity .4s;
-  }
-  body.show-ui .bar, .bar:hover { opacity: 1; }
-  .dots { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; flex: 1; }
-  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--silver); border: 0; cursor: pointer; }
-  .dot.on { background: var(--blush-deep); transform: scale(1.3); }
-  .btn {
-    background: rgba(255,255,255,.8); border: 1px solid #e8dfe3; color: var(--ink);
-    border-radius: 999px; padding: 8px 14px; font: 500 13px "Inter", sans-serif; cursor: pointer;
-  }
-  .btn:hover { background: #fff; }
-  .progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--blush); z-index: 3; width: 0; }
-  .progress.run { transition: width linear; }
-  .hint { color: var(--soft); font-size: 12px; white-space: nowrap; }
-
-  @media (max-width: 760px) {
-    .photo-wrap { flex-direction: column; gap: 28px; text-align: center; }
-    .polaroid img, .polaroid .ph { height: 44vh; max-width: 80vw; }
-    .hint { display: none; }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .heart { display: none; }
-    .slide { transition: opacity .3s; transform: none; }
-    h1 .silver { animation: none; }
-  }
+  @media (max-width: 640px) { .choices { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: reduce) { .heart { display: none; } h1 .silver { animation: none; } .choice { transition: none; } }
 </style>
 </head>
 <body>
   <div class="bg"></div>
-  <div class="progress" id="progress"></div>
-  <main class="deck" id="deck"></main>
+  <main>
+    <div class="rings"><svg viewBox="0 0 64 40" fill="none" stroke-width="3.5" aria-hidden="true"><circle cx="24" cy="22" r="14" stroke="var(--silver-deep)"/><circle cx="40" cy="22" r="14" stroke="var(--blush-deep)"/></svg></div>
+    <h1><span class="silver">25</span> Years of Us</h1>
+    <p class="sub">Mom &amp; Dad's Silver Jubilee</p>
 
-  <div class="bar">
-    <button class="btn" id="play">▶ Autoplay</button>
-    <div class="dots" id="dots"></div>
-    <span class="hint">← → to move · F fullscreen</span>
-    <button class="btn" id="full">⛶ Fullscreen</button>
-  </div>
+    <nav class="choices">
+      <a class="choice" href="presentation.html">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>
+        <h2>Presentation</h2>
+        <p>The photo slideshow for the big screen.</p>
+        <span class="tag">For the party</span>
+      </a>
+      <a class="choice" href="planner.html">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <h2>Planner</h2>
+        <p>Run of show, performances, music and to-dos.</p>
+        <span class="tag">Password needed</span>
+      </a>
+    </nav>
 
-  <script src="slides.js"></script>
+    <p class="note">27 November 2026</p>
+  </main>
+
   <script>
-  (function () {
-    var show = window.SHOW;
-    var deck = document.getElementById("deck");
-    var dotsEl = document.getElementById("dots");
-    var progress = document.getElementById("progress");
-    var playBtn = document.getElementById("play");
     var heartSvg = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 4.3 2.4.7-1.2 2.2-2.4 4.3-2.4 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg>';
-    var ringsSvg = '<svg viewBox="0 0 64 40" fill="none" stroke="currentColor" stroke-width="3.5" aria-hidden="true" style="color:var(--silver-deep)"><circle cx="24" cy="22" r="14"/><circle cx="40" cy="22" r="14" style="color:var(--blush-deep)" stroke="var(--blush-deep)"/></svg>';
-
-    function esc(s) {
-      return String(s || "").replace(/[&<>"]/g, function (c) {
-        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
-      });
-    }
-
-    function render(s) {
-      switch (s.type) {
-        case "title":
-          return '<div class="center"><div class="rings">' + ringsSvg + '</div>' +
-            '<h1>' + esc(s.title).replace(/(25(th)?)/, '<span class="silver">$1</span>') + '</h1>' +
-            '<p class="sub">' + esc(s.subtitle) + '</p>' +
-            (s.note ? '<p class="note">' + esc(s.note) + '</p>' : "") + '</div>';
-        case "chapter":
-          return '<div class="center"><p class="eyebrow">' + esc(s.number) + '</p>' +
-            '<h2>' + esc(s.title) + '</h2>' +
-            '<p class="sub">' + esc(s.subtitle) + '</p><div class="divider"></div></div>';
-        case "photo":
-          var media = s.photo
-            ? '<img src="' + esc(s.photo) + '" alt="' + esc(s.caption) + '">'
-            : '<div class="ph">' + heartSvg + '<span>photo coming soon</span></div>';
-          return '<div class="photo-wrap"><figure class="polaroid"><span class="tape"></span>' + media +
-            '<figcaption class="scrawl">' + esc(s.caption) + '</figcaption></figure>' +
-            '<div class="photo-text"><h3>' + esc(s.caption) + '</h3>' +
-            (s.detail ? '<p>' + esc(s.detail) + '</p>' : "") + '</div></div>';
-        case "quote":
-          return '<div class="center"><blockquote>“' + esc(s.text) + '”</blockquote>' +
-            '<p class="by">' + esc(s.by) + '</p></div>';
-        case "message":
-          return '<div class="card"><span class="mark">' + heartSvg.replace('<svg', '<svg width="20" height="20"') + '</span>' +
-            '<p class="msg">' + esc(s.text) + '</p><p class="from">— ' + esc(s.from) + '</p></div>';
-      }
-      return "";
-    }
-
-    show.slides.forEach(function (s, i) {
-      var el = document.createElement("section");
-      el.className = "slide";
-      el.innerHTML = render(s);
-      deck.appendChild(el);
-      var d = document.createElement("button");
-      d.className = "dot"; d.setAttribute("aria-label", "Slide " + (i + 1));
-      d.onclick = function (e) { e.stopPropagation(); go(i); };
-      dotsEl.appendChild(d);
-    });
-
-    var slides = deck.children, dots = dotsEl.children, cur = 0, timer = null;
-
-    function go(i) {
-      if (i < 0 || i >= slides.length) return;
-      if (timer && i === slides.length - 1) togglePlay();
-      slides[cur].classList.remove("active"); dots[cur].classList.remove("on");
-      cur = i;
-      slides[cur].classList.add("active"); dots[cur].classList.add("on");
-      try { history.replaceState(null, "", "#" + (cur + 1)); } catch (e) {}
-      if (timer) restartProgress();
-    }
-
-    function restartProgress() {
-      var secs = show.autoplaySeconds || 8;
-      progress.classList.remove("run"); progress.style.width = "0";
-      void progress.offsetWidth;
-      progress.classList.add("run");
-      progress.style.transitionDuration = secs + "s";
-      progress.style.width = "100%";
-    }
-
-    function togglePlay() {
-      if (timer) {
-        clearInterval(timer); timer = null;
-        progress.classList.remove("run"); progress.style.width = "0";
-        playBtn.textContent = "▶ Autoplay";
-      } else {
-        timer = setInterval(function () { go(cur + 1); }, (show.autoplaySeconds || 8) * 1000);
-        restartProgress();
-        playBtn.textContent = "❚❚ Pause";
-      }
-    }
-
-    function fullscreen() {
-      if (document.fullscreenElement) document.exitFullscreen();
-      else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
-    }
-
-    playBtn.onclick = function (e) { e.stopPropagation(); togglePlay(); };
-    document.getElementById("full").onclick = function (e) { e.stopPropagation(); fullscreen(); };
-
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") { e.preventDefault(); go(cur + 1); }
-      else if (e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); go(cur - 1); }
-      else if (e.key === "f" || e.key === "F") fullscreen();
-      else if (e.key === "p" || e.key === "P") togglePlay();
-      else if (e.key === "Home") go(0);
-      else if (e.key === "End") go(slides.length - 1);
-    });
-
-    deck.addEventListener("click", function (e) {
-      go(e.clientX > window.innerWidth / 3 ? cur + 1 : cur - 1);
-    });
-
-    var tx = null;
-    deck.addEventListener("touchstart", function (e) { tx = e.touches[0].clientX; }, { passive: true });
-    deck.addEventListener("touchend", function (e) {
-      if (tx === null) return;
-      var dx = e.changedTouches[0].clientX - tx;
-      if (Math.abs(dx) > 40) go(dx < 0 ? cur + 1 : cur - 1);
-      tx = null;
-    });
-
-    var hideTimer;
-    document.addEventListener("mousemove", function () {
-      document.body.classList.add("show-ui");
-      clearTimeout(hideTimer);
-      hideTimer = setTimeout(function () { document.body.classList.remove("show-ui"); }, 2200);
-    });
-
-    // floating hearts
-    for (var h = 0; h < 14; h++) {
+    for (var h = 0; h < 12; h++) {
       var heart = document.createElement("div");
       heart.className = "heart";
       heart.innerHTML = heartSvg;
@@ -332,11 +103,6 @@
       heart.style.animationDelay = -Math.random() * 30 + "s";
       document.body.appendChild(heart);
     }
-
-    var start = parseInt((location.hash || "").slice(1), 10);
-    slides[0].classList.add("active"); dots[0].classList.add("on");
-    if (start > 1 && start <= slides.length) go(start - 1);
-  })();
   </script>
 </body>
 </html>
