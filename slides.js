@@ -33,7 +33,7 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Little Mom", detail: "A childhood photo and where she grew up." },
     { type: "photo", photo: "", caption: "Young Mom", detail: "College days, first job, or a favourite memory." },
     { type: "photo", photo: "", caption: "Mom as we know her", detail: "What makes her, her." },
-    { type: "chapter", number: "A dance for Mom", title: "Yai Re Yai Re", subtitle: "Performed by: add names" },
+    { type: "chapter", number: "A dance for Mom", title: "Yai Re Yai Re", subtitle: "From Rangeela · performed by: add names" },
 
     // ── PART 2: together ──
     { type: "chapter", number: "Part Two", title: "Then Came Us", subtitle: "Twenty-five years together" },
