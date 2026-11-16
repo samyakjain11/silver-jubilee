@@ -66,6 +66,8 @@
   td.len, td.who { white-space: nowrap; color: var(--soft); }
   .tbd { color: var(--silver-deep); font-style: italic; }
   .film { color: var(--soft); font-size: 13px; }
+  tr.open td { background: repeating-linear-gradient(135deg, #fdf8f9 0 10px, #f9eff2 10px 20px); color: var(--soft); font-style: italic; }
+  tr.open td.seg::after { content: "Open slot"; display: inline-block; margin-left: 8px; font: 600 10px "Inter", sans-serif; font-style: normal; letter-spacing: .1em; text-transform: uppercase; color: var(--blush-deep); border: 1px dashed var(--blush); border-radius: 999px; padding: 1px 8px; vertical-align: 2px; }
 
   ul.todo { list-style: none; }
   ul.todo li { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
@@ -172,9 +174,9 @@
         return '<td class="time">' + esc(r.time) + '</td><td class="seg">' + esc(r.segment) + '</td><td>' + esc(r.what) + '</td><td class="len">' + esc(r.length) + '</td>';
       }));
 
-      html += panel("perf", "Performances", table(["Act", "Song", "Performed by", "When"], p.performances, function (r) {
-        return '<td class="seg">' + esc(r.act) + '</td><td>' + val(r.song) + (r.film ? '<div class="film">' + esc(r.film) + '</div>' : "") +
-          '</td><td class="who">' + val(r.who) + '</td><td>' + esc(r.when) + '</td>';
+      html += panel("perf", "Performances", table(["Chapter", "Act", "Song", "Performed by"], p.performances, function (r) {
+        return '<td class="seg">' + esc(r.chapter) + '</td><td>' + esc(r.act) + '</td><td>' + val(r.song) + (r.film ? '<div class="film">' + esc(r.film) + '</div>' : "") +
+          '</td><td class="who">' + val(r.who) + '</td>';
       }));
 
       html += panel("music", "Music cues", table(["Cue", "Track", "Notes"], p.music, function (r) {
@@ -210,7 +212,7 @@
     function panel(id, title, body) { return '<section class="panel" id="' + id + '"><h2>' + esc(title) + '</h2>' + body + '</section>'; }
     function table(heads, rows, row) {
       return '<div class="table-scroll"><table><thead><tr>' + heads.map(function (h) { return '<th>' + h + '</th>'; }).join("") +
-        '</tr></thead><tbody>' + (rows || []).map(function (r) { return '<tr>' + row(r) + '</tr>'; }).join("") + '</tbody></table></div>';
+        '</tr></thead><tbody>' + (rows || []).map(function (r) { return '<tr' + (r.open ? ' class="open"' : '') + '>' + row(r) + '</tr>'; }).join("") + '</tbody></table></div>';
     }
 
     form.addEventListener("submit", function (e) {
