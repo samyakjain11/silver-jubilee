@@ -59,7 +59,7 @@ window.SHOW = {
     { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
 
     // ── DINNER IS OPEN (the program carries on) ──
-    { type: "chapter", number: "Dinner is open · the show goes on", title: "How Well Do You Know the Couple?", subtitle: "Fill in the quiz card on your table. Winning table gets a prize!" },
+    { type: "chapter", number: "Dinner is open", title: "Help Yourselves!", subtitle: "Grab a plate. The show goes on while you eat" },
 
     // ── RETRO THROWBACKS ──
     { type: "chapter", number: "Rewind", title: "Retro Throwbacks", subtitle: "The old photo albums, opened up" },
@@ -96,14 +96,11 @@ window.SHOW = {
     { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
     { type: "chapter", number: "A song from Grandpa", title: "Hai Apna Dil To Awaara", subtitle: "From Solva Saal" },
 
-    // ── GAME 2: QUIZ RESULTS ──
-    { type: "chapter", number: "And the winner is", title: "Quiz Results", subtitle: "Which table knows Mom & Dad best?" },
-
     // ── CHAPTER 6: WISHES & MEMORIES ──
     { type: "chapter", number: "Chapter 6", title: "Wishes & Memories", subtitle: "From the people who love them" },
-    { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by: add name" },
     { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
     { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
+    { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by: add name" },
     { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
 
     // ── FINALE ──
@@ -111,7 +108,7 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Mom & Dad, 2026", detail: "" },
     { type: "chapter", number: "Mom & Dad", title: "Tere Bina Nahi Lagda Dil", subtitle: "Their dance, then cake!" },
 
-    // ── GAME 3 ──
+    // ── GAME 2 ──
     { type: "chapter", number: "One last game", title: "Bollywood Trivia", subtitle: "Answer as a table. Fastest table wins!" },
 
     {

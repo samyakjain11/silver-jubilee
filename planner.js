@@ -11,11 +11,11 @@
 window.PLAN = {
   title: "Party Planner",
   date: "Friday, 27 November 2026",
-  summary: "A three-hour evening for 25 to 30 family and friends, built around a heartfelt tribute with quizzes and performances in between. Warm, fun and family friendly, following their story from the arranged match onward.",
+  summary: "A three-hour evening for 25 to 30 family and friends, built around a heartfelt tribute with games and performances in between. Warm, fun and family friendly, following their story from the arranged match onward.",
 
   glance: [
-    { label: "Timing", text: "6:30 to about 9:15 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
-    { label: "Centerpieces", text: "A story in chapters told through family performances, with the shoe game, guest quiz and Bollywood trivia as breathers" },
+    { label: "Timing", text: "6:30 to about 9:05 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
+    { label: "Centerpieces", text: "A story in chapters told through family performances, with the shoe game and Bollywood trivia as breathers" },
     { label: "Rule of thumb", text: "No segment longer than 20 minutes, so energy stays up. Every solo song is kept to 2 minutes, except Grandpa's (4 min). Each act has 2 minutes before it for the changeover and the host's intro (shown as \"2 + 5 min\")" },
   ],
 
@@ -23,7 +23,7 @@ window.PLAN = {
   // dances or two songs sit back to back. open: true marks a slot that is
   // still being filled, so it shows up as a placeholder on the website.
   runOfShow: [
-    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open. Guest quiz cards already on the tables so people can start early", length: "30 min" },
+    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open.", length: "30 min" },
     { time: "7:00 PM", segment: "Welcome & Blessings", what: "Speech · Host welcomes everyone, then Grandpa & Grandma give a short speech to open the evening", length: "7 min" },
     { time: "7:07 PM", segment: "Uncles & Aunts' Dance", what: "Dance · A short entry dance from the uncles & aunts to set the shaadi mood (about 2 min), then 1 min for everyone to settle. Song not final: \"Wah Wah Ramji\" or \"Ae Dil Laaya Hai Bahaar\"", length: "2 + 3 min" },
     { time: "7:12 PM", segment: "0. Grand Entrance", what: "Entrance · Mom & Dad walk in to Flipperachi, host welcomes the \"jodi of the night\"", length: "2 + 3 min" },
@@ -32,16 +32,15 @@ window.PLAN = {
     { time: "7:26 PM", segment: "2. The Rishta", what: "Photos, then dance · Host walks through the first meeting and engagement photos, then Kake & Surbhi perform \"Tum Se Mil Ke Dil Ka Hai Jo Haal\"", length: "2 + 7 min" },
     { time: "7:35 PM", segment: "Game 1: Shoe game", what: "Game · The headline game. Mom & Dad back to back, 15 to 20 questions", length: "2 + 15 min" },
     { time: "7:52 PM", segment: "3. The Shaadi", what: "Dance · Gayatri & Hanisha's 2-minute dance: \"Maahi Vey\", \"Jhumka Gira Re\" and a third song (TBD)", length: "2 + 2 min" },
-    { time: "7:56 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on. Guest quiz cards are on the tables", length: "1 min" },
+    { time: "7:56 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on.", length: "1 min" },
     { time: "7:57 PM", segment: "Open slot A: Early years", what: "The kids arrive. Acts to be added", length: "2 + 10 min", open: true },
     { time: "8:09 PM", segment: "4. Building a Home", what: "Song · Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "2 + 2 min" },
     { time: "8:13 PM", segment: "5. Blessings: Poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min" },
     { time: "8:18 PM", segment: "5. Blessings: Grandpa sings", what: "Song · Grandpa sings \"Hai Apna Dil To Awaara\"", length: "2 + 4 min" },
-    { time: "8:24 PM", segment: "Game 2: Guest quiz results", what: "Game · Answers to \"How well do you know the couple?\", winning table gets small prizes", length: "2 + 8 min" },
-    { time: "8:34 PM", segment: "6. Wishes & Memories", what: "Song, then messages · A friend's dad sings \"Tere Sang Yaara\" (2 min), then any short speeches or video messages (5 min)", length: "2 + 7 min" },
-    { time: "8:43 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "2 + 15 min" },
-    { time: "9:00 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min" },
-    { time: "9:12 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open" },
+    { time: "8:24 PM", segment: "6. Wishes & Memories", what: "Messages, then song · Any short speeches or video messages (5 min), then a friend's dad sings \"Tere Sang Yaara\" (2 min)", length: "2 + 7 min" },
+    { time: "8:33 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "2 + 15 min" },
+    { time: "8:50 PM", segment: "Game 2: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min" },
+    { time: "9:02 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open" },
   ],
 
   performances: [
@@ -125,7 +124,6 @@ window.PLAN = {
     ] },
     { cue: "7:56 PM · Dinner is open", lines: [
       "And just like at every shaadi, after the dancing comes the food! Dinner is now open. Please help yourselves whenever you like, and the show will carry on while you eat.",
-      "You'll also find a quiz card on your table: \"How well do you know the couple?\" Fill it in as a table. We'll collect them a little later, and the winning table gets a prize.",
     ] },
     { cue: "7:57 PM · Open slot A", lines: [
       "Keep eating, because the story continues. A few years into the marriage, life got a lot louder. That's right, the kids arrived.",
@@ -142,24 +140,21 @@ window.PLAN = {
     { cue: "8:18 PM · 5. Blessings: Grandpa sings", lines: [
       "And now for the sung kind. Grandpa started our evening, and he isn't done yet. Here's a song from the original heartthrob of the family!",
     ] },
-    { cue: "8:24 PM · Game 2: Guest quiz results", lines: [
-      "Drumroll please! Let's find out which table knows Mom & Dad best.",
-      "[Collect the quiz cards first if they aren't in yet] [Read out three or four answers, then announce the winning table and hand over the prizes]",
+    { cue: "8:24 PM · 6. Wishes & Memories", lines: [
+      "Chapter six: Wishes & Memories. Over twenty-five years, Mom & Dad have collected a lot of people who love them, and a few of them have something to say.",
+      "[Any short speeches or video messages first]",
+      "And one of them wanted to say it with a song about the people who stay by your side. Please welcome [name]!",
     ] },
-    { cue: "8:34 PM · 6. Wishes & Memories", lines: [
-      "Chapter six: Wishes & Memories. Over twenty-five years, Mom & Dad have collected a lot of people who love them, and one of them wanted to say it with a song about the people who stay by your side. Please welcome [name]!",
-      "[Then any short speeches or video messages, if there are some]",
-    ] },
-    { cue: "8:43 PM · Finale", lines: [
+    { cue: "8:33 PM · Finale", lines: [
       "We've told the whole story, from the rishta to tonight. But there's one chapter only the two of them can perform.",
       "Mom, Dad, this floor is yours.",
       "[After the dance] Let's bring out the cake! Everyone, please join in.",
     ] },
-    { cue: "9:00 PM · Game 3: Bollywood trivia", lines: [
+    { cue: "8:50 PM · Game 2: Bollywood trivia", lines: [
       "Before we hand the stage to the DJ, one last round, and this one is for everybody. It's Bollywood trivia! Answer as a table, shout it out, and the fastest table wins.",
       "[8 to 10 quick questions, then announce the winning table]",
     ] },
-    { cue: "9:12 PM · Group photo, then DJ", lines: [
+    { cue: "9:02 PM · Group photo, then DJ", lines: [
       "Thank you all for coming and for being part of their story. Before anyone goes anywhere, everyone in for one big group photo!",
       "Here's to Mom & Dad, and to the next twenty-five. Happy anniversary! DJ, take it away!",
     ] },
@@ -168,7 +163,7 @@ window.PLAN = {
   roles: [
     { role: "Host / MC", does: "Welcome, story narration, runs the games (script in the Emcee script tab)", who: "Samyak" },
     { role: "Tech helper", does: "Runs the slideshow and music, cues each chapter's song", who: "TBD" },
-    { role: "Quiz helper", does: "Hands out quiz cards, scores tables, gives prizes", who: "TBD" },
+    { role: "Games helper", does: "Helps with the shoe game props, keeps score in Bollywood trivia, gives prizes", who: "TBD" },
     { role: "Performance lead", does: "Collects the lineup, runs a rehearsal, keeps acts short", who: "TBD" },
     { role: "Photographer", does: "Candid photos plus the group photo at the end", who: "TBD" },
   ],
@@ -177,10 +172,10 @@ window.PLAN = {
   timeline: [
     { by: "By Nov 7", task: "Lock the run of show, pick the host and helpers, create the GitHub repo", done: false },
     { by: "By Nov 10", task: "Send guests the ask for photos, messages and performance sign-ups", done: false },
-    { by: "By Nov 14", task: "Finalize shoe game and quiz questions, confirm the performance lineup", done: false },
+    { by: "By Nov 14", task: "Finalize shoe game and Bollywood trivia questions, confirm the performance lineup", done: false },
     { by: "By Nov 20", task: "All photos and messages in, slideshow built", done: false },
     { by: "By Nov 24", task: "Run-through of the slideshow on the actual TV or projector, performance rehearsal", done: false },
-    { by: "Nov 26", task: "Print quiz cards, pack prizes, test every song on the playlist", done: false },
+    { by: "Nov 26", task: "Pack trivia prizes, test every song on the playlist", done: false },
     { by: "Nov 27", task: "The party", done: false },
   ],
 };
