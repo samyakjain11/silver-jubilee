@@ -149,7 +149,7 @@
     function unlock() {
       // The plan is only downloaded after the right password is entered.
       var s = document.createElement("script");
-      s.src = "planner.js";
+      s.src = "planner.js?v=" + Date.now(); // always fetch the latest plan, never a cached copy
       s.onload = function () { lock.classList.add("hidden"); out.classList.remove("hidden"); render(window.PLAN); };
       s.onerror = function () { err.textContent = "Couldn't load the plan. Try refreshing."; };
       document.body.appendChild(s);
