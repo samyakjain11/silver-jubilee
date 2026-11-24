@@ -61,6 +61,12 @@ window.SHOW = {
     // ── DINNER IS OPEN (the program carries on) ──
     { type: "chapter", number: "Dinner is open · the show goes on", title: "How Well Do You Know the Couple?", subtitle: "Fill in the quiz card on your table. Winning table gets a prize!" },
 
+    // ── RETRO THROWBACKS ──
+    { type: "chapter", number: "Rewind", title: "Retro Throwbacks", subtitle: "The old photo albums, opened up" },
+    { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
+    { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
+    { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
+
     // ── EARLY YEARS (open slot A) ──
     { type: "chapter", number: "And then", title: "Came Us", subtitle: "The early years" },
     { type: "photo", photo: "", caption: "And then came us", detail: "The chaos officially began." },
@@ -68,8 +74,21 @@ window.SHOW = {
     // ── CHAPTER 4 ──
     { type: "chapter", number: "Chapter 4", title: "Building a Home", subtitle: "First home, first everything" },
     { type: "photo", photo: "", caption: "Our first home", detail: "Add the city and year." },
-    { type: "photo", photo: "", caption: "A favourite trip", detail: "Where did you go?" },
     { type: "photo", photo: "", caption: "Festival memories", detail: "Add a line about it." },
+
+    // Themed photo sections. They can play behind Dad's song.
+    { type: "chapter", number: "Together", title: "Exploring the World", subtitle: "Sydney · Italy · Singapore" },
+    { type: "photo", photo: "", caption: "Sydney", detail: "Add a line about the trip." },
+    { type: "photo", photo: "", caption: "Italy", detail: "Add a line about the trip." },
+    { type: "photo", photo: "", caption: "Singapore", detail: "Add a line about the trip." },
+
+    { type: "chapter", number: "Together", title: "Adventure", subtitle: "Trails and bike rides" },
+    { type: "photo", photo: "", caption: "On the trail", detail: "Add where and when." },
+    { type: "photo", photo: "", caption: "On the bike", detail: "Add where and when." },
+
+    { type: "chapter", number: "Together", title: "Fitness", subtitle: "The couple that trains together" },
+    { type: "photo", photo: "", caption: "Gym buddies", detail: "Add a line about it." },
+
     { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
 
     // ── CHAPTER 5 ──
