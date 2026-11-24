@@ -64,6 +64,7 @@
   td.time { white-space: nowrap; font-weight: 600; color: var(--blush-deep); }
   td.seg { font-weight: 600; }
   td.len, td.who { white-space: nowrap; color: var(--soft); }
+  td.resp { min-width: 220px; font-size: 14px; color: var(--soft); }
   .tbd { color: var(--silver-deep); font-style: italic; }
   .film { color: var(--soft); font-size: 13px; }
   tr.open td { background: repeating-linear-gradient(135deg, #fdf8f9 0 10px, #f9eff2 10px 20px); color: var(--soft); font-style: italic; }
@@ -177,8 +178,8 @@
           return '<div><b>' + esc(g.label) + '</b>' + esc(g.text) + '</div>';
         }).join("") + '</div>');
 
-      html += panel("run", "Run of show", table(["Time", "Segment", "What happens", "Length"], p.runOfShow, function (r) {
-        return '<td class="time">' + esc(r.time) + '</td><td class="seg">' + esc(r.segment) + '</td><td>' + esc(r.what) + '</td><td class="len">' + esc(r.length) + '</td>';
+      html += panel("run", "Run of show", table(["Time", "Segment", "What happens", "Length", "Responsible"], p.runOfShow, function (r) {
+        return '<td class="time">' + esc(r.time) + '</td><td class="seg">' + esc(r.segment) + '</td><td>' + esc(r.what) + '</td><td class="len">' + esc(r.length) + '</td><td class="resp">' + val(r.who) + '</td>';
       }));
 
       html += panel("perf", "Performances", table(["Chapter", "Act", "Song", "Performed by"], p.performances, function (r) {
