@@ -71,8 +71,8 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
     { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
 
-    // ── GAME 2: PROP GAME ──
-    { type: "chapter", number: "Game time", title: "The Prop Game", subtitle: "Get ready to play!" },
+    // ── GAME 2: PROP SONG GAME ──
+    { type: "chapter", number: "Game time", title: "The Prop Song Game", subtitle: "Led by Surbhi · get ready to play!" },
 
     // ── CHAPTER 4 ──
     { type: "chapter", number: "Chapter 4", title: "Building a Home", subtitle: "First home, first everything" },
