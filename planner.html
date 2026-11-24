@@ -26,19 +26,6 @@
   a.home { position: fixed; top: 16px; left: 16px; z-index: 2; text-decoration: none; color: var(--ink); background: rgba(255,255,255,.85); border: 1px solid #e8dfe3; border-radius: 999px; padding: 8px 14px; font-size: 13px; font-weight: 500; }
   a.home:hover { background: #fff; }
 
-  /* lock screen */
-  .lock { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
-  .lock form { background: var(--card); border-radius: 22px; padding: 44px 36px; width: 100%; max-width: 400px; text-align: center; box-shadow: 0 20px 50px rgba(59, 51, 64, .12); }
-  .lock .icon { width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; background: var(--blush-pale); color: var(--blush-deep); }
-  .lock h1 { font-family: "Fraunces", serif; font-weight: 600; font-size: 34px; }
-  .lock p { color: var(--soft); margin-top: 4px; }
-  .lock input { margin-top: 24px; width: 100%; font: 16px "Inter", sans-serif; padding: 12px 16px; border: 1px solid #e3d8dc; border-radius: 12px; background: #fdfbfa; color: var(--ink); }
-  .lock input:focus { outline: 2px solid var(--blush); border-color: transparent; }
-  .lock button { margin-top: 12px; width: 100%; font: 600 15px "Inter", sans-serif; padding: 12px; border: 0; border-radius: 12px; background: var(--blush-deep); color: #fff; cursor: pointer; }
-  .lock button:hover { filter: brightness(1.05); }
-  .lock .err { color: var(--blush-deep); font-size: 14px; margin-top: 12px; min-height: 1.5em; }
-  .shake { animation: shake .4s; }
-  @keyframes shake { 25% { transform: translateX(-8px); } 75% { transform: translateX(8px); } }
 
   /* planner */
   .planner { max-width: 1040px; margin: 0 auto; padding: 72px 24px 80px; }
@@ -106,40 +93,13 @@
   <a class="home" href="./">⌂ Home</a>
 
   <div class="wrap">
-    <div class="lock" id="lock">
-      <form id="lockForm" autocomplete="off">
-        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
-        <h1>Planner</h1>
-        <p>Enter the password to see the plan.</p>
-        <input type="password" id="pw" placeholder="Password" aria-label="Password" autofocus>
-        <button type="submit">Open planner</button>
-        <div class="err" id="err" role="alert"></div>
-      </form>
-    </div>
 
-    <div class="planner hidden" id="planner"></div>
+    <div class="planner" id="planner"></div>
   </div>
 
   <script>
   (function () {
-    // SHA-256 of the planner password. To change the password, put the new
-    // password's SHA-256 here (any online "SHA-256 generator" will make one).
-    var PASSWORD_HASH = "376dd4dc4aab86266b7b870bcad52f9d8177b0345c4cd6d1eedf48f7b6240d34";
-    var KEY = "sj-planner-unlocked";
-
-    var lock = document.getElementById("lock");
-    var form = document.getElementById("lockForm");
-    var pw = document.getElementById("pw");
-    var err = document.getElementById("err");
     var out = document.getElementById("planner");
-
-    function sha256(text) {
-      return crypto.subtle.digest("SHA-256", new TextEncoder().encode(text)).then(function (buf) {
-        return Array.prototype.map.call(new Uint8Array(buf), function (b) {
-          return ("0" + b.toString(16)).slice(-2);
-        }).join("");
-      });
-    }
 
     function esc(s) {
       return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
@@ -148,12 +108,11 @@
     }
     function val(s) { return /^\s*(tbd)?\s*$/i.test(s || "") ? '<span class="tbd">TBD</span>' : esc(s); }
 
-    function unlock() {
-      // The plan is only downloaded after the right password is entered.
+    function load() {
       var s = document.createElement("script");
       s.src = "planner.js?v=" + Date.now(); // always fetch the latest plan, never a cached copy
-      s.onload = function () { lock.classList.add("hidden"); out.classList.remove("hidden"); render(window.PLAN); };
-      s.onerror = function () { err.textContent = "Couldn't load the plan. Try refreshing."; };
+      s.onload = function () { render(window.PLAN); };
+      s.onerror = function () { out.textContent = "Couldn't load the plan. Try refreshing."; };
       document.body.appendChild(s);
     }
 
@@ -208,7 +167,6 @@
           '<span class="by">' + esc(t.by) + '</span><span class="task">' + esc(t.task) + '</span></li>';
       }).join("") + '</ul>');
 
-      html += '<div class="foot"><button id="lockAgain">Lock the planner</button></div>';
       out.innerHTML = html;
 
       document.getElementById("tabs").addEventListener("click", function (e) {
@@ -219,10 +177,6 @@
           s.classList.toggle("hidden", tab !== "all" && s.id !== tab);
         });
       });
-      document.getElementById("lockAgain").onclick = function () {
-        try { sessionStorage.removeItem(KEY); } catch (e) {}
-        location.reload();
-      };
     }
 
     function panel(id, title, body) { return '<section class="panel" id="' + id + '"><h2>' + esc(title) + '</h2>' + body + '</section>'; }
@@ -231,25 +185,7 @@
         '</tr></thead><tbody>' + (rows || []).map(function (r) { return '<tr' + (r.open ? ' class="open"' : '') + '>' + row(r) + '</tr>'; }).join("") + '</tbody></table></div>';
     }
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      err.textContent = "";
-      if (!window.crypto || !crypto.subtle) { err.textContent = "Please open this page over https."; return; }
-      sha256(pw.value.trim()).then(function (h) {
-        if (h === PASSWORD_HASH) {
-          try { sessionStorage.setItem(KEY, "1"); } catch (e) {}
-          unlock();
-        } else {
-          err.textContent = "That's not it. Try again!";
-          form.classList.remove("shake"); void form.offsetWidth; form.classList.add("shake");
-          pw.select();
-        }
-      });
-    });
-
-    var remembered = false;
-    try { remembered = sessionStorage.getItem(KEY) === "1"; } catch (e) {}
-    if (remembered) unlock();
+    load();
   })();
   </script>
 </body>
