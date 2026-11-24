@@ -36,6 +36,7 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Young Dad", detail: "College days, first job, or a favourite memory." },
     { type: "photo", photo: "", caption: "Dad as we know him", detail: "What makes him, him." },
     { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Dad" },
+    { type: "chapter", number: "A song from an old friend", title: "Add song name", subtitle: "Sung by Dad's friend: add name" },
 
     { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
     { type: "photo", photo: "", caption: "Little Mom", detail: "A childhood photo and where she grew up." },
@@ -49,14 +50,14 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "The engagement", detail: "Add the year and a sweet line here." },
     { type: "chapter", number: "The first meeting", title: "Tum Se Mil Ke Dil Ka Hai Jo Haal", subtitle: "From Main Hoon Na · performed by Kake & Surbhi" },
 
+    // ── GAME 1 ──
+    { type: "chapter", number: "Game time", title: "The Shoe Game", subtitle: "Back to back, no peeking, no discussing" },
+
     // ── CHAPTER 3 ──
     { type: "chapter", number: "Chapter 3", title: "The Shaadi", subtitle: "Where it all began" },
     { type: "photo", photo: "", caption: "The big day", detail: "Add the wedding date and place." },
     { type: "photo", photo: "", caption: "The family together", detail: "Everyone who made it happen." },
     { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
-
-    // ── GAME 1 ──
-    { type: "chapter", number: "Game time", title: "The Shoe Game", subtitle: "Back to back, no peeking, no discussing" },
 
     // ── DINNER ──
     { type: "chapter", number: "Dinner is served", title: "How Well Do You Know the Couple?", subtitle: "Fill in the quiz card on your table. Winning table gets a prize!" },
@@ -86,8 +87,9 @@ window.SHOW = {
     // ── GAME 3 ──
     { type: "chapter", number: "And the winner is", title: "Quiz Results", subtitle: "Which table knows Mom & Dad best?" },
 
-    // ── WISHES & MEMORIES (open slot B) ──
+    // ── CHAPTER 7: WISHES & MEMORIES ──
     { type: "chapter", number: "Chapter 7", title: "Wishes & Memories", subtitle: "From the people who love them" },
+    { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by: add name" },
     { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
     { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
     { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
