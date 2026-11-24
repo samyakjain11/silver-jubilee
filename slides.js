@@ -76,7 +76,9 @@ window.SHOW = {
     { type: "chapter", number: "Game time", title: "Round Two", subtitle: "Add the second game's name here" },
 
     // ── CHAPTER 5 ──
-    { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "Hai Apna Dil To Awaara · sung by Grandpa" },
+    { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "A poem and a song" },
+    { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
+    { type: "chapter", number: "A song from Grandpa", title: "Hai Apna Dil To Awaara", subtitle: "From Solva Saal" },
 
     // ── CHAPTER 6 ──
     { type: "chapter", number: "Chapter 6", title: "Her Circle", subtitle: "Teri Ore · performed by Mom with: add names" },
