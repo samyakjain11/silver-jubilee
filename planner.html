@@ -151,10 +151,10 @@
         return '<td class="seg">' + esc(r.cue) + '</td><td>' + val(r.track) + '</td><td class="film">' + esc(r.note) + '</td>';
       }));
 
-      html += panel("script", "Emcee script", '<p class="film" style="margin-bottom:10px">What the hosts say, in order. Samyak and Anshi take turns. Lines in [brackets] are notes or names to fill in.</p>' +
+      html += panel("script", "Emcee script", '<p class="film" style="margin-bottom:10px">What the hosts say, in order. Samyak and Anshi take turns, and a guest emcee covers their own dance. Lines in [brackets] are notes or names to fill in.</p>' +
         (p.script || []).map(function (c) {
           return '<div class="cue"><div class="cue-time">' + esc(c.cue) + '</div>' + (c.lines || []).map(function (l) {
-            return /^\[.*\]$/.test(l) ? '<p class="note-line">' + esc(l.slice(1, -1)) + '</p>' : (/^(Samyak|Anshi|Both):\s*/.test(l) ? '<p><b class="spk">' + esc(l.split(":")[0]) + ':</b> ' + esc(l.replace(/^[^:]+:\s*/, "")) + '</p>' : '<p>' + esc(l) + '</p>');
+            return /^\[.*\]$/.test(l) ? '<p class="note-line">' + esc(l.slice(1, -1)) + '</p>' : (/^(Samyak|Anshi|Both|Guest):\s*/.test(l) ? '<p><b class="spk">' + esc(l.split(":")[0] === "Guest" ? "Guest emcee" : l.split(":")[0]) + ':</b> ' + esc(l.replace(/^[^:]+:\s*/, "")) + '</p>' : '<p>' + esc(l) + '</p>');
           }).join("") + '</div>';
         }).join(""));
 
