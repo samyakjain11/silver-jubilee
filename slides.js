@@ -53,6 +53,9 @@ window.SHOW = {
     // ── GAME 1 ──
     { type: "chapter", number: "Game time", title: "The Shoe Game", subtitle: "Back to back, no peeking, no discussing" },
 
+    // ── SONG BEFORE THE WEDDING ──
+    { type: "chapter", number: "A song for the couple", title: "Song name TBD", subtitle: "Sung by Dad's friend" },
+
     // ── CHAPTER 3 ──
     { type: "chapter", number: "Chapter 3", title: "The Shaadi", subtitle: "Where it all began" },
     { type: "photo", photo: "", caption: "The big day", detail: "Add the wedding date and place." },
