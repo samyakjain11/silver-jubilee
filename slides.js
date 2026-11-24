@@ -27,6 +27,7 @@ window.SHOW = {
     // Song not final yet (Wah Wah Ramji or Ae Dil Laaya Hai Bahaar). Add it to the subtitle once decided.
     { type: "chapter", number: "Setting the mood", title: "A Shaadi Welcome", subtitle: "Performed by the uncles & aunts" },
     { type: "chapter", number: "Please welcome", title: "The Jodi of the Night", subtitle: "Mom & Dad" },
+    { type: "chapter", number: "A song from Grandpa", title: "Hai Apna Dil To Awaara", subtitle: "From Solva Saal · sung by Grandpa" },
 
     // ── CHAPTER 1: each of them on their own ──
     { type: "chapter", number: "Chapter 1", title: "Before Us", subtitle: "Two stories that started separately" },
@@ -91,9 +92,8 @@ window.SHOW = {
     { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
 
     // ── CHAPTER 5 ──
-    { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "A poem and a song" },
+    { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "A few words from the heart" },
     { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
-    { type: "chapter", number: "A song from Grandpa", title: "Hai Apna Dil To Awaara", subtitle: "From Solva Saal" },
 
     // ── CHAPTER 6: WISHES & MEMORIES ──
     { type: "chapter", number: "Chapter 6", title: "Wishes & Memories", subtitle: "From the people who love them" },
