@@ -5,7 +5,7 @@ A click-through photo slideshow for Mom and Dad's 25th anniversary (27 November 
 The site opens on a home screen with two choices:
 
 - **Presentation** (`presentation.html`): the photo slideshow for the party.
-- **Planner** (`planner.html`): run of show, performances, music cues, emcee script, roles and prep timeline. It asks for the family password.
+- **Planner** (`planner.html`): run of show, performances, music cues, emcee script, roles and prep timeline.
 
 ## Presenting
 
@@ -29,8 +29,6 @@ To add a photo, upload it to the `photos` folder, then put its name on a photo s
 Slide types: `title`, `chapter`, `photo`, `quote` and `message`.
 Resize big phone photos to about 2000px on the long side so the site loads quickly.
 
-## About the planner password
+## About the planner
 
-The password keeps casual visitors out, but it is not real security: this repo is public, so anyone who finds `planner.js` on GitHub can read it. Keep addresses, phone numbers and money details out of it.
-
-To change the password, put the SHA-256 of the new password into `PASSWORD_HASH` near the top of the script in `planner.html`.
+The planner opens without a password. This repo is public, so anyone can read `planner.js` on GitHub or open the planner page. Keep addresses, phone numbers and money details out of it.

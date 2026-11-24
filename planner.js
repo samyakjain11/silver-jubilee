@@ -3,8 +3,8 @@
 //  Just change the text between the quotes. Add a row by copying
 //  a line that starts with { and ends with }, then editing it.
 //
-//  Heads up: this file is public in the GitHub repo. The password
-//  only hides it on the website, so keep anything truly private
+//  Heads up: this file is public in the GitHub repo, and the planner
+//  page has no password, so keep anything truly private
 //  (addresses, phone numbers, money) out of here.
 // ─────────────────────────────────────────────────────────────
 
@@ -23,14 +23,14 @@ window.PLAN = {
   // dances or two songs sit back to back. open: true marks a slot that is
   // still being filled, so it shows up as a placeholder on the website.
   runOfShow: [
-    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open.", length: "30 min", who: "Greeting at the door: TBD · Decorations, guestbook & photo corner: decorations helper · Background music: tech helper" },
+    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open.", length: "30 min", who: "Greeting at the door: TBD · Decorations & photo corner: set up that morning by the decorations crew · Guestbook: TBD · Background music: tech helper" },
     { time: "7:00 PM", segment: "Welcome & Blessings", what: "Speech · Host welcomes everyone, then Grandpa & Grandma give a short speech to open the evening", length: "7 min", who: "Samyak & Anshi (hosts) · Grandpa & Grandma · Mic & chairs: tech helper" },
     { time: "7:07 PM", segment: "Uncles & Aunts' Dance", what: "Dance · A short entry dance from the uncles & aunts to set the shaadi mood (about 2 min), then 1 min for everyone to settle. Song not final: \"Wah Wah Ramji\" or \"Ae Dil Laaya Hai Bahaar\"", length: "2 + 3 min", who: "Uncles & aunts (lead TBD) · Intro: Samyak & Anshi · Song: tech helper" },
     { time: "7:12 PM", segment: "0. Grand Entrance", what: "Entrance · Mom & Dad walk in to Flipperachi, host welcomes the \"jodi of the night\"", length: "2 + 3 min", who: "Mom & Dad · Intro: Samyak & Anshi · Cue them at the door: TBD · Flipperachi track: tech helper" },
     { time: "7:17 PM", segment: "Grandpa sings for the couple", what: "Song · Grandpa sings \"Hai Apna Dil To Awaara\"", length: "2 + 4 min", who: "Grandpa · Intro: Samyak & Anshi · Track & mic: tech helper" },
-    { time: "7:23 PM", segment: "1. Before Us: Dad", what: "Dance · Dad's dance to \"O O Jaane Jaana\"", length: "2 + 2 min", who: "Dad · Intro: Samyak (Anshi is getting ready) · Song: tech helper" },
-    { time: "7:27 PM", segment: "1. Before Us: Mom", what: "Photos, then dance · Host clicks through Mom's younger-years photos, then Anshi dances to \"Mere Khwabon Mein Jo Aaye\" for Mom (1 to 2 min)", length: "2 + 3 min", who: "Anshi dances · Photos & intro: Samyak · Song: tech helper" },
-    { time: "7:32 PM", segment: "2. The Rishta", what: "Photos, then dance · Host walks through the first meeting and engagement photos, then Kake & Surbhi perform \"Tum Se Mil Ke Dil Ka Hai Jo Haal\"", length: "2 + 7 min", who: "Kake & Surbhi · Photos & intro: Samyak · Song: tech helper" },
+    { time: "7:23 PM", segment: "1. Before Us: Dad", what: "Dance · Dad's dance to \"O O Jaane Jaana\"", length: "2 + 2 min", who: "Dad · Intro: Samyak (Anshi is getting ready), then he hands over to the guest emcee · Song: tech helper" },
+    { time: "7:27 PM", segment: "1. Before Us: Mom", what: "Photos, then dance · Host clicks through Mom's younger-years photos, then Anshi dances to \"Mere Khwabon Mein Jo Aaye\" for Mom (1 to 2 min)", length: "2 + 3 min", who: "Anshi dances · Photos & intro: guest emcee (TBD) · Song: tech helper" },
+    { time: "7:32 PM", segment: "2. The Rishta", what: "Photos, then dance · Host walks through the first meeting and engagement photos, then Kake & Surbhi perform \"Tum Se Mil Ke Dil Ka Hai Jo Haal\"", length: "2 + 7 min", who: "Kake & Surbhi · Photos & intro: guest emcee (TBD) · Song: tech helper" },
     { time: "7:41 PM", segment: "Game 1: Shoe game", what: "Game · The headline game. Mom & Dad back to back, 15 to 20 questions", length: "2 + 15 min", who: "Samyak & Anshi run it, Mom & Dad play · Chairs & questions: games helper" },
     { time: "7:58 PM", segment: "Song before the wedding", what: "Song · Dad's friend Rajesh sings \"Loote Koi Mann Ka Nagar\", leading into The Shaadi", length: "2 + 2 min", who: "Rajesh uncle · Intro: Samyak & Anshi · Track & mic: tech helper" },
     { time: "8:02 PM", segment: "3. The Shaadi", what: "Dance · Gayatri & Hanisha's 2-minute dance: \"Maahi Vey\", \"Jhumka Gira Re\" and a third song (TBD)", length: "2 + 2 min", who: "Gayatri & Hanisha · Intro: Samyak & Anshi · Medley: tech helper" },
@@ -39,8 +39,8 @@ window.PLAN = {
     { time: "8:19 PM", segment: "4. Building a Home", what: "Song · Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "2 + 2 min", who: "Dad · Intro: Samyak & Anshi · Track & photo slideshow: tech helper" },
     { time: "8:23 PM", segment: "5. Blessings: Poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min", who: "Uncle Grandpa · Intro: Samyak & Anshi · Music off, lights down, mic stand: tech helper" },
     { time: "8:28 PM", segment: "6. Wishes & Memories", what: "Messages, then song · Any short speeches or video messages (5 min), then a friend's dad sings \"Tere Sang Yaara\" (2 min)", length: "2 + 7 min", who: "Samyak & Anshi collect messages · Video messages: tech helper · Song: friend's dad" },
-    { time: "8:37 PM", segment: "Birthday cake for [aunt]", what: "Cake · Surprise! Everyone sings Happy Birthday to [aunt] and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake, candles & knife: TBD · Happy Birthday track: tech helper" },
-    { time: "8:44 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min", who: "Mom & Dad · Intro: Samyak & Anshi · Anniversary cake, candles & knife: TBD · Song: tech helper" },
+    { time: "8:37 PM", segment: "Birthday cake for [aunt]", what: "Cake · Surprise! Everyone sings Happy Birthday to [aunt] and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Happy Birthday track: tech helper" },
+    { time: "8:44 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min", who: "Mom & Dad · Intro: Samyak & Anshi · Anniversary cake: cake pickup person · Candles & knife: TBD · Song: tech helper" },
     { time: "9:01 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min", who: "Samyak & Anshi run it · Scoring & prizes: games helper · Song clips: tech helper" },
     { time: "9:13 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open", who: "Samyak & Anshi wrap up · Photographer · Hand over to the DJ: tech helper" },
   ],
@@ -87,7 +87,7 @@ window.PLAN = {
     { cue: "DJ", track: "DJ takes over", note: "Hand over the sound system after the group photo" },
   ],
 
-  // What the hosts (Samyak & Anshi) say, in order. Start a line with "Samyak:", "Anshi:" or "Both:" to show who says it. Lines are a starting point: change the
+  // What the hosts (Samyak & Anshi) say, in order. Start a line with "Samyak:", "Anshi:", "Both:" or "Guest:" (the guest emcee) to show who says it. Lines are a starting point: change the
   // wording to sound like you. Anything in [brackets] is a name to fill in.
   script: [
     { cue: "7:00 PM · Welcome", lines: [
@@ -110,19 +110,22 @@ window.PLAN = {
     { cue: "7:17 PM · Grandpa sings for the couple", lines: [
       "Anshi: Please take your seats, you two, because tonight you're the audience.",
       "Samyak: And who better to welcome the jodi of the night than the original heartthrob of the family? Grandpa started our evening with a blessing, and now he has a song for you both. Grandpa, the mic is yours!",
-      "[Anshi slips away during Grandpa's song to get ready for her dance. Samyak hosts alone until after The Rishta]",
+      "[Anshi slips away during Grandpa's song to get ready for her dance]",
     ] },
     { cue: "7:23 PM · 1. Before Us: Dad", lines: [
       "Samyak: Thank you, Grandpa! Now, we're going to tell Mom & Dad's story in chapters. And every story starts before the two main characters even meet.",
       "Samyak: Chapter one: Before Us. Long before he was Dad, he was a young man with great hair and even better dance moves. Or so we've been told. Let's see if it's true!",
+      "[After Dad's dance, Samyak hands the mic to the guest emcee, who hosts through The Rishta]",
     ] },
     { cue: "7:27 PM · 1. Before Us: Mom", lines: [
-      "Samyak: And on the other side of town, there was a young woman with her own style and her own dreams. [Click through Mom's photos] To tell her side of the story, please welcome my co-host, Anshi!",
+      "Guest: Hello everyone! I'm stepping in for a few minutes, because our hosts have something special of their own.",
+      "Guest: On the other side of town, there was a young woman with her own style and her own dreams. [Click through Mom's photos] To tell her side of the story, please welcome Anshi!",
     ] },
     { cue: "7:32 PM · 2. The Rishta", lines: [
-      "Samyak: Give it up for Anshi! [Anshi catches her breath while Samyak carries on]",
-      "Samyak: Chapter two: The Rishta. Two families, one cup of chai, and a lot of nervous glances. [Click through the first meeting and engagement photos]",
-      "Samyak: Here's how we imagine that first meeting went. Please welcome Kake and Surbhi!",
+      "Guest: Give it up for Anshi!",
+      "Guest: Chapter two: The Rishta. Two families, one cup of chai, and a lot of nervous glances. [Click through the first meeting and engagement photos]",
+      "Guest: Here's how we imagine that first meeting went. Please welcome Kake and Surbhi!",
+      "Guest: [After the dance] And now, let's welcome back our hosts, Samyak and Anshi!",
     ] },
     { cue: "7:41 PM · Game 1: Shoe game", lines: [
       "[Anshi is back on the mic from here]",
@@ -187,11 +190,13 @@ window.PLAN = {
   ],
 
   roles: [
-    { role: "Hosts / MCs", does: "Welcome, story narration, run the games (script in the Emcee script tab). Samyak hosts alone around Anshi's dance", who: "Samyak & Anshi" },
+    { role: "Hosts / MCs", does: "Welcome, story narration, run the games (script in the Emcee script tab). A guest emcee covers 7:27 to 7:41 so they don't introduce their own dance", who: "Samyak & Anshi" },
     { role: "Tech helper", does: "Runs the slideshow and music, cues each chapter's song", who: "TBD" },
+    { role: "Guest emcee", does: "Takes the mic from 7:27 to 7:41 (Mom's photos, Anshi's dance, The Rishta) so the hosts never introduce their own dance. Lines are in the Emcee script", who: "TBD" },
     { role: "Games helper", does: "Sets up the shoe game chairs and the props for Surbhi's prop song game, keeps score in Bollywood trivia, gives prizes", who: "TBD" },
     { role: "Performance lead", does: "Collects the lineup, runs a rehearsal, keeps acts short", who: "TBD" },
-    { role: "Decorations helper", does: "Sets up the decorations, backdrop and photo corner before guests arrive", who: "TBD" },
+    { role: "Decorations crew (2 to 3 people)", does: "Decorate the venue the morning of the party: decorations, backdrop and photo corner", who: "TBD" },
+    { role: "Cake pickup", does: "Collect both cakes before the party (the birthday cake and the anniversary cake) and keep them hidden until their moments", who: "TBD" },
     { role: "Photographer", does: "Candid photos plus the group photo at the end", who: "TBD" },
   ],
 
@@ -203,6 +208,8 @@ window.PLAN = {
     { by: "By Nov 20", task: "All photos and messages in, slideshow built", done: false },
     { by: "By Nov 24", task: "Run-through of the slideshow on the actual TV or projector, performance rehearsal", done: false },
     { by: "Nov 26", task: "Pack the prop song game props (check with Surbhi) and trivia prizes, test every song on the playlist", done: false },
-    { by: "Nov 27", task: "The party", done: false },
+    { by: "Nov 27, before the party", task: "Pick up both cakes (birthday and anniversary), names TBD", done: false },
+    { by: "Nov 27, morning", task: "Decorations crew (2 to 3 people, names TBD) decorates the venue and sets up the photo corner", done: false },
+    { by: "Nov 27, evening", task: "The party", done: false },
   ],
 };
