@@ -69,6 +69,12 @@
   tr.open td { background: repeating-linear-gradient(135deg, #fdf8f9 0 10px, #f9eff2 10px 20px); color: var(--soft); font-style: italic; }
   tr.open td.seg::after { content: "Open slot"; display: inline-block; margin-left: 8px; font: 600 10px "Inter", sans-serif; font-style: normal; letter-spacing: .1em; text-transform: uppercase; color: var(--blush-deep); border: 1px dashed var(--blush); border-radius: 999px; padding: 1px 8px; vertical-align: 2px; }
 
+  .cue { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .cue:last-child { border-bottom: 0; }
+  .cue-time { font-weight: 600; color: var(--blush-deep); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 6px; }
+  .cue p { margin: 6px 0; font-size: 16px; }
+  .cue p.note-line { color: var(--soft); font-style: italic; font-size: 14px; }
+
   ul.todo { list-style: none; }
   ul.todo li { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--line); }
   ul.todo li:last-child { border-bottom: 0; }
@@ -154,6 +160,7 @@
       { id: "run", label: "Run of show" },
       { id: "perf", label: "Performances" },
       { id: "music", label: "Music cues" },
+      { id: "script", label: "Emcee script" },
       { id: "roles", label: "Who does what" },
       { id: "todo", label: "Prep timeline" },
     ];
@@ -182,6 +189,13 @@
       html += panel("music", "Music cues", table(["Cue", "Track", "Notes"], p.music, function (r) {
         return '<td class="seg">' + esc(r.cue) + '</td><td>' + val(r.track) + '</td><td class="film">' + esc(r.note) + '</td>';
       }));
+
+      html += panel("script", "Emcee script", '<p class="film" style="margin-bottom:10px">What the host says, in order. Lines in [brackets] are notes or names to fill in.</p>' +
+        (p.script || []).map(function (c) {
+          return '<div class="cue"><div class="cue-time">' + esc(c.cue) + '</div>' + (c.lines || []).map(function (l) {
+            return /^\[.*\]$/.test(l) ? '<p class="note-line">' + esc(l.slice(1, -1)) + '</p>' : '<p>' + esc(l) + '</p>';
+          }).join("") + '</div>';
+        }).join(""));
 
       html += panel("roles", "Who does what", table(["Role", "Responsibilities", "Who"], p.roles, function (r) {
         return '<td class="seg">' + esc(r.role) + '</td><td>' + esc(r.does) + '</td><td class="who">' + val(r.who) + '</td>';

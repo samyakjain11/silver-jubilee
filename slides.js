@@ -20,14 +20,22 @@ window.SHOW = {
       note: "27 November 2026",
     },
 
-    // ── PART 1: each of them on their own ──
-    { type: "chapter", number: "Part One", title: "Before They Were Us", subtitle: "Two stories that started separately" },
+    // The slides follow the order of the evening (see Run of show in the Planner).
+
+    // ── OPENING ──
+    { type: "chapter", number: "To begin", title: "With Blessings", subtitle: "A few words from Grandpa & Grandma" },
+    // Song not final yet (Wah Wah Ramji or Ae Dil Laaya Hai Bahaar). Add it to the subtitle once decided.
+    { type: "chapter", number: "Setting the mood", title: "A Shaadi Welcome", subtitle: "Performed by the uncles & aunts" },
+    { type: "chapter", number: "Please welcome", title: "The Jodi of the Night", subtitle: "Mom & Dad" },
+
+    // ── CHAPTER 1: each of them on their own ──
+    { type: "chapter", number: "Chapter 1", title: "Before Us", subtitle: "Two stories that started separately" },
 
     { type: "chapter", number: "Meet", title: "Dad", subtitle: "Add a sweet one-liner about Dad" },
     { type: "photo", photo: "", caption: "Little Dad", detail: "A childhood photo and where he grew up." },
     { type: "photo", photo: "", caption: "Young Dad", detail: "College days, first job, or a favourite memory." },
     { type: "photo", photo: "", caption: "Dad as we know him", detail: "What makes him, him." },
-    { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by: add names" },
+    { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Dad" },
 
     { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
     { type: "photo", photo: "", caption: "Little Mom", detail: "A childhood photo and where she grew up." },
@@ -35,32 +43,57 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Mom as we know her", detail: "What makes her, her." },
     { type: "chapter", number: "A dance for Mom", title: "Yai Re Yai Re", subtitle: "From Rangeela · performed by: add names" },
 
-    // ── PART 2: together ──
-    { type: "chapter", number: "Part Two", title: "Then Came Us", subtitle: "Twenty-five years together" },
-
-    { type: "chapter", number: "Chapter 1", title: "The Match", subtitle: "Two families, one very good idea" },
+    // ── CHAPTER 2 ──
+    { type: "chapter", number: "Chapter 2", title: "The Rishta", subtitle: "Two families, one very good idea" },
     { type: "photo", photo: "", caption: "The first meeting", detail: "Who was more nervous? We'll find out in the shoe game." },
     { type: "photo", photo: "", caption: "The engagement", detail: "Add the year and a sweet line here." },
+    { type: "chapter", number: "The first meeting", title: "Tum Se Mil Ke Dil Ka Hai Jo Haal", subtitle: "From Main Hoon Na · performed by Kake & Surbhi" },
 
-    { type: "chapter", number: "Chapter 2", title: "The Wedding", subtitle: "Where it all began" },
+    // ── CHAPTER 3 ──
+    { type: "chapter", number: "Chapter 3", title: "The Shaadi", subtitle: "Where it all began" },
     { type: "photo", photo: "", caption: "The big day", detail: "Add the wedding date and place." },
     { type: "photo", photo: "", caption: "The family together", detail: "Everyone who made it happen." },
+    { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
 
-    { type: "chapter", number: "Chapter 3", title: "Building a Home", subtitle: "First home, first everything" },
-    { type: "photo", photo: "", caption: "Our first home", detail: "Add the city and year." },
+    // ── GAME 1 ──
+    { type: "chapter", number: "Game time", title: "The Shoe Game", subtitle: "Back to back, no peeking, no discussing" },
+
+    // ── DINNER ──
+    { type: "chapter", number: "Dinner is served", title: "How Well Do You Know the Couple?", subtitle: "Fill in the quiz card on your table. Winning table gets a prize!" },
+
+    // ── EARLY YEARS (open slot A) ──
+    { type: "chapter", number: "And then", title: "Came Us", subtitle: "The early years" },
     { type: "photo", photo: "", caption: "And then came us", detail: "The chaos officially began." },
 
-    { type: "chapter", number: "Chapter 4", title: "The Adventures", subtitle: "Trips, festivals and everyday moments" },
+    // ── CHAPTER 4 ──
+    { type: "chapter", number: "Chapter 4", title: "Building a Home", subtitle: "First home, first everything" },
+    { type: "photo", photo: "", caption: "Our first home", detail: "Add the city and year." },
     { type: "photo", photo: "", caption: "A favourite trip", detail: "Where did you go?" },
     { type: "photo", photo: "", caption: "Festival memories", detail: "Add a line about it." },
+    { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
 
-    { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
+    // ── GAME 2 (to be added) ──
+    { type: "chapter", number: "Game time", title: "Round Two", subtitle: "Add the second game's name here" },
 
-    { type: "chapter", number: "Chapter 5", title: "Today", subtitle: "Still the best team we know" },
-    { type: "photo", photo: "", caption: "Mom & Dad, 2026", detail: "" },
+    // ── CHAPTER 5 ──
+    { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "Hai Apna Dil To Awaara · sung by Grandpa" },
 
+    // ── CHAPTER 6 ──
+    { type: "chapter", number: "Chapter 6", title: "Her Circle", subtitle: "Teri Ore · performed by Mom with: add names" },
+
+    // ── GAME 3 ──
+    { type: "chapter", number: "And the winner is", title: "Quiz Results", subtitle: "Which table knows Mom & Dad best?" },
+
+    // ── WISHES & MEMORIES (open slot B) ──
+    { type: "chapter", number: "Chapter 7", title: "Wishes & Memories", subtitle: "From the people who love them" },
     { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
     { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
+    { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
+
+    // ── FINALE ──
+    { type: "chapter", number: "Finale", title: "Today", subtitle: "Still the best team we know" },
+    { type: "photo", photo: "", caption: "Mom & Dad, 2026", detail: "" },
+    { type: "chapter", number: "Mom & Dad", title: "Tere Bina Nahi Lagda Dil", subtitle: "Their dance, then cake!" },
 
     {
       type: "title",

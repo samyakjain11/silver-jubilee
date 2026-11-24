@@ -5,7 +5,7 @@ A click-through photo slideshow for Mom and Dad's 25th anniversary (27 November 
 The site opens on a home screen with two choices:
 
 - **Presentation** (`presentation.html`): the photo slideshow for the party.
-- **Planner** (`planner.html`): run of show, performances, music cues, roles and prep timeline. It asks for the family password.
+- **Planner** (`planner.html`): run of show, performances, music cues, emcee script, roles and prep timeline. It asks for the family password.
 
 ## Presenting
 
