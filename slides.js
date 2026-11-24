@@ -42,7 +42,7 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Little Mom", detail: "A childhood photo and where she grew up." },
     { type: "photo", photo: "", caption: "Young Mom", detail: "College days, first job, or a favourite memory." },
     { type: "photo", photo: "", caption: "Mom as we know her", detail: "What makes her, her." },
-    { type: "chapter", number: "A dance for Mom", title: "Yai Re Yai Re", subtitle: "From Rangeela · performed by: add names" },
+    { type: "chapter", number: "A dance for Mom", title: "Mere Khwabon Mein Jo Aaye", subtitle: "From Dilwale Dulhania Le Jayenge · performed by Anshi" },
 
     // ── CHAPTER 2 ──
     { type: "chapter", number: "Chapter 2", title: "The Rishta", subtitle: "Two families, one very good idea" },
@@ -73,22 +73,16 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Festival memories", detail: "Add a line about it." },
     { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
 
-    // ── GAME 2 (to be added) ──
-    { type: "chapter", number: "Game time", title: "Round Two", subtitle: "Add the second game's name here" },
-
     // ── CHAPTER 5 ──
     { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "A poem and a song" },
     { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
     { type: "chapter", number: "A song from Grandpa", title: "Hai Apna Dil To Awaara", subtitle: "From Solva Saal" },
 
-    // ── CHAPTER 6 ──
-    { type: "chapter", number: "Chapter 6", title: "Her Circle", subtitle: "Teri Ore · performed by Mom with: add names" },
-
-    // ── GAME 3 ──
+    // ── GAME 2: QUIZ RESULTS ──
     { type: "chapter", number: "And the winner is", title: "Quiz Results", subtitle: "Which table knows Mom & Dad best?" },
 
-    // ── CHAPTER 7: WISHES & MEMORIES ──
-    { type: "chapter", number: "Chapter 7", title: "Wishes & Memories", subtitle: "From the people who love them" },
+    // ── CHAPTER 6: WISHES & MEMORIES ──
+    { type: "chapter", number: "Chapter 6", title: "Wishes & Memories", subtitle: "From the people who love them" },
     { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by: add name" },
     { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
     { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
@@ -98,6 +92,9 @@ window.SHOW = {
     { type: "chapter", number: "Finale", title: "Today", subtitle: "Still the best team we know" },
     { type: "photo", photo: "", caption: "Mom & Dad, 2026", detail: "" },
     { type: "chapter", number: "Mom & Dad", title: "Tere Bina Nahi Lagda Dil", subtitle: "Their dance, then cake!" },
+
+    // ── GAME 3 ──
+    { type: "chapter", number: "One last game", title: "Bollywood Trivia", subtitle: "Answer as a table. Fastest table wins!" },
 
     {
       type: "title",
