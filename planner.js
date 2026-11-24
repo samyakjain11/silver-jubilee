@@ -34,12 +34,13 @@ window.PLAN = {
     { time: "8:37 PM", segment: "Open slot A: Early years", what: "The kids arrive. Acts to be added", length: "10 min", open: true },
     { time: "8:47 PM", segment: "4. Building a Home", what: "Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "5 min" },
     { time: "8:52 PM", segment: "Game 2: To be added", what: "A slot for one more game (to be added). Keep it under 10 minutes", length: "10 min", open: true },
-    { time: "9:02 PM", segment: "5. Blessings from the Elders", what: "Grandpa sings \"Hai Apna Dil To Awaara\"", length: "5 min" },
-    { time: "9:07 PM", segment: "6. Her Circle", what: "Mom and two aunts perform \"Teri Ore\"", length: "5 min" },
-    { time: "9:12 PM", segment: "Game 3: Guest quiz results", what: "Answers to \"How well do you know the couple?\", winning table gets small prizes", length: "8 min" },
-    { time: "9:20 PM", segment: "Open slot B: Wishes & Memories", what: "Friends' songs, speeches and video messages. Acts to be added", length: "15 min", open: true },
-    { time: "9:35 PM", segment: "Finale", what: "Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "15 min" },
-    { time: "9:50 PM", segment: "Close", what: "Group photo and dancing or open mic", length: "open" },
+    { time: "9:02 PM", segment: "5. Blessings: Poetry", what: "Uncle Grandpa reads his poetry. A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "5 min" },
+    { time: "9:07 PM", segment: "5. Blessings from the Elders", what: "Grandpa sings \"Hai Apna Dil To Awaara\"", length: "5 min" },
+    { time: "9:12 PM", segment: "6. Her Circle", what: "Mom and two aunts perform \"Teri Ore\"", length: "5 min" },
+    { time: "9:17 PM", segment: "Game 3: Guest quiz results", what: "Answers to \"How well do you know the couple?\", winning table gets small prizes", length: "8 min" },
+    { time: "9:25 PM", segment: "Open slot B: Wishes & Memories", what: "Friends' songs, speeches and video messages. Acts to be added", length: "15 min", open: true },
+    { time: "9:40 PM", segment: "Finale", what: "Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "15 min" },
+    { time: "9:55 PM", segment: "Close", what: "Group photo and dancing or open mic", length: "open" },
   ],
 
   performances: [
@@ -54,6 +55,7 @@ window.PLAN = {
     { chapter: "3. The Shaadi", act: "Wedding medley, song 3", song: "TBD", film: "", who: "Gayatri & Hanisha" },
     { chapter: "Open slot A", act: "Early years: the kids arrive", song: "TBD", film: "", who: "TBD", open: true },
     { chapter: "4. Building a Home", act: "Dad sings to Mom, photo slideshow behind", song: "Tum Se Hi Din Hota Hai", film: "Jab We Met", who: "Dad" },
+    { chapter: "5. Blessings from the Elders", act: "Poetry reading, very mellow", song: "His own poetry", film: "", who: "Uncle Grandpa (name TBD)" },
     { chapter: "5. Blessings from the Elders", act: "A song from Grandpa", song: "Hai Apna Dil To Awaara", film: "Solva Saal", who: "Grandpa" },
     { chapter: "6. Her Circle", act: "Mom with two aunts", song: "Teri Ore", film: "Singh Is Kinng", who: "Mom + two aunts" },
     { chapter: "Open slot B", act: "Wishes & memories: friends' songs, speeches, video messages", song: "TBD", film: "", who: "TBD", open: true },
@@ -71,6 +73,7 @@ window.PLAN = {
     { cue: "Shoe game", track: "Short sting or drumroll between questions (optional)", note: "" },
     { cue: "Dinner", track: "Old Bollywood favourites playlist", note: "" },
     { cue: "4. Building a Home", track: "Tum Se Hi Din Hota Hai", note: "Family photo slideshow plays behind Dad" },
+    { cue: "5. Poetry", track: "Music off (or a very soft instrumental underneath)", note: "Dim the lights a little, mic on a stand so he can sit if he likes" },
     { cue: "5. Blessings", track: "Hai Apna Dil To Awaara", note: "" },
     { cue: "6. Her Circle", track: "Teri Ore", note: "" },
     { cue: "Finale", track: "Tere Bina Nahi Lagda Dil", note: "Cake ready to roll out right after" },
@@ -126,26 +129,32 @@ window.PLAN = {
     { cue: "8:52 PM · Game 2", lines: [
       "[Intro for the second game goes here. Keep it under 10 minutes.]",
     ] },
-    { cue: "9:02 PM · 5. Blessings from the Elders", lines: [
-      "Chapter five: Blessings from the Elders. Grandpa started our evening, and he isn't done yet. Here's a song from the original heartthrob of the family!",
+    { cue: "9:02 PM · 5. Blessings: Poetry", lines: [
+      "[Speak softly here, the room should settle down]",
+      "Chapter five: Blessings from the Elders. Some blessings are written, and some are sung. We'll start with the written kind. Our Uncle Grandpa has been writing poetry for as long as any of us can remember, and tonight he has a few words for Mom & Dad. Let's give him our full attention.",
+      "[After the poem, let it sit for a moment] Thank you. I think that's one we'll all remember.",
+      "[Grandpa's song follows straight after and lifts the mood back up]",
     ] },
-    { cue: "9:07 PM · 6. Her Circle", lines: [
+    { cue: "9:07 PM · 5. Blessings: Grandpa sings", lines: [
+      "And now for the sung kind. Grandpa started our evening, and he isn't done yet. Here's a song from the original heartthrob of the family!",
+    ] },
+    { cue: "9:12 PM · 6. Her Circle", lines: [
       "Chapter six: Her Circle. Behind every strong woman is an even stronger group of sisters. Mom, the stage is yours, along with [aunt] and [aunt]!",
     ] },
-    { cue: "9:12 PM · Game 3: Guest quiz results", lines: [
+    { cue: "9:17 PM · Game 3: Guest quiz results", lines: [
       "Drumroll please! Let's find out which table knows Mom & Dad best.",
       "[Read out three or four answers, then announce the winning table and hand over the prizes]",
     ] },
-    { cue: "9:20 PM · Open slot B: Wishes & Memories", lines: [
+    { cue: "9:25 PM · Open slot B: Wishes & Memories", lines: [
       "Over twenty-five years, Mom & Dad have collected a lot of people who love them, and a few of them have something to say.",
       "[Introduce each friend, speech or video message]",
     ] },
-    { cue: "9:35 PM · Finale", lines: [
+    { cue: "9:40 PM · Finale", lines: [
       "We've told the whole story, from the rishta to tonight. But there's one chapter only the two of them can perform.",
       "Mom, Dad, this floor is yours.",
       "[After the dance] Let's bring out the cake! Everyone, please join in.",
     ] },
-    { cue: "9:50 PM · Close", lines: [
+    { cue: "9:55 PM · Close", lines: [
       "Thank you all for coming and for being part of their story. Before anyone leaves, everyone in for one big group photo!",
       "Here's to Mom & Dad, and to the next twenty-five. Happy anniversary!",
     ] },
