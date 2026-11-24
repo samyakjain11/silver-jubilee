@@ -15,7 +15,7 @@ window.PLAN = {
 
   glance: [
     { label: "Timing", text: "6:30 to about 9:05 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
-    { label: "Centerpieces", text: "A story in chapters told through family performances, with the shoe game and Bollywood trivia as breathers" },
+    { label: "Centerpieces", text: "A story in chapters told through family performances, with the shoe game, a prop game and Bollywood trivia as breathers" },
     { label: "Rule of thumb", text: "No segment longer than 20 minutes, so energy stays up. Every solo song is kept to 2 minutes, except Grandpa's (4 min). Each act has 2 minutes before it for the changeover and the host's intro (shown as \"2 + 5 min\")" },
   ],
 
@@ -33,13 +33,13 @@ window.PLAN = {
     { time: "7:35 PM", segment: "Game 1: Shoe game", what: "Game · The headline game. Mom & Dad back to back, 15 to 20 questions", length: "2 + 15 min" },
     { time: "7:52 PM", segment: "3. The Shaadi", what: "Dance · Gayatri & Hanisha's 2-minute dance: \"Maahi Vey\", \"Jhumka Gira Re\" and a third song (TBD)", length: "2 + 2 min" },
     { time: "7:56 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on.", length: "1 min" },
-    { time: "7:57 PM", segment: "Open slot A: Early years", what: "The kids arrive. Acts to be added", length: "2 + 10 min", open: true },
+    { time: "7:57 PM", segment: "Game 2: Prop game", what: "Game · A fun prop game (details to come)", length: "2 + 10 min" },
     { time: "8:09 PM", segment: "4. Building a Home", what: "Song · Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "2 + 2 min" },
     { time: "8:13 PM", segment: "5. Blessings: Poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min" },
     { time: "8:18 PM", segment: "5. Blessings: Grandpa sings", what: "Song · Grandpa sings \"Hai Apna Dil To Awaara\"", length: "2 + 4 min" },
     { time: "8:24 PM", segment: "6. Wishes & Memories", what: "Messages, then song · Any short speeches or video messages (5 min), then a friend's dad sings \"Tere Sang Yaara\" (2 min)", length: "2 + 7 min" },
     { time: "8:33 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "2 + 15 min" },
-    { time: "8:50 PM", segment: "Game 2: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min" },
+    { time: "8:50 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min" },
     { time: "9:02 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open" },
   ],
 
@@ -53,7 +53,6 @@ window.PLAN = {
     { chapter: "3. The Shaadi", act: "Dance: wedding medley, song 1", song: "Maahi Vey", film: "", who: "Gayatri & Hanisha" },
     { chapter: "3. The Shaadi", act: "Dance: wedding medley, song 2", song: "Jhumka Gira Re", film: "Mera Saaya", who: "Gayatri & Hanisha" },
     { chapter: "3. The Shaadi", act: "Dance: wedding medley, song 3", song: "TBD", film: "", who: "Gayatri & Hanisha" },
-    { chapter: "Open slot A", act: "Early years: the kids arrive", song: "TBD", film: "", who: "TBD", open: true },
     { chapter: "4. Building a Home", act: "Song: Dad sings to Mom, photo slideshow behind", song: "Tum Se Hi Din Hota Hai", film: "Jab We Met", who: "Dad" },
     { chapter: "5. Blessings from the Elders", act: "Poetry reading, very mellow", song: "His own poetry", film: "", who: "Uncle Grandpa (name TBD)" },
     { chapter: "5. Blessings from the Elders", act: "Song from Grandpa", song: "Hai Apna Dil To Awaara", film: "Solva Saal", who: "Grandpa" },
@@ -125,9 +124,10 @@ window.PLAN = {
     { cue: "7:56 PM · Dinner is open", lines: [
       "And just like at every shaadi, after the dancing comes the food! Dinner is now open. Please help yourselves whenever you like, and the show will carry on while you eat.",
     ] },
-    { cue: "7:57 PM · Open slot A", lines: [
-      "Keep eating, because the story continues. A few years into the marriage, life got a lot louder. That's right, the kids arrived.",
-      "[Introduce the act for the early years here]",
+    { cue: "7:57 PM · Game 2: Prop game", lines: [
+      "Keep eating, but keep watching, because it's game time again! [Call up the players]",
+      "[Explain the prop game and run it. Details to come]",
+      "Give it up for our contestants!",
     ] },
     { cue: "8:09 PM · 4. Building a Home", lines: [
       "Chapter four: Building a Home. First home, first everything. And somewhere along the way, Dad figured out that his whole day revolves around one person. He's going to tell her himself. Dad, the mic is yours.",
@@ -150,7 +150,7 @@ window.PLAN = {
       "Mom, Dad, this floor is yours.",
       "[After the dance] Let's bring out the cake! Everyone, please join in.",
     ] },
-    { cue: "8:50 PM · Game 2: Bollywood trivia", lines: [
+    { cue: "8:50 PM · Game 3: Bollywood trivia", lines: [
       "Before we hand the stage to the DJ, one last round, and this one is for everybody. It's Bollywood trivia! Answer as a table, shout it out, and the fastest table wins.",
       "[8 to 10 quick questions, then announce the winning table]",
     ] },
@@ -163,7 +163,7 @@ window.PLAN = {
   roles: [
     { role: "Host / MC", does: "Welcome, story narration, runs the games (script in the Emcee script tab)", who: "Samyak" },
     { role: "Tech helper", does: "Runs the slideshow and music, cues each chapter's song", who: "TBD" },
-    { role: "Games helper", does: "Helps with the shoe game props, keeps score in Bollywood trivia, gives prizes", who: "TBD" },
+    { role: "Games helper", does: "Sets up the shoe game and prop game props, keeps score in Bollywood trivia, gives prizes", who: "TBD" },
     { role: "Performance lead", does: "Collects the lineup, runs a rehearsal, keeps acts short", who: "TBD" },
     { role: "Photographer", does: "Candid photos plus the group photo at the end", who: "TBD" },
   ],
@@ -175,7 +175,7 @@ window.PLAN = {
     { by: "By Nov 14", task: "Finalize shoe game and Bollywood trivia questions, confirm the performance lineup", done: false },
     { by: "By Nov 20", task: "All photos and messages in, slideshow built", done: false },
     { by: "By Nov 24", task: "Run-through of the slideshow on the actual TV or projector, performance rehearsal", done: false },
-    { by: "Nov 26", task: "Pack trivia prizes, test every song on the playlist", done: false },
+    { by: "Nov 26", task: "Pack the prop game props and trivia prizes, test every song on the playlist", done: false },
     { by: "Nov 27", task: "The party", done: false },
   ],
 };

@@ -67,9 +67,8 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
     { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
 
-    // ── EARLY YEARS (open slot A) ──
-    { type: "chapter", number: "And then", title: "Came Us", subtitle: "The early years" },
-    { type: "photo", photo: "", caption: "And then came us", detail: "The chaos officially began." },
+    // ── GAME 2: PROP GAME ──
+    { type: "chapter", number: "Game time", title: "The Prop Game", subtitle: "Get ready to play!" },
 
     // ── CHAPTER 4 ──
     { type: "chapter", number: "Chapter 4", title: "Building a Home", subtitle: "First home, first everything" },
@@ -108,7 +107,7 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Mom & Dad, 2026", detail: "" },
     { type: "chapter", number: "Mom & Dad", title: "Tere Bina Nahi Lagda Dil", subtitle: "Their dance, then cake!" },
 
-    // ── GAME 2 ──
+    // ── GAME 3 ──
     { type: "chapter", number: "One last game", title: "Bollywood Trivia", subtitle: "Answer as a table. Fastest table wins!" },
 
     {
