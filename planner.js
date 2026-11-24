@@ -23,7 +23,7 @@ window.PLAN = {
   // dances or two songs sit back to back. open: true marks a slot that is
   // still being filled, so it shows up as a placeholder on the website.
   runOfShow: [
-    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open.", length: "30 min", who: "Greeting at the door: TBD · Decorations, guestbook & photo corner: decorations helper · Background music: tech helper" },
+    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open.", length: "30 min", who: "Greeting at the door: TBD · Decorations & photo corner: set up that morning by the decorations crew · Guestbook: TBD · Background music: tech helper" },
     { time: "7:00 PM", segment: "Welcome & Blessings", what: "Speech · Host welcomes everyone, then Grandpa & Grandma give a short speech to open the evening", length: "7 min", who: "Samyak & Anshi (hosts) · Grandpa & Grandma · Mic & chairs: tech helper" },
     { time: "7:07 PM", segment: "Uncles & Aunts' Dance", what: "Dance · A short entry dance from the uncles & aunts to set the shaadi mood (about 2 min), then 1 min for everyone to settle. Song not final: \"Wah Wah Ramji\" or \"Ae Dil Laaya Hai Bahaar\"", length: "2 + 3 min", who: "Uncles & aunts (lead TBD) · Intro: Samyak & Anshi · Song: tech helper" },
     { time: "7:12 PM", segment: "0. Grand Entrance", what: "Entrance · Mom & Dad walk in to Flipperachi, host welcomes the \"jodi of the night\"", length: "2 + 3 min", who: "Mom & Dad · Intro: Samyak & Anshi · Cue them at the door: TBD · Flipperachi track: tech helper" },
@@ -191,7 +191,7 @@ window.PLAN = {
     { role: "Tech helper", does: "Runs the slideshow and music, cues each chapter's song", who: "TBD" },
     { role: "Games helper", does: "Sets up the shoe game chairs and the props for Surbhi's prop song game, keeps score in Bollywood trivia, gives prizes", who: "TBD" },
     { role: "Performance lead", does: "Collects the lineup, runs a rehearsal, keeps acts short", who: "TBD" },
-    { role: "Decorations helper", does: "Sets up the decorations, backdrop and photo corner before guests arrive", who: "TBD" },
+    { role: "Decorations crew (2 to 3 people)", does: "Decorate the venue the morning of the party: decorations, backdrop and photo corner", who: "TBD" },
     { role: "Photographer", does: "Candid photos plus the group photo at the end", who: "TBD" },
   ],
 
@@ -203,6 +203,7 @@ window.PLAN = {
     { by: "By Nov 20", task: "All photos and messages in, slideshow built", done: false },
     { by: "By Nov 24", task: "Run-through of the slideshow on the actual TV or projector, performance rehearsal", done: false },
     { by: "Nov 26", task: "Pack the prop song game props (check with Surbhi) and trivia prizes, test every song on the playlist", done: false },
-    { by: "Nov 27", task: "The party", done: false },
+    { by: "Nov 27, morning", task: "Decorations crew (2 to 3 people, names TBD) decorates the venue and sets up the photo corner", done: false },
+    { by: "Nov 27, evening", task: "The party", done: false },
   ],
 };
