@@ -36,7 +36,6 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "Young Dad", detail: "College days, first job, or a favourite memory." },
     { type: "photo", photo: "", caption: "Dad as we know him", detail: "What makes him, him." },
     { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Dad" },
-    { type: "chapter", number: "A song from an old friend", title: "Add song name", subtitle: "Sung by Dad's friend: add name" },
 
     { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
     { type: "photo", photo: "", caption: "Little Mom", detail: "A childhood photo and where she grew up." },
