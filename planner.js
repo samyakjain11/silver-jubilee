@@ -14,7 +14,7 @@ window.PLAN = {
   summary: "A three-hour evening for 25 to 30 family and friends, built around a heartfelt tribute with quizzes and performances in between. Warm, fun and family friendly, following their story from the arranged match onward.",
 
   glance: [
-    { label: "Timing", text: "6:30 to about 10 PM, with dinner in the middle (to confirm)" },
+    { label: "Timing", text: "6:30 to about 9:15 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
     { label: "Centerpieces", text: "A story in chapters told through family performances, with the shoe game, guest quiz and Bollywood trivia as breathers" },
     { label: "Rule of thumb", text: "No segment longer than 20 minutes, so energy stays up" },
   ],
@@ -23,7 +23,7 @@ window.PLAN = {
   // dances or two songs sit back to back. open: true marks a slot that is
   // still being filled, so it shows up as a placeholder on the website.
   runOfShow: [
-    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open", length: "30 min" },
+    { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open. Guest quiz cards already on the tables so people can start early", length: "30 min" },
     { time: "7:00 PM", segment: "Welcome & Blessings", what: "Speech · Host welcomes everyone, then Grandpa & Grandma give a short speech to open the evening", length: "7 min" },
     { time: "7:07 PM", segment: "Uncles & Aunts' Dance", what: "Dance · The uncles & aunts set the shaadi mood. Song not final: \"Wah Wah Ramji\" or \"Ae Dil Laaya Hai Bahaar\"", length: "5 min" },
     { time: "7:12 PM", segment: "0. Grand Entrance", what: "Entrance · Mom & Dad walk in to Flipperachi, host welcomes the \"jodi of the night\"", length: "5 min" },
@@ -33,16 +33,16 @@ window.PLAN = {
     { time: "7:32 PM", segment: "2. The Rishta", what: "Photos, then dance · Host walks through the first meeting and engagement photos, then Kake & Surbhi perform \"Tum Se Mil Ke Dil Ka Hai Jo Haal\"", length: "7 min" },
     { time: "7:39 PM", segment: "Game 1: Shoe game", what: "Game · The headline game. Mom & Dad back to back, 15 to 20 questions", length: "15 min" },
     { time: "7:54 PM", segment: "3. The Shaadi", what: "Dance · Gayatri & Hanisha perform \"Maahi Vey\", \"Jhumka Gira Re\" and a third song (TBD)", length: "10 min" },
-    { time: "8:04 PM", segment: "Dinner", what: "Music playing. Guest quiz cards on the tables, collected before dessert", length: "40 min" },
-    { time: "8:44 PM", segment: "Open slot A: Early years", what: "The kids arrive. Acts to be added", length: "10 min", open: true },
-    { time: "8:54 PM", segment: "4. Building a Home", what: "Song · Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "5 min" },
-    { time: "8:59 PM", segment: "5. Blessings: Poetry", what: "Poetry · Uncle Grandpa reads his poetry. A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "5 min" },
-    { time: "9:04 PM", segment: "5. Blessings: Grandpa sings", what: "Song · Grandpa sings \"Hai Apna Dil To Awaara\"", length: "5 min" },
-    { time: "9:09 PM", segment: "Game 2: Guest quiz results", what: "Game · Answers to \"How well do you know the couple?\", winning table gets small prizes", length: "8 min" },
-    { time: "9:17 PM", segment: "6. Wishes & Memories", what: "Song, then messages · A friend's dad sings \"Tere Sang Yaara\", then any short speeches or video messages", length: "10 min" },
-    { time: "9:27 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "15 min" },
-    { time: "9:42 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "10 min" },
-    { time: "9:52 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open" },
+    { time: "8:04 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on. Guest quiz cards are on the tables", length: "1 min" },
+    { time: "8:05 PM", segment: "Open slot A: Early years", what: "The kids arrive. Acts to be added", length: "10 min", open: true },
+    { time: "8:15 PM", segment: "4. Building a Home", what: "Song · Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "5 min" },
+    { time: "8:20 PM", segment: "5. Blessings: Poetry", what: "Poetry · Uncle Grandpa reads his poetry. A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "5 min" },
+    { time: "8:25 PM", segment: "5. Blessings: Grandpa sings", what: "Song · Grandpa sings \"Hai Apna Dil To Awaara\"", length: "5 min" },
+    { time: "8:30 PM", segment: "Game 2: Guest quiz results", what: "Game · Answers to \"How well do you know the couple?\", winning table gets small prizes", length: "8 min" },
+    { time: "8:38 PM", segment: "6. Wishes & Memories", what: "Song, then messages · A friend's dad sings \"Tere Sang Yaara\", then any short speeches or video messages", length: "10 min" },
+    { time: "8:48 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "15 min" },
+    { time: "9:03 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "10 min" },
+    { time: "9:13 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open" },
   ],
 
   performances: [
@@ -76,7 +76,7 @@ window.PLAN = {
     { cue: "2. The Rishta", track: "Tum Se Mil Ke Dil Ka Hai Jo Haal", note: "Slideshow on the first meeting and engagement photos first" },
     { cue: "Shoe game", track: "Short sting or drumroll between questions (optional)", note: "" },
     { cue: "3. The Shaadi", track: "Maahi Vey, Jhumka Gira Re, third song TBD", note: "" },
-    { cue: "Dinner", track: "Old Bollywood favourites playlist", note: "" },
+    { cue: "Dinner is open", track: "No change", note: "The program carries on while people eat. Keep performance music loud enough over the chatter" },
     { cue: "4. Building a Home", track: "Tum Se Hi Din Hota Hai", note: "Family photo slideshow plays behind Dad" },
     { cue: "5. Poetry", track: "Music off (or a very soft instrumental underneath)", note: "Dim the lights a little, mic on a stand so he can sit if he likes" },
     { cue: "5. Grandpa sings", track: "Hai Apna Dil To Awaara", note: "" },
@@ -128,42 +128,43 @@ window.PLAN = {
     { cue: "7:54 PM · 3. The Shaadi", lines: [
       "Chapter three: The Shaadi. The mehendi, the music, the baraat, and every relative in town. Bringing back the wedding magic, here are Gayatri and Hanisha!",
     ] },
-    { cue: "8:04 PM · Dinner", lines: [
-      "And just like at every shaadi, after the dancing comes the food! Dinner is served. While you eat, you'll find a quiz card on your table: \"How well do you know the couple?\" Fill it in as a table. We'll collect them before dessert, and the winning table gets a prize.",
+    { cue: "8:04 PM · Dinner is open", lines: [
+      "And just like at every shaadi, after the dancing comes the food! Dinner is now open. Please help yourselves whenever you like, and the show will carry on while you eat.",
+      "You'll also find a quiz card on your table: \"How well do you know the couple?\" Fill it in as a table. We'll collect them a little later, and the winning table gets a prize.",
     ] },
-    { cue: "8:44 PM · Back from dinner · Open slot A", lines: [
-      "I hope everyone has eaten well, because the story continues. A few years into the marriage, life got a lot louder. That's right, the kids arrived.",
+    { cue: "8:05 PM · Open slot A", lines: [
+      "Keep eating, because the story continues. A few years into the marriage, life got a lot louder. That's right, the kids arrived.",
       "[Introduce the act for the early years here]",
     ] },
-    { cue: "8:54 PM · 4. Building a Home", lines: [
+    { cue: "8:15 PM · 4. Building a Home", lines: [
       "Chapter four: Building a Home. First home, first everything. And somewhere along the way, Dad figured out that his whole day revolves around one person. He's going to tell her himself. Dad, the mic is yours.",
     ] },
-    { cue: "8:59 PM · 5. Blessings: Poetry", lines: [
+    { cue: "8:20 PM · 5. Blessings: Poetry", lines: [
       "[Speak softly here, the room should settle down]",
       "Chapter five: Blessings from the Elders. Some blessings are written, and some are sung. We'll start with the written kind. Our Uncle Grandpa has been writing poetry for as long as any of us can remember, and tonight he has a few words for Mom & Dad. Let's give him our full attention.",
       "[After the poem, let it sit for a moment] Thank you. I think that's one we'll all remember.",
     ] },
-    { cue: "9:04 PM · 5. Blessings: Grandpa sings", lines: [
+    { cue: "8:25 PM · 5. Blessings: Grandpa sings", lines: [
       "And now for the sung kind. Grandpa started our evening, and he isn't done yet. Here's a song from the original heartthrob of the family!",
     ] },
-    { cue: "9:09 PM · Game 2: Guest quiz results", lines: [
+    { cue: "8:30 PM · Game 2: Guest quiz results", lines: [
       "Drumroll please! Let's find out which table knows Mom & Dad best.",
-      "[Read out three or four answers, then announce the winning table and hand over the prizes]",
+      "[Collect the quiz cards first if they aren't in yet] [Read out three or four answers, then announce the winning table and hand over the prizes]",
     ] },
-    { cue: "9:17 PM · 6. Wishes & Memories", lines: [
+    { cue: "8:38 PM · 6. Wishes & Memories", lines: [
       "Chapter six: Wishes & Memories. Over twenty-five years, Mom & Dad have collected a lot of people who love them, and one of them wanted to say it with a song about the people who stay by your side. Please welcome [name]!",
       "[Then any short speeches or video messages, if there are some]",
     ] },
-    { cue: "9:27 PM · Finale", lines: [
+    { cue: "8:48 PM · Finale", lines: [
       "We've told the whole story, from the rishta to tonight. But there's one chapter only the two of them can perform.",
       "Mom, Dad, this floor is yours.",
       "[After the dance] Let's bring out the cake! Everyone, please join in.",
     ] },
-    { cue: "9:42 PM · Game 3: Bollywood trivia", lines: [
+    { cue: "9:03 PM · Game 3: Bollywood trivia", lines: [
       "Before we hand the stage to the DJ, one last round, and this one is for everybody. It's Bollywood trivia! Answer as a table, shout it out, and the fastest table wins.",
       "[8 to 10 quick questions, then announce the winning table]",
     ] },
-    { cue: "9:52 PM · Group photo, then DJ", lines: [
+    { cue: "9:13 PM · Group photo, then DJ", lines: [
       "Thank you all for coming and for being part of their story. Before anyone goes anywhere, everyone in for one big group photo!",
       "Here's to Mom & Dad, and to the next twenty-five. Happy anniversary! DJ, take it away!",
     ] },

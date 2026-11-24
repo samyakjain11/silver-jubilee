@@ -59,8 +59,8 @@ window.SHOW = {
     { type: "photo", photo: "", caption: "The family together", detail: "Everyone who made it happen." },
     { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
 
-    // ── DINNER ──
-    { type: "chapter", number: "Dinner is served", title: "How Well Do You Know the Couple?", subtitle: "Fill in the quiz card on your table. Winning table gets a prize!" },
+    // ── DINNER IS OPEN (the program carries on) ──
+    { type: "chapter", number: "Dinner is open · the show goes on", title: "How Well Do You Know the Couple?", subtitle: "Fill in the quiz card on your table. Winning table gets a prize!" },
 
     // ── EARLY YEARS (open slot A) ──
     { type: "chapter", number: "And then", title: "Came Us", subtitle: "The early years" },
