@@ -24,7 +24,8 @@ window.SHOW = {
 
     // ── OPENING ──
     { type: "chapter", number: "To begin", title: "With Blessings", subtitle: "A few words from Grandpa & Grandma" },
-    { type: "chapter", number: "Setting the mood", title: "Wah Wah Ramji", subtitle: "From Hum Aapke Hain Koun..! · performed by the uncles & aunts" },
+    // Song not final yet (Wah Wah Ramji or Ae Dil Laaya Hai Bahaar). Add it to the subtitle once decided.
+    { type: "chapter", number: "Setting the mood", title: "A Shaadi Welcome", subtitle: "Performed by the uncles & aunts" },
     { type: "chapter", number: "Please welcome", title: "The Jodi of the Night", subtitle: "Mom & Dad" },
 
     // ── CHAPTER 1: each of them on their own ──

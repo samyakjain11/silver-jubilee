@@ -24,7 +24,7 @@ window.PLAN = {
   runOfShow: [
     { time: "6:30 PM", segment: "Arrivals", what: "Guests mingle, sign a memory card or guestbook, photo corner open", length: "30 min" },
     { time: "7:00 PM", segment: "Welcome & Blessings", what: "Host welcomes everyone, then Grandpa & Grandma give a short speech to open the evening", length: "7 min" },
-    { time: "7:07 PM", segment: "Wah Wah Ramji", what: "The uncles & aunts dance to \"Wah Wah Ramji\" to set the shaadi mood", length: "5 min" },
+    { time: "7:07 PM", segment: "Uncles & Aunts' Dance", what: "The uncles & aunts set the shaadi mood. Song not final: \"Wah Wah Ramji\" or \"Ae Dil Laaya Hai Bahaar\"", length: "5 min" },
     { time: "7:12 PM", segment: "0. Grand Entrance", what: "Mom & Dad walk in to Flipperachi, host welcomes the \"jodi of the night\"", length: "5 min" },
     { time: "7:17 PM", segment: "1. Before Us", what: "Dad's dance to \"O O Jaane Jaana\", then Mom's \"Yai Re Yai Re\" (or a photo montage of Mom's younger years)", length: "10 min" },
     { time: "7:27 PM", segment: "2. The Rishta", what: "The first meeting: Kake & Surbhi perform \"Tum Se Mil Ke Dil Ka Hai Jo Haal\"", length: "5 min" },
@@ -44,7 +44,7 @@ window.PLAN = {
 
   performances: [
     { chapter: "Opening", act: "A short speech to open the evening", song: "Speech", film: "", who: "Grandpa & Grandma" },
-    { chapter: "Opening", act: "Uncles & aunts set the shaadi mood", song: "Wah Wah Ramji", film: "Hum Aapke Hain Koun..!", who: "Uncles & aunts (names TBD)" },
+    { chapter: "Opening", act: "Uncles & aunts set the shaadi mood", song: "Wah Wah Ramji or Ae Dil Laaya Hai Bahaar (to decide)", film: "Hum Aapke Hain Koun..! / Kya Kehna", who: "Uncles & aunts (names TBD)" },
     { chapter: "0. Grand Entrance", act: "Mom & Dad walk in", song: "A Flipperachi track", film: "", who: "Mom & Dad" },
     { chapter: "1. Before Us", act: "A dance for Dad", song: "O O Jaane Jaana", film: "Pyaar Kiya To Darna Kya", who: "Dad" },
     { chapter: "1. Before Us", act: "A dance for Mom (may drop, fallback is a photo montage)", song: "Yai Re Yai Re", film: "Rangeela", who: "Mom (TBD)" },
@@ -63,7 +63,7 @@ window.PLAN = {
   music: [
     { cue: "Arrivals", track: "Soft background playlist", note: "" },
     { cue: "Welcome & Blessings", track: "Music off", note: "Mic ready for the grandparents, chairs close to the mic" },
-    { cue: "Wah Wah Ramji", track: "Wah Wah Ramji", note: "Starts the moment the grandparents sit down" },
+    { cue: "Uncles & aunts' dance", track: "Wah Wah Ramji or Ae Dil Laaya Hai Bahaar (to decide)", note: "Starts the moment the grandparents sit down" },
     { cue: "Grand Entrance", track: "A Flipperachi track", note: "Tech helper cues it as Mom & Dad walk in" },
     { cue: "1. Before Us", track: "O O Jaane Jaana, then Yai Re Yai Re", note: "If Mom's dance drops, play her photo montage instead" },
     { cue: "2. The Rishta", track: "Tum Se Mil Ke Dil Ka Hai Jo Haal", note: "" },
@@ -90,7 +90,7 @@ window.PLAN = {
       "Now, every good shaadi celebration needs a proper welcome, and our uncles and aunts have been practising for this one. Put your hands together for them!",
     ] },
     { cue: "7:12 PM · Before the entrance", lines: [
-      "Wah wah! The mood is set. Now, the moment we've all been waiting for.",
+      "What a start! The mood is set. Now, the moment we've all been waiting for.",
       "Ladies and gentlemen, please be on your feet and make some noise for the jodi of the night... Mom and Dad!",
     ] },
     { cue: "7:15 PM · After the entrance", lines: [
