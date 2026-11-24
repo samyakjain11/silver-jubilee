@@ -14,7 +14,7 @@ window.PLAN = {
   summary: "A three-hour evening for 25 to 30 family and friends, built around a heartfelt tribute with games and performances in between. Warm, fun and family friendly, following their story from the arranged match onward.",
 
   glance: [
-    { label: "Timing", text: "6:30 to about 9:05 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
+    { label: "Timing", text: "6:30 to about 9:10 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
     { label: "Centerpieces", text: "A story in chapters told through family performances, with the shoe game, a prop game and Bollywood trivia as breathers" },
     { label: "Rule of thumb", text: "No segment longer than 20 minutes, so energy stays up. Every solo song is kept to 2 minutes, except Grandpa's (4 min). Each act has 2 minutes before it for the changeover and the host's intro (shown as \"2 + 5 min\")" },
   ],
@@ -38,9 +38,10 @@ window.PLAN = {
     { time: "8:15 PM", segment: "4. Building a Home", what: "Song · Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "2 + 2 min" },
     { time: "8:19 PM", segment: "5. Blessings: Poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min" },
     { time: "8:24 PM", segment: "6. Wishes & Memories", what: "Messages, then song · Any short speeches or video messages (5 min), then a friend's dad sings \"Tere Sang Yaara\" (2 min)", length: "2 + 7 min" },
-    { time: "8:33 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then cake cutting", length: "2 + 15 min" },
-    { time: "8:50 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min" },
-    { time: "9:02 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open" },
+    { time: "8:33 PM", segment: "Birthday cake for [aunt]", what: "Cake · Surprise! Everyone sings Happy Birthday to [aunt] and she cuts her birthday cake", length: "2 + 5 min" },
+    { time: "8:40 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min" },
+    { time: "8:57 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min" },
+    { time: "9:09 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open" },
   ],
 
   performances: [
@@ -76,7 +77,8 @@ window.PLAN = {
     { cue: "4. Building a Home", track: "Tum Se Hi Din Hota Hai", note: "Family photo slideshow plays behind Dad" },
     { cue: "5. Poetry", track: "Music off (or a very soft instrumental underneath)", note: "Dim the lights a little, mic on a stand so he can sit if he likes" },
     { cue: "6. Wishes & Memories", track: "Tere Sang Yaara", note: "Karaoke track ready if he sings over one" },
-    { cue: "Finale", track: "Tere Bina Nahi Lagda Dil", note: "Cake ready to roll out right after" },
+    { cue: "Birthday cake", track: "Happy Birthday", note: "Birthday cake and candles ready. Keep the anniversary cake for right after the finale dance" },
+    { cue: "Finale", track: "Tere Bina Nahi Lagda Dil", note: "Anniversary cake ready to roll out right after" },
     { cue: "Bollywood trivia", track: "Short song clips if any questions are \"guess the song\"", note: "" },
     { cue: "DJ", track: "DJ takes over", note: "Hand over the sound system after the group photo" },
   ],
@@ -143,16 +145,21 @@ window.PLAN = {
       "[Any short speeches or video messages first]",
       "And one of them wanted to say it with a song about the people who stay by your side. Please welcome [name]!",
     ] },
-    { cue: "8:33 PM · Finale", lines: [
+    { cue: "8:33 PM · Birthday cake for [aunt]", lines: [
+      "Before our grand finale, one more celebration. Tonight isn't only Mom & Dad's special day. It's also [aunt]'s birthday!",
+      "[Bring out the birthday cake] Everyone, please join in: Happy Birthday!",
+      "[After she cuts the cake] Happy birthday, [aunt]! And now, for the moment we've all been waiting for...",
+    ] },
+    { cue: "8:40 PM · Finale", lines: [
       "We've told the whole story, from the rishta to tonight. But there's one chapter only the two of them can perform.",
       "Mom, Dad, this floor is yours.",
-      "[After the dance] Let's bring out the cake! Everyone, please join in.",
+      "[After the dance] Let's bring out the anniversary cake! Everyone, please join in.",
     ] },
-    { cue: "8:50 PM · Game 3: Bollywood trivia", lines: [
+    { cue: "8:57 PM · Game 3: Bollywood trivia", lines: [
       "Before we hand the stage to the DJ, one last round, and this one is for everybody. It's Bollywood trivia! Answer as a table, shout it out, and the fastest table wins.",
       "[8 to 10 quick questions, then announce the winning table]",
     ] },
-    { cue: "9:02 PM · Group photo, then DJ", lines: [
+    { cue: "9:09 PM · Group photo, then DJ", lines: [
       "Thank you all for coming and for being part of their story. Before anyone goes anywhere, everyone in for one big group photo!",
       "Here's to Mom & Dad, and to the next twenty-five. Happy anniversary! DJ, take it away!",
     ] },

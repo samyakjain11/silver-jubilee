@@ -102,6 +102,9 @@ window.SHOW = {
     { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by: add name" },
     { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
 
+    // ── BIRTHDAY CAKE ──
+    { type: "chapter", number: "One more celebration", title: "Happy Birthday!", subtitle: "Add your aunt's name here" },
+
     // ── FINALE ──
     { type: "chapter", number: "Finale", title: "Today", subtitle: "Still the best team we know" },
     { type: "photo", photo: "", caption: "Mom & Dad, 2026", detail: "" },
