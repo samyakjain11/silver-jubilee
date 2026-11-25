@@ -37,7 +37,7 @@ window.PLAN = {
     { time: "7:31 PM", segment: "Game 2: Prop song game", what: "Game · Surbhi leads a prop song game (details to come)", length: "2 + 10 min", who: "Surbhi leads it · Intro: Samyak & Anshi · Props: games helper · Songs: tech helper" },
     { time: "7:43 PM", segment: "4. Building a Home", what: "Song · Dad sings \"Tum Se Hi Din Hota Hai\" to Mom, family photo slideshow behind him", length: "2 + 2 min", who: "Dad · Intro: Samyak & Anshi · Track & photo slideshow: tech helper" },
     { time: "7:47 PM", segment: "5. Blessings: Poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min", who: "Uncle Grandpa · Intro: Samyak & Anshi · Music off, lights down, mic stand: tech helper" },
-    { time: "7:52 PM", segment: "6. Wishes & Memories", what: "Messages, then song · Any short speeches or video messages (3 min), then a friend's dad sings \"Tere Sang Yaara\" (2 min)", length: "2 + 5 min", who: "Samyak & Anshi collect messages · Video messages: tech helper · Song: friend's dad" },
+    { time: "7:52 PM", segment: "6. Wishes & Memories", what: "Messages, then song · Any short speeches or video messages (5 min), then a friend's dad sings \"Tere Sang Yaara\" (2 min). No changeover buffer: the hosts introduce it straight away", length: "7 min", who: "Samyak & Anshi collect messages · Video messages: tech helper · Song: friend's dad" },
     { time: "7:59 PM", segment: "Birthday cake for [aunt]", what: "Cake · Surprise! Everyone sings Happy Birthday to [aunt] and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Happy Birthday track: tech helper" },
     { time: "8:06 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min", who: "Mom & Dad · Intro: Samyak & Anshi · Anniversary cake: cake pickup person · Candles & knife: TBD · Song: tech helper" },
     { time: "8:23 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min", who: "Samyak & Anshi run it · Scoring & prizes: games helper · Song clips: tech helper" },
@@ -159,7 +159,7 @@ window.PLAN = {
     ] },
     { cue: "7:52 PM · 6. Wishes & Memories", lines: [
       "Samyak: Chapter six: Wishes & Memories. Over twenty-five years, Mom & Dad have collected a lot of people who love them, and a few of them have something to say.",
-      "[Any short speeches or video messages first, 3 minutes total]",
+      "[Any short speeches or video messages first]",
       "Anshi: And one of them wanted to say it with a song about the people who stay by your side. Please welcome [name]!",
     ] },
     { cue: "7:59 PM · Birthday cake for [aunt]", lines: [
