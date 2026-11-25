@@ -30,8 +30,8 @@ window.SHOW = {
     { type: "chapter", number: "Please welcome", title: "The Jodi of the Night", subtitle: "Mom & Dad" },
     { type: "chapter", number: "A song from Grandpa", title: "Hai Apna Dil To Awaara", subtitle: "From Solva Saal · sung by Grandpa" },
 
-    // ── CHAPTER 1: each of them on their own ──
-    { type: "chapter", number: "Chapter 1", title: "Before Us", subtitle: "Two stories that started separately" },
+    // ── BEFORE US: each of them on their own ──
+    { type: "chapter", number: "Once upon a time", title: "Before Us", subtitle: "Two stories that started separately" },
 
     // Dad's early photos, shown right before Samyak's dance for him. Add more early photos here.
     { type: "chapter", number: "Meet", title: "Dad", subtitle: "The early years" },
@@ -46,8 +46,8 @@ window.SHOW = {
     { type: "photo", photo: "photos/mom-today-bike.jpg", caption: "Mom as we know her", detail: "And now she rides too!" },
     { type: "chapter", number: "A dance for Mom", title: "Mere Khwabon Mein Jo Aaye", subtitle: "From Dilwale Dulhania Le Jayenge · performed by Anshi" },
 
-    // ── CHAPTER 2 ──
-    { type: "chapter", number: "Chapter 2", title: "The Rishta", subtitle: "Two families, one very good idea" },
+    // ── THE RISHTA ──
+    { type: "chapter", number: "Then came", title: "The Rishta", subtitle: "Two families, one very good idea" },
     { type: "photo", photo: "photos/rishta-1.jpg", caption: "The rishta", detail: "Who was more nervous? We'll find out in the shoe game." },
     { type: "collage", caption: "The engagement", detail: "Add the year here.", photos: ["photos/engagement-1.jpg", "photos/engagement-2.jpg", "photos/engagement-3.jpg", "photos/engagement-4.jpg"] },
     { type: "chapter", number: "The first meeting", title: "Tum Se Mil Ke Dil Ka Hai Jo Haal", subtitle: "From Main Hoon Na · performed by Kake & Surbhi" },
@@ -58,8 +58,8 @@ window.SHOW = {
     // ── SONG BEFORE THE WEDDING ──
     { type: "chapter", number: "A song for the couple", title: "Loote Koi Mann Ka Nagar", subtitle: "From Abhimaan · sung by Rajesh uncle" },
 
-    // ── CHAPTER 3 ──
-    { type: "chapter", number: "Chapter 3", title: "The Shaadi", subtitle: "Where it all began" },
+    // ── THE SHAADI ──
+    { type: "chapter", number: "And then", title: "The Shaadi", subtitle: "Where it all began" },
     { type: "photo", photo: "photos/shaadi-main.jpg", caption: "The big day", detail: "Add the wedding date and place." },
     { type: "collage", caption: "Shaadi moments", detail: "", photos: ["photos/shaadi-1.jpg", "photos/shaadi-2.jpg", "photos/shaadi-3.jpg"] },
     { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
@@ -80,8 +80,19 @@ window.SHOW = {
     // ── GAME 2: PROP SONG GAME ──
     { type: "chapter", number: "Game time", title: "The Prop Song Game", subtitle: "Led by Surbhi · get ready to play!" },
 
-    // ── CHAPTER 4 ──
-    { type: "chapter", number: "Chapter 4", title: "Building a Home", subtitle: "First home, first everything" },
+    // ── POETRY ──
+    { type: "chapter", number: "With love", title: "Blessings from the Elders", subtitle: "A few words from the heart" },
+    { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
+
+    // ── WISHES & MEMORIES ──
+    { type: "chapter", number: "From all of us", title: "Wishes & Memories", subtitle: "From the people who love them" },
+    { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
+    { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
+    { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by: add name" },
+    { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
+
+    // ── MOM & DAD SPEAK, THEN DAD SINGS ──
+    { type: "chapter", number: "In their own words", title: "Mom & Dad", subtitle: "A few words from the two of them" },
     { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
     // The photos below play behind Dad's song.
     { type: "photo", photo: "photos/home-window.jpg", caption: "Home sweet home", detail: "Add the city and year." },
@@ -111,17 +122,6 @@ window.SHOW = {
     { type: "chapter", number: "Together", title: "Fitness", subtitle: "The couple that trains together" },
     { type: "photo", photo: "photos/gym.jpg", caption: "Gym buddies", detail: "The couple that trains together." },
 
-
-    // ── CHAPTER 5 ──
-    { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "A few words from the heart" },
-    { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
-
-    // ── CHAPTER 6: WISHES & MEMORIES ──
-    { type: "chapter", number: "Chapter 6", title: "Wishes & Memories", subtitle: "From the people who love them" },
-    { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
-    { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
-    { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by: add name" },
-    { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
 
     // ── BIRTHDAY CAKE ──
     { type: "chapter", number: "One more celebration", title: "Happy Birthday!", subtitle: "Add your aunt's name here" },
