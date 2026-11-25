@@ -203,8 +203,7 @@
           return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(sec.iv) }, key, b64(sec.data));
         }).then(function (buf) {
           var qs = JSON.parse(new TextDecoder().decode(buf));
-          document.getElementById("secretBox").innerHTML = '<ol class="shoe-qs">' + qs.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join("") + '</ol>' +
-            '<p class="film" style="margin-top:10px">Finish on a sweet one, like: Who would you choose all over again?</p>';
+          document.getElementById("secretBox").innerHTML = '<ol class="shoe-qs">' + qs.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join("") + '</ol>';
         }).catch(function () { err.textContent = "That's not it. Try again!"; });
       });
     }
