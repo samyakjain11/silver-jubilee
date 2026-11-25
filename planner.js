@@ -90,7 +90,7 @@ window.PLAN = {
   // wording to sound like you. Anything in [brackets] is a name to fill in.
   // Shoe game questions, encrypted so they stay a surprise. Only the password
   // (ask Samyak) unlocks them in the "Shoe game questions" tab.
-  shoeSecret: { salt: "QvO8dZGO17SaVmm7Q8ZItw==", iv: "AFnT2RJNN+P9LUAG", data: "q1vqCF9ZF2bjzSyKttlBNhyN/+tCfPtQBC64jSglouFEzVnc7zTnrAO4iQQqlF7FuapvqSznYky4LWbt6K/OcH0VvxLJeabNGU4IGJKaESdbE3ZVUxHKvviR3887v4JnRhPiRvXwU+91p+r2i6ewO9wiFN9T5WaYfs3l0mxpEUP2UWs/eAmawbCTF45375Y9wllrP7h3My0vgh7DguCCxqzi8Aswtjp0XR9EyFlr+3Ce0H7iqjtlI5LToXvZmKK89MD9vrTXDlLTVcGA4OnzyHiscXJHK8gdOH3QzOYcncRDZiiPzj5Nn1XktQ4TuGonSDz3LbDlIjJggKbSD2YcgH4dF/5ks4c7Zlj9TspbE1QO+zBUB3KwQ4u+RJ/TNODCIb6vpP9yACXG2bYJEUsc828qvquf/fYlSg6lXzY7XAVGKUm0QsX5FyVMCFGvr2XCrwTtTQDT9D/cTYxfm5gEjoudn0KB8pQkvz7OkFFY0/W0yFdpgBFyGZILs9pdJwv8q3huPFmL2fb0FtwLJt1AdA+Pylb9iNfWmrpU7MSc03chyT/LlVBoRXKWgdbzJuxsFYmt+PeRfzcDBdBoe5aaCM7k+T0tYMeElD2cnBqTUKqZUUGYyg/0bd2idIUeLVpbJ5imQIKSbedXsEOdK4na2q68QYTP4YHlinQJkArQ9AXb8bOgBQOfHfUfLArMUomFdjLsNbdglryVf55dUK0+yc8EqphvRkSPscqSSRpa5+pHBOAjRqXfWiKN7kgCZbJKd/Pqnayap+320CbWcGqi4UEiQGilJ0u8b6qsjgiSXwmBmxY/NjWySyFTEcDC/RMpqOZSUrsoDM9gQh/03+FIEkqWXNJ+bv9yUh0nmzQtCHxwM/QXJuW0GEin+/dJHXz5cTIJUFNrEahKoFkoegakhe59CEkcvRM1kYPpfy5GZNnwRPzc+YrvJ2Yf6LMkXXuhOoeuDA==" },
+  shoeSecret: { salt: "AwEe7hxXpDKucNGmGIvxVg==", iv: "zk06Ka7dgZD2evKM", data: "yqW/SY6lYgIbWMJMrgIgxAZIEzBzNm9+AJpgtpS2Ixa7DY2+ittiXk4YkV9lCmX2wGS4K4xfIpoYGSmnMDF26qxVT9DFFTwWTja4Ug09Dz4jJTr6tpc3bvN+bNUNAQL/V2jozImJIiifqklxNkAnyDk0gPdlWpgaKoYKHSRaz1Fz2MLyK4uKsxnsMEsr8ZXlDo4OQkYZXdd1sZZY52AAWZQiUeq7EWxloIpFX8gO2zZ/CdEQcKS9cXFM29nUqYRp7d87iyUnFjETgTO1fsN2X7ZOl8c//EoxY2OpHD3i9KJWccmU0mEy2DjhbmMyQxbq7cEZei+YqONI39d3K8ULu0PgRz4gvjM8Bktf+Tu/tbJf6+qJE56LRl7QLB2kipHdjqRlfto2/D2NMHMs825835mrLiBBZSze/66vbs7KHVRsKtx45UcjP0h6EP8CpFOkOvXJ+JElFqOe2NgnwqL6itCGyfTo26Jm4csUOSA1jp8+FpHLiXb2XosiPPQz/rBGMm1MVbgLhksYOCRjkDNdmEP7p7FTL4+c70EuIC4CWGUg9VVo6NmODuogvC6KYa+2turdiB9tBFm3NAhgmYueh1RjfIAzQQzEheQ2Bk7/SQkJEgxjIxqFEygnfem+gHrypFh+pQYVDw+Hm31to170+DD+/4s4CnSQpI8vjiifQXLKPTRJf3E/WZTKnASdCpYyHrOe05pRDm06BSJP6PimcXrw8AqReK+nFnrIOtZB2Hmpn9aqFDvLhW0xMof1MStTtQRfwzlm/6XG2Ep0slmwdY8pqPAZfjJSwE8ksOIL2fwlgjTwGY7L72gSyYqVA37bftN+4fSHmMdj7dCt8gcxJKwd5sNqK1CLGODQrHDoez/93MMYOOaThSmd7Gp728I2XzEVxtVTX3lKCFFzAeXka7USgOi6PJx3AntJVvmiCz6uy3e8BoYLM1LmEpj7XB+iXC8RPg==" },
 
   script: [
     { cue: "6:30 PM · Welcome", lines: [
@@ -133,7 +133,7 @@ window.PLAN = {
       "Anshi: Alright, game time! Mama, Mami, come sit here back to back. Take off your shoes, and hold one of yours and one of each other's.",
       "Samyak: We'll ask a question, and you raise the shoe of whoever the answer is. No peeking and no talking to each other! Everyone else, you're the judges.",
       "Anshi: Mama, a tip. If you're not sure, just hold up Mami's shoe. That's what you do at home anyway.",
-      "[21 questions in the Shoe game questions tab (password needed). Take turns asking. Finish on a sweet one, like: Who would you choose all over again?]",
+      "[21 questions in the Shoe game questions tab (password needed). Take turns asking.]",
       "Anshi: Okay, that was more honest than we expected. Ghar jaake koi ladai nahi, please. Big hand for them!",
     ] },
     { cue: "7:22 PM · Song before the wedding", lines: [
