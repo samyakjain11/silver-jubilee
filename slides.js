@@ -33,10 +33,12 @@ window.SHOW = {
     // ── CHAPTER 1: each of them on their own ──
     { type: "chapter", number: "Chapter 1", title: "Before Us", subtitle: "Two stories that started separately" },
 
-    { type: "chapter", number: "Meet", title: "Dad", subtitle: "Add a sweet one-liner about Dad" },
+    // Dad's early photos, shown right before Samyak's dance for him. Add more early photos here.
+    { type: "chapter", number: "Meet", title: "Dad", subtitle: "The early years" },
+    { type: "photo", photo: "", caption: "Little Dad", detail: "A childhood photo and where he grew up." },
     { type: "photo", photo: "photos/dad-young-bike.jpg", caption: "Young Dad", detail: "Him and his bike, even back then." },
     { type: "photo", photo: "photos/dad-today-bike.jpg", caption: "Dad as we know him", detail: "Some loves never change." },
-    { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Dad" },
+    { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Samyak" },
 
     { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
     { type: "photo", photo: "photos/mom-young-portrait.jpg", caption: "Young Mom", detail: "Add a sweet line about Mom here." },
@@ -66,6 +68,7 @@ window.SHOW = {
     { type: "chapter", number: "Dinner is open", title: "Help Yourselves!", subtitle: "Grab a plate. The show goes on while you eat" },
 
     // ── RETRO THROWBACKS ──
+    // Plays while dinner opens and people get their food.
     { type: "chapter", number: "Rewind", title: "Retro Throwbacks", subtitle: "The old photo albums, opened up" },
     { type: "photo", photo: "photos/retro-beach.jpg", caption: "Beach days", detail: "Add where and when." },
     { type: "photo", photo: "photos/retro-beach-collage.jpg", caption: "Sun, sand and a jet ski", detail: "Add where and when." },
@@ -79,6 +82,8 @@ window.SHOW = {
 
     // ── CHAPTER 4 ──
     { type: "chapter", number: "Chapter 4", title: "Building a Home", subtitle: "First home, first everything" },
+    { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
+    // The photos below play behind Dad's song.
     { type: "photo", photo: "photos/home-window.jpg", caption: "Home sweet home", detail: "Add the city and year." },
     { type: "collage", caption: "Growing up together", detail: "", photos: ["photos/home-1.jpg", "photos/home-2.jpg", "photos/home-3.jpg", "photos/home-4.jpg"] },
     { type: "collage", caption: "Family trips", detail: "", photos: ["photos/home-5.jpg", "photos/home-6.jpg", "photos/home-7.jpg", "photos/home-8.jpg"] },
@@ -86,7 +91,6 @@ window.SHOW = {
     { type: "collage", caption: "Festival memories", detail: "", photos: ["photos/festival-1.jpg", "photos/festival-2.jpg", "photos/festival-3.jpg"] },
     { type: "photo", photo: "photos/graduation.jpg", caption: "Proud parents", detail: "Samyak's graduation, 2024." },
 
-    // Themed photo sections. They can play behind Dad's song.
     { type: "chapter", number: "Together", title: "Exploring the World", subtitle: "Sydney · Italy · Singapore · and more" },
     { type: "photo", photo: "photos/sydney-main.jpg", caption: "Sydney", detail: "On the Harbour Bridge." },
     { type: "collage", caption: "Sydney", detail: "", photos: ["photos/sydney-1.jpg", "photos/sydney-2.jpg", "photos/sydney-3.jpg", "photos/sydney-4.jpg"] },
@@ -107,7 +111,6 @@ window.SHOW = {
     { type: "chapter", number: "Together", title: "Fitness", subtitle: "The couple that trains together" },
     { type: "photo", photo: "photos/gym.jpg", caption: "Gym buddies", detail: "The couple that trains together." },
 
-    { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
 
     // ── CHAPTER 5 ──
     { type: "chapter", number: "Chapter 5", title: "Blessings from the Elders", subtitle: "A few words from the heart" },
