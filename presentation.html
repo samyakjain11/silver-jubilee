@@ -128,6 +128,18 @@
     transform: translateX(-50%) rotate(-3deg);
     background: rgba(233, 168, 180, .55);
   }
+
+  /* collage slide: a few polaroids together */
+  .collage { display: flex; flex-direction: column; align-items: center; gap: 2.2vh; width: 100%; }
+  .collage h3 { font-family: "Fraunces", serif; font-weight: 600; font-size: clamp(26px, 3.4vw, 50px); line-height: 1.1; text-align: center; }
+  .collage .cdetail { color: var(--soft); font-size: clamp(14px, 1.4vw, 20px); margin-top: -1vh; text-align: center; }
+  .collage .grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2.5vw; max-width: 1500px; }
+  .collage .polaroid { padding: 10px 10px 14px; }
+  .collage .polaroid:nth-child(odd) { transform: rotate(-2deg); }
+  .collage .polaroid:nth-child(even) { transform: rotate(2deg); }
+  .collage .polaroid img { height: min(52vh, 560px); max-width: 30vw; object-fit: cover; }
+  .collage.n4 .grid { display: grid; grid-template-columns: repeat(2, auto); justify-items: center; align-items: center; gap: 2vh 2.5vw; }
+  .collage.n4 .polaroid img { height: 30vh; max-width: 36vw; }
   .photo-text { max-width: 440px; }
   .photo-text h3 {
     font-family: "Fraunces", serif; font-weight: 600;
@@ -172,6 +184,7 @@
 
   @media (max-width: 760px) {
     .photo-wrap { flex-direction: column; gap: 28px; text-align: center; }
+    .collage .polaroid img, .collage.n4 .polaroid img { height: 22vh; max-width: 42vw; }
     .polaroid img, .polaroid .ph { height: 44vh; max-width: 80vw; }
     .hint { display: none; }
   }
@@ -231,6 +244,13 @@
             '<figcaption class="scrawl">' + esc(s.caption) + '</figcaption></figure>' +
             '<div class="photo-text"><h3>' + esc(s.caption) + '</h3>' +
             (s.detail ? '<p>' + esc(s.detail) + '</p>' : "") + '</div></div>';
+        case "collage":
+          var ps = (s.photos || []).slice(0, 4);
+          return '<div class="collage n' + ps.length + '"><h3>' + esc(s.caption) + '</h3>' +
+            (s.detail ? '<p class="cdetail">' + esc(s.detail) + '</p>' : "") +
+            '<div class="grid">' + ps.map(function (p) {
+              return '<figure class="polaroid"><img src="' + esc(p) + '" alt="' + esc(s.caption) + '" loading="lazy"></figure>';
+            }).join("") + '</div></div>';
         case "quote":
           return '<div class="center"><blockquote>“' + esc(s.text) + '”</blockquote>' +
             '<p class="by">' + esc(s.by) + '</p></div>';

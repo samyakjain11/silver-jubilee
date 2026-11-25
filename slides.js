@@ -5,6 +5,7 @@
 //  Photos: put them in the "photos" folder and write the file
 //  name, e.g.  photo: "photos/wedding-day.jpg"
 //  Leave photo: "" to show a pretty placeholder frame instead.
+//  A "collage" slide shows 2 to 4 photos at once: list them in photos: [ ... ].
 // ─────────────────────────────────────────────────────────────
 
 window.SHOW = {
@@ -33,21 +34,20 @@ window.SHOW = {
     { type: "chapter", number: "Chapter 1", title: "Before Us", subtitle: "Two stories that started separately" },
 
     { type: "chapter", number: "Meet", title: "Dad", subtitle: "Add a sweet one-liner about Dad" },
-    { type: "photo", photo: "", caption: "Little Dad", detail: "A childhood photo and where he grew up." },
-    { type: "photo", photo: "", caption: "Young Dad", detail: "College days, first job, or a favourite memory." },
-    { type: "photo", photo: "", caption: "Dad as we know him", detail: "What makes him, him." },
+    { type: "photo", photo: "photos/dad-young-bike.jpg", caption: "Young Dad", detail: "Him and his bike, even back then." },
+    { type: "photo", photo: "photos/dad-today-bike.jpg", caption: "Dad as we know him", detail: "Some loves never change." },
     { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Dad" },
 
     { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
-    { type: "photo", photo: "", caption: "Little Mom", detail: "A childhood photo and where she grew up." },
-    { type: "photo", photo: "", caption: "Young Mom", detail: "College days, first job, or a favourite memory." },
-    { type: "photo", photo: "", caption: "Mom as we know her", detail: "What makes her, her." },
+    { type: "photo", photo: "photos/mom-young-portrait.jpg", caption: "Young Mom", detail: "Add a sweet line about Mom here." },
+    { type: "photo", photo: "photos/mom-young-bike.jpg", caption: "Young Mom", detail: "Already ready for the road." },
+    { type: "photo", photo: "photos/mom-today-bike.jpg", caption: "Mom as we know her", detail: "And now she rides too!" },
     { type: "chapter", number: "A dance for Mom", title: "Mere Khwabon Mein Jo Aaye", subtitle: "From Dilwale Dulhania Le Jayenge · performed by Anshi" },
 
     // ── CHAPTER 2 ──
     { type: "chapter", number: "Chapter 2", title: "The Rishta", subtitle: "Two families, one very good idea" },
-    { type: "photo", photo: "", caption: "The first meeting", detail: "Who was more nervous? We'll find out in the shoe game." },
-    { type: "photo", photo: "", caption: "The engagement", detail: "Add the year and a sweet line here." },
+    { type: "photo", photo: "photos/rishta-1.jpg", caption: "The rishta", detail: "Who was more nervous? We'll find out in the shoe game." },
+    { type: "collage", caption: "The engagement", detail: "Add the year here.", photos: ["photos/engagement-1.jpg", "photos/engagement-2.jpg", "photos/engagement-3.jpg", "photos/engagement-4.jpg"] },
     { type: "chapter", number: "The first meeting", title: "Tum Se Mil Ke Dil Ka Hai Jo Haal", subtitle: "From Main Hoon Na · performed by Kake & Surbhi" },
 
     // ── GAME 1 ──
@@ -58,8 +58,8 @@ window.SHOW = {
 
     // ── CHAPTER 3 ──
     { type: "chapter", number: "Chapter 3", title: "The Shaadi", subtitle: "Where it all began" },
-    { type: "photo", photo: "", caption: "The big day", detail: "Add the wedding date and place." },
-    { type: "photo", photo: "", caption: "The family together", detail: "Everyone who made it happen." },
+    { type: "photo", photo: "photos/shaadi-main.jpg", caption: "The big day", detail: "Add the wedding date and place." },
+    { type: "collage", caption: "Shaadi moments", detail: "", photos: ["photos/shaadi-1.jpg", "photos/shaadi-2.jpg", "photos/shaadi-3.jpg"] },
     { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
 
     // ── DINNER IS OPEN (the program carries on) ──
@@ -67,30 +67,45 @@ window.SHOW = {
 
     // ── RETRO THROWBACKS ──
     { type: "chapter", number: "Rewind", title: "Retro Throwbacks", subtitle: "The old photo albums, opened up" },
-    { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
-    { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
-    { type: "photo", photo: "", caption: "Retro throwback", detail: "Add a line about this photo." },
+    { type: "photo", photo: "photos/retro-beach.jpg", caption: "Beach days", detail: "Add where and when." },
+    { type: "photo", photo: "photos/retro-beach-collage.jpg", caption: "Sun, sand and a jet ski", detail: "Add where and when." },
+    { type: "photo", photo: "photos/retro-baby.jpg", caption: "And then there were three", detail: "Add the year." },
+    { type: "collage", caption: "Throwback trips", detail: "", photos: ["photos/retro-1.jpg", "photos/retro-2.jpg", "photos/retro-3.jpg", "photos/retro-4.jpg"] },
+    { type: "collage", caption: "More throwbacks", detail: "", photos: ["photos/retro-5.jpg", "photos/retro-6.jpg", "photos/retro-7.jpg", "photos/retro-8.jpg"] },
+    { type: "collage", caption: "Date nights", detail: "", photos: ["photos/retro-9.jpg", "photos/retro-10.jpg", "photos/retro-11.jpg", "photos/retro-12.jpg"] },
 
     // ── GAME 2: PROP SONG GAME ──
     { type: "chapter", number: "Game time", title: "The Prop Song Game", subtitle: "Led by Surbhi · get ready to play!" },
 
     // ── CHAPTER 4 ──
     { type: "chapter", number: "Chapter 4", title: "Building a Home", subtitle: "First home, first everything" },
-    { type: "photo", photo: "", caption: "Our first home", detail: "Add the city and year." },
-    { type: "photo", photo: "", caption: "Festival memories", detail: "Add a line about it." },
+    { type: "photo", photo: "photos/home-window.jpg", caption: "Home sweet home", detail: "Add the city and year." },
+    { type: "collage", caption: "Growing up together", detail: "", photos: ["photos/home-1.jpg", "photos/home-2.jpg", "photos/home-3.jpg", "photos/home-4.jpg"] },
+    { type: "collage", caption: "Family trips", detail: "", photos: ["photos/home-5.jpg", "photos/home-6.jpg", "photos/home-7.jpg", "photos/home-8.jpg"] },
+    { type: "collage", caption: "Along the way", detail: "", photos: ["photos/home-9.jpg", "photos/home-10.jpg", "photos/home-11.jpg", "photos/home-12.jpg"] },
+    { type: "collage", caption: "Festival memories", detail: "", photos: ["photos/festival-1.jpg", "photos/festival-2.jpg", "photos/festival-3.jpg"] },
+    { type: "photo", photo: "photos/graduation.jpg", caption: "Proud parents", detail: "Samyak's graduation, 2024." },
 
     // Themed photo sections. They can play behind Dad's song.
-    { type: "chapter", number: "Together", title: "Exploring the World", subtitle: "Sydney · Italy · Singapore" },
-    { type: "photo", photo: "", caption: "Sydney", detail: "Add a line about the trip." },
-    { type: "photo", photo: "", caption: "Italy", detail: "Add a line about the trip." },
-    { type: "photo", photo: "", caption: "Singapore", detail: "Add a line about the trip." },
+    { type: "chapter", number: "Together", title: "Exploring the World", subtitle: "Sydney · Italy · Singapore · and more" },
+    { type: "photo", photo: "photos/sydney-main.jpg", caption: "Sydney", detail: "On the Harbour Bridge." },
+    { type: "collage", caption: "Sydney", detail: "", photos: ["photos/sydney-1.jpg", "photos/sydney-2.jpg", "photos/sydney-3.jpg", "photos/sydney-4.jpg"] },
+    { type: "photo", photo: "photos/italy-main.jpg", caption: "Italy", detail: "The Colosseum, Rome." },
+    { type: "collage", caption: "Rome", detail: "", photos: ["photos/rome-1.jpg", "photos/rome-2.jpg", "photos/rome-3.jpg"] },
+    { type: "collage", caption: "Venice", detail: "", photos: ["photos/venice-1.jpg", "photos/venice-2.jpg", "photos/venice-3.jpg"] },
+    { type: "collage", caption: "Florence & Cinque Terre", detail: "", photos: ["photos/italy-1.jpg", "photos/italy-2.jpg", "photos/italy-3.jpg"] },
+    { type: "collage", caption: "Singapore", detail: "", photos: ["photos/singapore-1.jpg", "photos/singapore-2.jpg"] },
+    { type: "collage", caption: "Niagara Falls", detail: "", photos: ["photos/niagara-1.jpg", "photos/niagara-2.jpg"] },
 
     { type: "chapter", number: "Together", title: "Adventure", subtitle: "Trails and bike rides" },
-    { type: "photo", photo: "", caption: "On the trail", detail: "Add where and when." },
-    { type: "photo", photo: "", caption: "On the bike", detail: "Add where and when." },
+    { type: "photo", photo: "photos/trail-main.jpg", caption: "On the trail", detail: "Add where and when." },
+    { type: "collage", caption: "Outdoors", detail: "", photos: ["photos/trail-1.jpg", "photos/trail-2.jpg", "photos/trail-3.jpg", "photos/trail-4.jpg"] },
+    { type: "collage", caption: "On the bike", detail: "", photos: ["photos/bike-1.jpg", "photos/bike-2.jpg", "photos/bike-3.jpg", "photos/bike-4.jpg"] },
+    { type: "collage", caption: "Riding together", detail: "", photos: ["photos/bike-5.jpg", "photos/bike-6.jpg", "photos/bike-7.jpg", "photos/bike-8.jpg"] },
+    { type: "collage", caption: "Up in the air", detail: "", photos: ["photos/flight-1.jpg", "photos/flight-2.jpg"] },
 
     { type: "chapter", number: "Together", title: "Fitness", subtitle: "The couple that trains together" },
-    { type: "photo", photo: "", caption: "Gym buddies", detail: "Add a line about it." },
+    { type: "photo", photo: "photos/gym.jpg", caption: "Gym buddies", detail: "The couple that trains together." },
 
     { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
 
@@ -110,7 +125,7 @@ window.SHOW = {
 
     // ── FINALE ──
     { type: "chapter", number: "Finale", title: "Today", subtitle: "Still the best team we know" },
-    { type: "photo", photo: "", caption: "Mom & Dad, 2026", detail: "" },
+    { type: "photo", photo: "photos/today.jpg", caption: "Mom & Dad, 2026", detail: "" },
     { type: "chapter", number: "Mom & Dad", title: "Tere Bina Nahi Lagda Dil", subtitle: "Their dance, then cake!" },
 
     // ── GAME 3 ──
