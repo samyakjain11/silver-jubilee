@@ -97,7 +97,7 @@ window.PLAN = {
       "Samyak: Hi everyone, namaste, and thank you so much for coming! I'm Samyak...",
       "Anshi: ...and I'm Anshi, Samyak's cousin. We're your hosts tonight.",
       "Samyak: Mom and Dad have been married for 25 years now. Haan ji, 25. Hum bhi believe nahi kar pa rahe.",
-      "Anshi: 25 years, and Uncle still asks Aunty where his keys are. Roz. Every single day.",
+      "Anshi: 25 years, and Mama still asks Mami where his keys are. Roz. Every single day.",
       "Anshi: We've got some dances, some songs, a couple of games, and lots of photos. Please enjoy, khana kha ke jaana, and don't leave early!",
       "Samyak: Also, the food is after The Shaadi, so if you're hungry, please clap louder. Jitni zor se taali, utna jaldi khana.",
       "Samyak: But first, the people who made all of this possible. Grandpa, Grandma, please aaiye.",
@@ -109,7 +109,7 @@ window.PLAN = {
       "Both: ...and here they are, the jodi of the night!",
     ] },
     { cue: "6:41 PM · Grandpa sings for the couple", lines: [
-      "Anshi: Uncle, Aunty, please sit. Aaj aapko kuch nahi karna, bas enjoy karo.",
+      "Anshi: Mama, Mami, please sit. Aaj aapko kuch nahi karna, bas enjoy karo.",
       "Samyak: Grandpa has a song for you both. Grandpa, over to you!",
       "[Samyak and Anshi slip away during Grandpa's song to get ready for their dances. The guest emcee takes the mic from here until the shoe game]",
     ] },
@@ -130,9 +130,9 @@ window.PLAN = {
     ] },
     { cue: "7:05 PM · Game 1: Shoe game", lines: [
       "[Anshi is back on the mic from here]",
-      "Anshi: Alright, game time! Uncle, Aunty, come sit here back to back. Take off your shoes, and hold one of yours and one of each other's.",
+      "Anshi: Alright, game time! Mama, Mami, come sit here back to back. Take off your shoes, and hold one of yours and one of each other's.",
       "Samyak: We'll ask a question, and you raise the shoe of whoever the answer is. No peeking and no talking to each other! Everyone else, you're the judges.",
-      "Anshi: Uncle, a tip. If you're not sure, just hold up Aunty's shoe. That's what you do at home anyway.",
+      "Anshi: Mama, a tip. If you're not sure, just hold up Mami's shoe. That's what you do at home anyway.",
       "[21 questions in the Shoe game questions tab (password needed). Take turns asking. Finish on a sweet one, like: Who would you choose all over again?]",
       "Anshi: Okay, that was more honest than we expected. Ghar jaake koi ladai nahi, please. Big hand for them!",
     ] },
@@ -166,7 +166,7 @@ window.PLAN = {
       "Anshi: And [name] has a song for them. Please come up!",
     ] },
     { cue: "7:55 PM · Mom & Dad speak, then Dad sings", lines: [
-      "Anshi: Okay, humne bahut baatein kar li. Uncle, Aunty, your turn. Come say a few words!",
+      "Anshi: Okay, humne bahut baatein kar li. Mama, Mami, your turn. Come say a few words!",
       "[Mom & Dad speak for about 2.5 minutes]",
       "Samyak: And Dad has one more thing. He's going to sing a song for Mom. I've heard him practising at home, so trust me, he's ready. Dad, ho jaaye!",
       "[Photos of their home, trips, adventures and gym days play behind him]",
