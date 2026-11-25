@@ -88,6 +88,10 @@ window.PLAN = {
 
   // What the hosts (Samyak & Anshi) say, in order. Start a line with "Samyak:", "Anshi:", "Both:" or "Guest:" (the guest emcee) to show who says it. Lines are a starting point: change the
   // wording to sound like you. Anything in [brackets] is a name to fill in.
+  // Shoe game questions, encrypted so they stay a surprise. Only the password
+  // (ask Samyak) unlocks them in the "Shoe game questions" tab.
+  shoeSecret: { salt: "jsdbzjBWcVgVoD/iW5/npQ==", iv: "RdECa4f9QtRaF5df", data: "Kxtb+IMfGFYlmoqkQSZNywIk6xTILfa2p4Ceo7iXwkfDwsnuiiKnh1UgURLvFFUF6mbMe6BbP+7KQe78hreyE8NCHq3rnSWu30dC0IdTgJ+6/aFIBRDQGHGdpMwiyYor10HmTl2yvgq2PE5MAzsbJ3Ldlf2siQVmYtMLLXSda5WE+mH+tE8VucjzzytGVZxtN/wGrzuxeychCro4MyvHnJXM2TkOiien0u0oysQjosGwxXdJBtpawp/alAXmvjb82Bj5bHtyL7mwqRYmkuyYlmHQQXh/dsKKZ5+95JYgANeZECvT2uAUMLVEOTGf/83/aa3C8oz/ggxpmGm/CKkZcWitA19BijNfwd22v7eHkRtAsVxaFVMY+JybLk3iuhHha6w0CB+3ZuCgBWQblHrR7dWr4eZt4O8OvBvndFiddBqw5RaWqF97lsqmAfdMwELFkNUk7J4Xv4N+sQz5rFBjbHTcAgNfWnUUxNND5eGPOaSzCw9GrFpFpCwfRRpkdoDNocNeuEIugla9DRak7fE6PzWchhNyJ9JJ5CUFsgmwmuZH4mAIoYJebD1Fcd8yy1ECQALtr63FVCd+kbOhsn3PObXf47dFuWy/LdlW2DYvG4EY2XxBOPeDNclGMLI1M4/GBWzotQQS2SzX7gP8qhGKRfjRK1KL2Dr4gmS7M+LQiBSdrlKr3f/96UYzxeL1LlJFuCLhXYQrDEMjtQqyjAet0mSXVVFWYKQHVLlSNzHT+IwathB8cGDObN/O2SaCut7AOGfsFnV2azIfwTVrFFtON6SOl45b+DwphO+WDG7rQ9YKuPBHAdqGDgqoS0WwpQeYooHC9BaqeLZPD+uAnvfFJpLY7Q==" },
+
   script: [
     { cue: "6:30 PM · Welcome", lines: [
       "Samyak: Hi everyone, thank you so much for coming! I'm Samyak...",
@@ -129,7 +133,7 @@ window.PLAN = {
       "Anshi: Alright, game time! Mom, Dad, come sit here back to back. Take off your shoes, and hold one of yours and one of each other's.",
       "Samyak: We'll ask a question, and you raise the shoe of whoever the answer is. No peeking and no talking to each other! Everyone else, you're the judges.",
       "Anshi: Dad, a tip. If you're not sure, just hold up Mom's shoe. That's what you do at home anyway.",
-      "[15 to 20 questions. Take turns asking. Finish on a sweet one, like: Who would you choose all over again?]",
+      "[19 questions in the Shoe game questions tab (password needed). Take turns asking. Finish on a sweet one, like: Who would you choose all over again?]",
       "Anshi: Okay, that was more honest than we expected. Big hand for them!",
     ] },
     { cue: "7:22 PM · Song before the wedding", lines: [

@@ -51,6 +51,10 @@
   td.time { white-space: nowrap; font-weight: 600; color: var(--blush-deep); }
   td.seg { font-weight: 600; }
   td.len, td.who { white-space: nowrap; color: var(--soft); }
+  .secret-form input { font: 15px "Inter", sans-serif; padding: 8px 12px; border: 1px solid #e3d8dc; border-radius: 10px; }
+  .secret-form button { font: 600 14px "Inter", sans-serif; padding: 8px 14px; border: 0; border-radius: 10px; background: var(--blush-deep); color: #fff; cursor: pointer; }
+  .secret-err { color: var(--blush-deep); font-size: 14px; margin-left: 8px; }
+  .shoe-qs { padding-left: 1.4em; line-height: 1.9; }
   .spk { color: var(--blush-deep); font-weight: 600; }
   td.resp { min-width: 220px; font-size: 14px; color: var(--soft); }
   .tbd { color: var(--silver-deep); font-style: italic; }
@@ -122,6 +126,7 @@
       { id: "perf", label: "Performances" },
       { id: "music", label: "Music cues" },
       { id: "script", label: "Emcee script" },
+      { id: "secret", label: "Shoe game questions 🔒" },
       { id: "roles", label: "Who does what" },
       { id: "todo", label: "Prep timeline" },
     ];
@@ -167,7 +172,11 @@
           '<span class="by">' + esc(t.by) + '</span><span class="task">' + esc(t.task) + '</span></li>';
       }).join("") + '</ul>');
 
+      html += panel("secret", "Shoe game questions", '<div id="secretBox"><p class="film" style="margin-bottom:10px">These are hidden so they stay a surprise. Enter the password to see them.</p>' +
+        '<form id="secretForm" class="secret-form" autocomplete="off"><input type="password" id="secretPw" placeholder="Password" aria-label="Password"> <button type="submit">Unlock</button> <span id="secretErr" class="secret-err"></span></form></div>');
+
       out.innerHTML = html;
+      wireSecret(p.shoeSecret);
 
       document.getElementById("tabs").addEventListener("click", function (e) {
         var b = e.target.closest("button"); if (!b) return;
@@ -176,6 +185,27 @@
         Array.prototype.forEach.call(out.querySelectorAll("section.panel"), function (s) {
           s.classList.toggle("hidden", tab !== "all" && s.id !== tab);
         });
+      });
+    }
+
+    function b64(s) { return Uint8Array.from(atob(s), function (c) { return c.charCodeAt(0); }); }
+    function wireSecret(sec) {
+      var form = document.getElementById("secretForm");
+      if (!form || !sec) return;
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var err = document.getElementById("secretErr"); err.textContent = "";
+        if (!window.crypto || !crypto.subtle) { err.textContent = "Open this page over https to unlock."; return; }
+        var pw = document.getElementById("secretPw").value.trim();
+        crypto.subtle.importKey("raw", new TextEncoder().encode(pw), "PBKDF2", false, ["deriveKey"]).then(function (base) {
+          return crypto.subtle.deriveKey({ name: "PBKDF2", salt: b64(sec.salt), iterations: 200000, hash: "SHA-256" }, base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+        }).then(function (key) {
+          return crypto.subtle.decrypt({ name: "AES-GCM", iv: b64(sec.iv) }, key, b64(sec.data));
+        }).then(function (buf) {
+          var qs = JSON.parse(new TextDecoder().decode(buf));
+          document.getElementById("secretBox").innerHTML = '<ol class="shoe-qs">' + qs.map(function (q) { return '<li>' + esc(q) + '</li>'; }).join("") + '</ol>' +
+            '<p class="film" style="margin-top:10px">Finish on a sweet one, like: Who would you choose all over again?</p>';
+        }).catch(function () { err.textContent = "That's not it. Try again!"; });
       });
     }
 
