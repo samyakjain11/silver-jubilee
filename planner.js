@@ -93,7 +93,9 @@ window.PLAN = {
       "Samyak: Hi everyone, thank you so much for coming! I'm Samyak...",
       "Anshi: ...and I'm Anshi. We're your hosts tonight.",
       "Samyak: Mom and Dad have been married for 25 years now. Yes, 25. We can't believe it either.",
+      "Anshi: 25 years, and Dad still asks Mom where his keys are. Every single day.",
       "Anshi: We've got some dances, some songs, a couple of games, and lots of photos. Please enjoy, eat well, and don't leave early!",
+      "Samyak: Also, the food is after The Shaadi, so if you're hungry, please clap louder. It makes things go faster.",
       "Samyak: But first, the people who made all of this possible. Grandpa, Grandma, please come up.",
     ] },
     { cue: "6:36 PM · Grand Entrance", lines: [
@@ -110,7 +112,7 @@ window.PLAN = {
     { cue: "6:47 PM · Dad's early photos, then Samyak's dance", lines: [
       "Guest: Thank you, Grandpa! Hi everyone, I'm filling in for a few minutes because Samyak and Anshi are busy getting ready.",
       "Guest: Let's go back a bit. Before he was Dad, he was this guy. [Click through Dad's early photos]",
-      "Guest: Look at that hair! And the bike! Okay, Samyak has something for his dad. Samyak, come on up!",
+      "Guest: Look at that hair! Dad, what happened to that hairstyle? And the bike! Okay, Samyak has something for his dad. Samyak, come on up!",
     ] },
     { cue: "6:51 PM · Mom's early photos, then Anshi's dance", lines: [
       "Guest: Big round of applause for Samyak!",
@@ -126,6 +128,7 @@ window.PLAN = {
       "[Anshi is back on the mic from here]",
       "Anshi: Alright, game time! Mom, Dad, come sit here back to back. Take off your shoes, and hold one of yours and one of each other's.",
       "Samyak: We'll ask a question, and you raise the shoe of whoever the answer is. No peeking and no talking to each other! Everyone else, you're the judges.",
+      "Anshi: Dad, a tip. If you're not sure, just hold up Mom's shoe. That's what you do at home anyway.",
       "[15 to 20 questions. Take turns asking. Finish on a sweet one, like: Who would you choose all over again?]",
       "Anshi: Okay, that was more honest than we expected. Big hand for them!",
     ] },
@@ -138,8 +141,8 @@ window.PLAN = {
       "Samyak: And to bring back some of that shaadi feeling, here are Gayatri and Hanisha!",
     ] },
     { cue: "7:30 PM · Dinner is open", lines: [
-      "Anshi: Okay everyone, dinner is ready!",
-      "Samyak: Please go grab a plate whenever you want. We'll keep going while you eat.",
+      "Anshi: Okay everyone, the moment you've all actually been waiting for. Dinner is ready!",
+      "Samyak: Please go grab a plate whenever you want. We'll keep going while you eat. And uncles, please leave some for the rest of us.",
     ] },
     { cue: "7:31 PM · Game 2: Prop song game", lines: [
       "Samyak: You can keep eating, but stay with us, because we have another game.",
@@ -161,7 +164,7 @@ window.PLAN = {
     { cue: "7:55 PM · Mom & Dad speak, then Dad sings", lines: [
       "Anshi: Okay, we've done enough talking. Mom, Dad, your turn. Come say a few words!",
       "[Mom & Dad speak for about 2.5 minutes]",
-      "Samyak: And Dad has one more thing. He's going to sing a song for Mom. Dad, go for it.",
+      "Samyak: And Dad has one more thing. He's going to sing a song for Mom. We've heard him practising at home, so trust us, he's ready. Dad, go for it.",
       "[Photos of their home, trips, adventures and gym days play behind him]",
     ] },
     { cue: "8:02 PM · Birthday cake for [aunt]", lines: [
@@ -181,7 +184,7 @@ window.PLAN = {
     ] },
     { cue: "8:38 PM · Group photo, then DJ", lines: [
       "Anshi: Thank you all so much for coming tonight. It really means a lot to us. Okay, everyone come in for a group photo!",
-      "Samyak: Happy 25th, Mom and Dad. Love you both.",
+      "Samyak: Happy 25th, Mom and Dad. Love you both. Here's to 25 more years of Mom being right.",
       "Both: Happy anniversary! DJ, it's all yours!",
     ] },
   ],
