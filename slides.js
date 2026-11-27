@@ -74,7 +74,9 @@ window.SHOW = {
     { type: "photo", photo: "photos/retro-baby.jpg", caption: "And then there were three", detail: "Add the year." },
     { type: "collage", caption: "Throwback trips", detail: "", photos: ["photos/retro-1.jpg", "photos/retro-2.jpg", "photos/retro-3.jpg", "photos/retro-4.jpg"] },
     { type: "collage", caption: "More throwbacks", detail: "", photos: ["photos/retro-5.jpg", "photos/retro-6.jpg", "photos/retro-7.jpg", "photos/retro-8.jpg"] },
-    { type: "collage", caption: "Date nights", detail: "", photos: ["photos/retro-9.jpg", "photos/retro-10.jpg", "photos/retro-11.jpg", "photos/retro-12.jpg"] },
+    { type: "collage", caption: "Good times", detail: "", photos: ["photos/retro-9.jpg", "photos/retro-10.jpg", "photos/retro-11.jpg", "photos/retro-12.jpg"] },
+    { type: "collage", caption: "From the old albums", detail: "", photos: ["photos/retro-13.jpg", "photos/retro-14.jpg", "photos/retro-15.jpg"] },
+    { type: "collage", caption: "Snow and sea", detail: "", photos: ["photos/retro-16.jpg", "photos/retro-17.jpg"] },
 
     // ── GAME 2: PROP SONG GAME ──
     { type: "chapter", number: "Game time", title: "The Prop Song Game", subtitle: "Led by Surbhi · get ready to play!" },
@@ -116,6 +118,7 @@ window.SHOW = {
     { type: "collage", caption: "Outdoors", detail: "", photos: ["photos/trail-1.jpg", "photos/trail-2.jpg", "photos/trail-3.jpg", "photos/trail-4.jpg"] },
     { type: "collage", caption: "On the bike", detail: "", photos: ["photos/bike-1.jpg", "photos/bike-2.jpg", "photos/bike-3.jpg", "photos/bike-4.jpg"] },
     { type: "collage", caption: "Riding together", detail: "", photos: ["photos/bike-5.jpg", "photos/bike-6.jpg", "photos/bike-7.jpg", "photos/bike-8.jpg"] },
+    { type: "collage", caption: "More adventures", detail: "", photos: ["photos/adventure-1.jpg", "photos/adventure-2.jpg", "photos/adventure-3.jpg"] },
     { type: "collage", caption: "Up in the air", detail: "", photos: ["photos/flight-1.jpg", "photos/flight-2.jpg"] },
 
     { type: "chapter", number: "Together", title: "Fitness", subtitle: "The couple that trains together" },
@@ -127,7 +130,6 @@ window.SHOW = {
 
     // ── FINALE ──
     { type: "chapter", number: "Finale", title: "Today", subtitle: "Still the best team we know" },
-    { type: "photo", photo: "photos/today.jpg", caption: "Mom & Dad, 2026", detail: "" },
     { type: "chapter", number: "Mom & Dad", title: "Tere Bina Nahi Lagda Dil", subtitle: "Their dance, then cake!" },
 
     // ── GAME 3 ──
