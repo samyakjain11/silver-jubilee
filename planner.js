@@ -14,7 +14,7 @@ window.PLAN = {
   summary: "A three-hour evening for 25 to 30 family and friends, built around a heartfelt tribute with games and performances in between. Warm, fun and family friendly, following their story from the arranged match onward.",
 
   glance: [
-    { label: "Timing", text: "Mingling from 6:00, program 6:30 to about 8:45 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
+    { label: "Timing", text: "Mingling from 6:00, program 6:30 to about 8:50 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
     { label: "Centerpieces", text: "Their story told through family performances, with the shoe game, a prop song game and Bollywood trivia as breathers" },
     { label: "Rule of thumb", text: "No segment longer than 20 minutes, so energy stays up. Every solo song is kept to 2 minutes, except Grandpa's (4 min). Each act has 2 minutes before it for the changeover and the host's intro (shown as \"2 + 5 min\")" },
   ],
@@ -36,12 +36,12 @@ window.PLAN = {
     { time: "7:31 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on. The Retro Throwbacks photos play on screen while people get their food.", length: "1 min", who: "Samyak & Anshi announce · Food ready: TBD" },
     { time: "7:32 PM", segment: "Game 2: Prop song game", what: "Game · Surbhi leads a prop song game (details to come)", length: "2 + 10 min", who: "Surbhi leads it · Intro: Samyak & Anshi · Props: games helper · Songs: tech helper" },
     { time: "7:44 PM", segment: "Uncle Grandpa's poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min", who: "Uncle Grandpa · Intro: Samyak & Anshi · Music off, lights down, mic stand: tech helper" },
-    { time: "7:49 PM", segment: "Wishes & Memories", what: "Messages, then song · Any short speeches or video messages (5 min), then Pankaj uncle sings \"Tere Sang Yaara\" (2 min). No changeover buffer: the hosts introduce it straight away", length: "7 min", who: "Samyak & Anshi collect messages · Video messages: tech helper · Song: Pankaj uncle" },
-    { time: "7:56 PM", segment: "Mom & Dad speak, then Dad sings", what: "Speech, then song · Mom & Dad give a short speech together (2.5 min), then Dad sings \"Tum Se Hi Din Hota Hai\" to Mom while the home, travel, adventure and fitness photos play behind him (2 min)", length: "2 + 5 min", who: "Mom & Dad · Intro: Samyak & Anshi · Mic for two, track & photo slideshow: tech helper" },
-    { time: "8:03 PM", segment: "Birthday cake for [aunt]", what: "Cake · Surprise! \"Baar Baar Din Ye Aaye\" plays, everyone sings for [aunt] and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Birthday song: tech helper" },
-    { time: "8:10 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min", who: "Mom & Dad · Intro: Samyak & Anshi · Anniversary cake: cake pickup person · Candles & knife: TBD · Song: tech helper" },
-    { time: "8:27 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min", who: "Samyak & Anshi run it · Scoring & prizes: games helper · Song clips: tech helper" },
-    { time: "8:39 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open", who: "Samyak & Anshi wrap up · Photographer · Hand over to the DJ: tech helper" },
+    { time: "7:49 PM", segment: "Wishes & Memories", what: "Messages, speech, then song · Any short heartfelt messages or video messages (5 min), then a family speech from [aunt], [uncle] & [cousin] together (1 min to get up + 4 min), then Pankaj uncle sings \"Tere Sang Yaara\" (2 min). No changeover buffers: the hosts introduce each straight away", length: "5 + 5 + 2 min", who: "Samyak & Anshi collect messages · [Aunt], [uncle] & [cousin] speak · Video messages & mic: tech helper · Song: Pankaj uncle" },
+    { time: "8:01 PM", segment: "Mom & Dad speak, then Dad sings", what: "Speech, then song · Mom & Dad give a short speech together (2.5 min), then Dad sings \"Tum Se Hi Din Hota Hai\" to Mom while the home, travel, adventure and fitness photos play behind him (2 min)", length: "2 + 5 min", who: "Mom & Dad · Intro: Samyak & Anshi · Mic for two, track & photo slideshow: tech helper" },
+    { time: "8:08 PM", segment: "Birthday cake for [aunt]", what: "Cake · Surprise! \"Baar Baar Din Ye Aaye\" plays, everyone sings for [aunt] and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Birthday song: tech helper" },
+    { time: "8:15 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min", who: "Mom & Dad · Intro: Samyak & Anshi · Anniversary cake: cake pickup person · Candles & knife: TBD · Song: tech helper" },
+    { time: "8:32 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min", who: "Samyak & Anshi run it · Scoring & prizes: games helper · Song clips: tech helper" },
+    { time: "8:44 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open", who: "Samyak & Anshi wrap up · Photographer · Hand over to the DJ: tech helper" },
   ],
 
   performances: [
@@ -59,6 +59,7 @@ window.PLAN = {
     { chapter: "Blessings", act: "Poetry reading, very mellow", song: "His own poetry", film: "", who: "Uncle Grandpa (name TBD)" },
     { chapter: "Wishes & Memories", act: "Song for the couple", song: "Tere Sang Yaara", film: "Rustom", who: "Pankaj uncle" },
     { chapter: "Wishes & Memories", act: "Short speeches or video messages (optional)", song: "TBD", film: "", who: "TBD", open: true },
+    { chapter: "Wishes & Memories", act: "Family speech, 4 minutes", song: "Speech", film: "", who: "[Aunt], [uncle] & [cousin] (names TBD)" },
     { chapter: "Before the cakes", act: "Mom & Dad speak (2.5 min), then Dad sings to Mom with the photo slideshow behind", song: "Tum Se Hi Din Hota Hai", film: "Jab We Met", who: "Dad" },
     { chapter: "Finale", act: "Mom & Dad dance together, then cake", song: "Tere Bina Nahi Lagda Dil", film: "", who: "Mom & Dad" },
   ],
@@ -90,8 +91,119 @@ window.PLAN = {
   // (ask Samyak) unlocks them in the "Shoe game questions" tab.
   shoeSecret: { salt: "AwEe7hxXpDKucNGmGIvxVg==", iv: "zk06Ka7dgZD2evKM", data: "yqW/SY6lYgIbWMJMrgIgxAZIEzBzNm9+AJpgtpS2Ixa7DY2+ittiXk4YkV9lCmX2wGS4K4xfIpoYGSmnMDF26qxVT9DFFTwWTja4Ug09Dz4jJTr6tpc3bvN+bNUNAQL/V2jozImJIiifqklxNkAnyDk0gPdlWpgaKoYKHSRaz1Fz2MLyK4uKsxnsMEsr8ZXlDo4OQkYZXdd1sZZY52AAWZQiUeq7EWxloIpFX8gO2zZ/CdEQcKS9cXFM29nUqYRp7d87iyUnFjETgTO1fsN2X7ZOl8c//EoxY2OpHD3i9KJWccmU0mEy2DjhbmMyQxbq7cEZei+YqONI39d3K8ULu0PgRz4gvjM8Bktf+Tu/tbJf6+qJE56LRl7QLB2kipHdjqRlfto2/D2NMHMs825835mrLiBBZSze/66vbs7KHVRsKtx45UcjP0h6EP8CpFOkOvXJ+JElFqOe2NgnwqL6itCGyfTo26Jm4csUOSA1jp8+FpHLiXb2XosiPPQz/rBGMm1MVbgLhksYOCRjkDNdmEP7p7FTL4+c70EuIC4CWGUg9VVo6NmODuogvC6KYa+2turdiB9tBFm3NAhgmYueh1RjfIAzQQzEheQ2Bk7/SQkJEgxjIxqFEygnfem+gHrypFh+pQYVDw+Hm31to170+DD+/4s4CnSQpI8vjiifQXLKPTRJf3E/WZTKnASdCpYyHrOe05pRDm06BSJP6PimcXrw8AqReK+nFnrIOtZB2Hmpn9aqFDvLhW0xMof1MStTtQRfwzlm/6XG2Ep0slmwdY8pqPAZfjJSwE8ksOIL2fwlgjTwGY7L72gSyYqVA37bftN+4fSHmMdj7dCt8gcxJKwd5sNqK1CLGODQrHDoez/93MMYOOaThSmd7Gp728I2XzEVxtVTX3lKCFFzAeXka7USgOi6PJx3AntJVvmiCz6uy3e8BoYLM1LmEpj7XB+iXC8RPg==" },
 
-  // Emcee script v2: same order as v1, warm and casual, less cringe. This is the
-  // version the Emcee script tab shows first. Start a line with "Samyak:",
+  // Emcee script v3: v2 with more Hinglish, mostly in Samyak's lines.
+  // The Emcee script tab shows this one first.
+  scriptV3: [
+    { cue: "6:30 PM · Welcome", lines: [
+      "Samyak: Hi everyone, namaste! Aap sab ka bahut bahut thank you for coming tonight. I'm Samyak.",
+      "Anshi: And I'm Anshi, Samyak's cousin. We're your hosts tonight, toh please thoda pyaar se.",
+      "Samyak: Mom and Dad ki shaadi ko 25 saal ho gaye hain. 25 saal, and Dad still asks Mom where his keys are. Roz. Every single day.",
+      "Anshi: And Mami still knows exactly where they are. Honestly, I think that's the whole secret.",
+      "Anshi: We've got dances, songs, a few games and a lot of old photos tonight. Some of them are very cute, and some of them are a little embarrassing. Sorry in advance, Mama.",
+      "Samyak: Aur haan, we know sab log khane ka wait kar rahe hain. It opens after The Shaadi, toh tab tak please humare saath bane rahiye.",
+      "Samyak: But first, jinki wajah se yeh sab hai. Grandpa, Grandma, please aaiye and say a few words.",
+    ] },
+    { cue: "6:36 PM · Grand Entrance", lines: [
+      "Anshi: Thank you, Grandpa and Grandma. Bahut pyaari baat boli aapne.",
+      "Samyak: Chalo, sab log khade ho jao for this one. Our uncles and aunts have been practising for weeks, toh thoda shor machao!",
+      "[Uncles & aunts dance in to \"Wah Wah Ramji\". As it ends, the Flipperachi track starts]",
+      "Both: And here they are, the reason we're all here. Mama and Mami!",
+    ] },
+    { cue: "6:41 PM · Grandpa sings for the couple", lines: [
+      "Samyak: Mom, Dad, aap baith jaiye. Aaj aapko kuch nahi karna, bas sit back and enjoy.",
+      "Anshi: And we're starting with something really special. Grandpa is going to sing \"Pyar Deewana Hota Hai\" for the two of you. Grandpa, aapka stage.",
+      "[Samyak and Anshi both slip away during Grandpa's song to get ready. [Uncle] takes the mic for Samyak's dance, then Samyak takes it for Anshi & Yashi's]",
+    ] },
+    { cue: "6:48 PM · Dad's early photos, then Samyak's dance", lines: [
+      "[[Uncle] has the mic for this part. Hosts: fill in which uncle]",
+      "Uncle: Thank you, Grandpa, that was lovely. Hi everyone, I'm stealing the mic from the kids for a few minutes.",
+      "Uncle: Before he was Dad to Samyak, he was this guy. [Click through Dad's early photos]",
+      "Uncle: Look at that hair! Aur yeh bike. Some things clearly never change.",
+      "Uncle: Samyak has a dance for his dad tonight. Let's give him a big cheer. Samyak, come on up!",
+      "[After his dance, Samyak takes the mic from [Uncle]]",
+    ] },
+    { cue: "6:52 PM · Mom's early photos, then Anshi & Yashi's dance", lines: [
+      "Samyak: Thank you, thank you. Aur thanks, [Uncle], mere liye cover karne ke liye.",
+      "Samyak: Ab yeh hain Mom, before she had to deal with Dad and me every day. Bechari. [Click through Mom's photos]",
+      "Samyak: Anshi and Yashi have a dance for her. Zor se taaliyan please. Anshi, Yashi, aa jao!",
+    ] },
+    { cue: "6:57 PM · The Rishta", lines: [
+      "Samyak: Kya baat hai! Big round of applause for Anshi and Yashi! Okay, hum dono wapas aa gaye.",
+      "Anshi: So then came the rishta. Two families meeting, lots of chai, and two people trying their best to look calm. [Click through the first meeting and engagement photos]",
+      "Samyak: Kake and Surbhi are going to show us how that first meeting might have gone. Kake, Surbhi, aa jao!",
+      "Anshi: [After the dance] Thank you both, that was so sweet!",
+    ] },
+    { cue: "7:06 PM · Game 1: Shoe game", lines: [
+      "Samyak: Okay, game time! Mom, Dad, idhar aa jaiye, back to back baithna hai.",
+      "Anshi: Take off your shoes, and hold one of yours and one of each other's.",
+      "Samyak: We'll ask a question, and you raise the shoe of whoever the answer is. No peeking, aur ek doosre se koi baat nahi. Everyone else, aap judges ho, so keep them honest.",
+      "Anshi: Mama, a small tip. If you're not sure, just hold up Mami's shoe. Ghar pe bhi toh wahi karte ho.",
+      "[21 questions in the Shoe game questions tab (password needed). Take turns asking.]",
+      "Samyak: Okay, that was a lot more honest than we expected. Ghar jaate waqt car mein koi ladai nahi, please. Big hand for them!",
+    ] },
+    { cue: "7:23 PM · Song before the wedding", lines: [
+      "Anshi: Next, one of Dad's oldest friends has a song for them. Rajesh uncle is going to sing \"Loote Koi Mann Ka Nagar\". Rajesh uncle, please come up!",
+      "Samyak: [After the song] Thank you so much, Rajesh uncle. Chalo, ab shaadi ki taraf chalte hain.",
+    ] },
+    { cue: "7:27 PM · The Shaadi", lines: [
+      "Samyak: Ab dekhte hain shaadi ki kuch photos. [Click through]",
+      "Anshi: Mami, you look exactly the same. Mama... no comment. Okay, to bring back a bit of that shaadi feeling, here are Gayatri and Hanisha!",
+    ] },
+    { cue: "7:31 PM · Dinner is open", lines: [
+      "Anshi: Okay everyone, the moment you've actually been waiting for. Khana lag gaya hai!",
+      "Samyak: Plate utha lo jab mann kare. We'll keep the show going while you eat. Aur uncles, please humare liye bhi thoda chhod dena.",
+    ] },
+    { cue: "7:32 PM · Game 2: Prop song game", lines: [
+      "Samyak: Khaate raho, but stay with us, kyunki ek aur game aa raha hai.",
+      "Anshi: Surbhi is running this one. It's a prop song game, and it's going to be fun. Surbhi, over to you!",
+      "[Surbhi explains and runs the game. Details to come]",
+      "Anshi: Thank you, Surbhi! And well played, everyone.",
+    ] },
+    { cue: "7:44 PM · Uncle Grandpa's poetry", lines: [
+      "[Speak softly here, let the room settle]",
+      "Samyak: Sab log thoda shaant ho jaiye, please. Just for a few minutes.",
+      "Anshi: Uncle Grandpa has written something for Mama and Mami. Uncle Grandpa, please.",
+      "Anshi: [After the poem, give it a moment] Thank you, Uncle Grandpa. That was really beautiful.",
+    ] },
+    { cue: "7:49 PM · Wishes & Memories", lines: [
+      "Samyak: Kuch log Mom and Dad ko kuch kehna chahte the tonight.",
+      "[Any short heartfelt messages or video messages first]",
+      "Samyak: Ab thoda family time. [Aunt], [uncle] and [cousin] have a few words for Mom and Dad. Aaiye, please!",
+      "[Family speech, about 4 minutes]",
+      "Samyak: [After the speech] Thank you, aap teeno ka. That was really sweet.",
+      "Anshi: And Pankaj uncle has a song for them. He's going to sing \"Tere Sang Yaara\". Pankaj uncle, please come up!",
+    ] },
+    { cue: "8:01 PM · Mom & Dad speak, then Dad sings", lines: [
+      "Anshi: Okay, we've done enough talking for one night. Mama, Mami, it's your turn. Come say a few words!",
+      "[Mom & Dad speak for about 2.5 minutes]",
+      "Samyak: Dad, abhi baithna mat. Ek cheez aur baaki hai. He's going to sing \"Tum Se Hi Din Hota Hai\" for Mom. Dad, ho jaaye!",
+      "[Photos of their home, trips, adventures and gym days play behind him]",
+    ] },
+    { cue: "8:08 PM · Birthday cake for [aunt]", lines: [
+      "Anshi: Before the finale, there's one more thing to celebrate tonight. It's also [aunt]'s birthday!",
+      "Samyak: Sab log saath mein gaao, please!",
+      "[Bring out the birthday cake. \"Baar Baar Din Ye Aaye\" plays and everyone sings]",
+      "Anshi: [After she cuts the cake] Happy birthday, [aunt]! Okay, one last thing for Mama and Mami...",
+    ] },
+    { cue: "8:15 PM · Finale", lines: [
+      "Samyak: Mom, Dad, sab ne apna turn le liya. This last one is just for the two of you.",
+      "Both: The floor is all yours.",
+      "[\"Tere Bina Nahi Lagda Dil\" plays]",
+      "Anshi: [After the dance] Okay, time for the anniversary cake! Sab log paas aa jao.",
+    ] },
+    { cue: "8:32 PM · Game 3: Bollywood trivia", lines: [
+      "Samyak: DJ se pehle ek last game, and this time sab khelenge. It's Bollywood trivia!",
+      "Anshi: Table wise answer karo, zor se bolo. Fastest table wins.",
+      "[8 to 10 quick questions, taking turns, then announce the winning table]",
+    ] },
+    { cue: "8:44 PM · Group photo, then DJ", lines: [
+      "Anshi: Thank you all so much for coming tonight. It really means a lot to us and to Mama and Mami. Now everyone come in for a group photo!",
+      "Samyak: Happy 25th, Mom and Dad. Hum aap dono se bahut pyaar karte hain. Here's to 25 more years of Mom being right. Hamesha ki tarah.",
+      "Both: Happy anniversary! DJ, it's all yours!",
+    ] },
+  ],
+
+  // Emcee script v2 (frozen): same order as v1, warm and casual. Start a line with "Samyak:",
   // "Anshi:" or "Both:". Anything in [brackets] is a note or a name to fill in.
   scriptV2: [
     { cue: "6:30 PM · Welcome", lines: [
