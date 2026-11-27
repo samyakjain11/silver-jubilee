@@ -46,26 +46,26 @@
     to { transform: translateY(-115vh) rotate(25deg); }
   }
 
-  /* slides */
+  /* slides: big text, no frames, photos fill the screen */
   .deck { position: relative; z-index: 1; height: 100%; touch-action: pan-y pinch-zoom; }
   .slide {
     position: absolute; inset: 0;
     display: flex; align-items: center; justify-content: center;
-    padding: 6vh 6vw 10vh;
+    padding: 2vh 2vw;
     opacity: 0; visibility: hidden;
     transform: scale(.98);
     transition: opacity .9s ease, transform .9s ease, visibility .9s;
   }
   .slide.active { opacity: 1; visibility: visible; transform: none; }
 
-  .center { text-align: center; max-width: 1100px; }
+  .center { text-align: center; max-width: 96vw; }
   .eyebrow {
-    font-family: "Caveat", cursive; font-size: clamp(22px, 3.2vw, 44px);
+    font-family: "Caveat", cursive; font-size: clamp(30px, 5.2vw, 96px);
     color: var(--blush-deep);
   }
   h1 {
     font-family: "Fraunces", serif; font-weight: 600;
-    font-size: clamp(44px, 8.5vw, 132px); line-height: 1.02;
+    font-size: clamp(54px, 14vw, 280px); line-height: 1.02;
     letter-spacing: -0.02em;
   }
   h1 .silver {
@@ -77,91 +77,74 @@
   @keyframes shine { 50% { background-position: 100% 0; } }
   h2 {
     font-family: "Fraunces", serif; font-weight: 600;
-    font-size: clamp(36px, 6.5vw, 96px); line-height: 1.05;
+    font-size: clamp(46px, 11vw, 220px); line-height: 1.04;
   }
   .sub {
     font-family: "Fraunces", serif; font-style: italic;
-    font-size: clamp(18px, 2.4vw, 34px); color: var(--soft); margin-top: .6em;
+    font-size: clamp(24px, 4vw, 76px); color: var(--soft); margin-top: .5em;
   }
   .note {
-    margin-top: 2em; font-size: clamp(13px, 1.3vw, 18px);
+    margin-top: 1.6em; font-size: clamp(16px, 2.2vw, 40px);
     letter-spacing: .25em; text-transform: uppercase; color: var(--silver-deep);
   }
-  .rings { font-size: clamp(36px, 5vw, 70px); margin-bottom: .2em; }
+  .rings { font-size: clamp(44px, 7vw, 130px); margin-bottom: .1em; }
   .rings svg { width: 1.6em; height: 1em; }
 
   .divider {
-    width: 120px; height: 2px; margin: 1.2em auto 0;
+    width: 16vw; height: 3px; margin: 1em auto 0;
     background: linear-gradient(90deg, transparent, var(--silver), transparent);
   }
 
-  /* photo slide: a polaroid */
-  .photo-wrap { display: flex; align-items: center; gap: 5vw; max-width: 1400px; width: 100%; justify-content: center; }
-  .polaroid {
-    background: var(--card);
-    padding: 16px 16px 70px;
-    box-shadow: 0 20px 50px rgba(59, 51, 64, .18), 0 2px 6px rgba(59, 51, 64, .08);
-    transform: rotate(-2.5deg);
-    position: relative;
-    flex: 0 0 auto;
-  }
-  .slide:nth-child(even) .polaroid { transform: rotate(2deg); }
+  /* photo slide: one big photo, no frame, never cropped */
+  .photo-wrap { display: flex; align-items: center; gap: 3vw; width: 100%; height: 100%; justify-content: center; }
+  .polaroid { position: relative; flex: 0 0 auto; margin: 0; }
   .polaroid img, .polaroid .ph {
     display: block;
-    height: min(62vh, 640px); width: auto; max-width: 52vw;
-    object-fit: cover;
+    height: 92vh; width: auto; max-width: 64vw;
+    object-fit: contain;
   }
   .polaroid .ph {
     aspect-ratio: 4 / 5;
     background:
       repeating-linear-gradient(45deg, #f4eef0 0 14px, #faf6f7 14px 28px);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    color: var(--soft); font-family: "Caveat", cursive; font-size: 30px; gap: 8px;
+    color: var(--soft); font-family: "Caveat", cursive; font-size: 40px; gap: 8px;
   }
-  .polaroid .ph svg { width: 56px; height: 56px; color: var(--blush); }
-  .polaroid .scrawl {
-    position: absolute; left: 0; right: 0; bottom: 16px; text-align: center;
-    font-family: "Caveat", cursive; font-size: 30px; color: var(--ink);
-  }
-  .tape {
-    position: absolute; top: -14px; left: 50%; width: 110px; height: 30px;
-    transform: translateX(-50%) rotate(-3deg);
-    background: rgba(233, 168, 180, .55);
-  }
+  .polaroid .ph svg { width: 70px; height: 70px; color: var(--blush); }
+  .polaroid .scrawl, .tape { display: none; }
 
-  /* collage slide: a few polaroids together */
-  .collage { display: flex; flex-direction: column; align-items: center; gap: 2.2vh; width: 100%; }
-  .collage h3 { font-family: "Fraunces", serif; font-weight: 600; font-size: clamp(26px, 3.4vw, 50px); line-height: 1.1; text-align: center; }
-  .collage .cdetail { color: var(--soft); font-size: clamp(14px, 1.4vw, 20px); margin-top: -1vh; text-align: center; }
-  .collage .grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2.5vw; max-width: 1500px; }
-  .collage .polaroid { padding: 10px 10px 14px; }
-  .collage .polaroid:nth-child(odd) { transform: rotate(-2deg); }
-  .collage .polaroid:nth-child(even) { transform: rotate(2deg); }
-  .collage .polaroid img { height: min(52vh, 560px); max-width: 30vw; object-fit: cover; }
-  .collage.n4 .grid { display: grid; grid-template-columns: repeat(2, auto); justify-items: center; align-items: center; gap: 2vh 2.5vw; }
-  .collage.n4 .polaroid img { height: 30vh; max-width: 36vw; }
-  .collage.n2 .polaroid img { height: min(42vh, 460px); max-width: 38vw; } /* two photos: room for landscape shots without cropping people off the sides */
-  .photo-text { max-width: 440px; }
+  /* collage slide: 2 to 4 photos, as big as fits, never cropped */
+  .collage { display: flex; flex-direction: column; align-items: center; gap: 1.5vh; width: 100%; height: 100%; }
+  .collage h3 { flex: 0 0 auto; font-family: "Fraunces", serif; font-weight: 600; font-size: clamp(32px, 5.4vw, 110px); line-height: 1.05; text-align: center; }
+  .collage .cdetail { flex: 0 0 auto; color: var(--soft); font-size: clamp(18px, 2.2vw, 40px); margin-top: -1vh; text-align: center; }
+  .collage .grid { flex: 1 1 auto; min-height: 0; width: 100%; display: flex; justify-content: center; align-items: center; gap: 1.2vw; }
+  .collage .polaroid { height: 100%; display: flex; align-items: center; justify-content: center; min-width: 0; }
+  .collage .polaroid img { height: 100%; width: auto; max-width: 100%; object-fit: contain; }
+  .collage.n2 .polaroid { max-width: calc((96vw - 1.2vw) / 2); }
+  .collage.n3 .polaroid { max-width: calc((96vw - 2.4vw) / 3); }
+  .collage.n4 .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); gap: 1.2vh 1.2vw; }
+  .collage.n4 .polaroid { width: 100%; }
+  .collage.n4 .polaroid:nth-child(odd) { justify-content: flex-end; }
+  .collage.n4 .polaroid:nth-child(even) { justify-content: flex-start; }
+  .photo-text { max-width: 30vw; }
   .photo-text h3 {
     font-family: "Fraunces", serif; font-weight: 600;
-    font-size: clamp(30px, 4vw, 60px); line-height: 1.1;
+    font-size: clamp(34px, 5vw, 104px); line-height: 1.08;
   }
-  .photo-text p { font-size: clamp(16px, 1.7vw, 24px); color: var(--soft); margin-top: .7em; line-height: 1.5; }
+  .photo-text p { font-size: clamp(18px, 2.4vw, 46px); color: var(--soft); margin-top: .6em; line-height: 1.4; }
 
   /* quote + message */
   blockquote {
     font-family: "Fraunces", serif; font-style: italic;
-    font-size: clamp(30px, 4.6vw, 70px); line-height: 1.2; max-width: 1100px;
+    font-size: clamp(34px, 6.4vw, 130px); line-height: 1.18; max-width: 94vw;
   }
-  .by { font-family: "Caveat", cursive; font-size: clamp(24px, 3vw, 42px); color: var(--blush-deep); margin-top: .8em; }
+  .by { font-family: "Caveat", cursive; font-size: clamp(30px, 4.6vw, 90px); color: var(--blush-deep); margin-top: .6em; }
   .card {
-    background: var(--card); border-radius: 22px; padding: clamp(28px, 5vw, 70px);
-    max-width: 960px; box-shadow: 0 20px 50px rgba(59, 51, 64, .12);
-    position: relative; text-align: center;
+    position: relative; text-align: center; max-width: 94vw;
   }
-  .card .msg { font-family: "Caveat", cursive; font-size: clamp(30px, 4vw, 58px); line-height: 1.25; }
-  .card .from { margin-top: 1em; letter-spacing: .2em; text-transform: uppercase; font-size: clamp(12px, 1.2vw, 16px); color: var(--silver-deep); }
-  .card .mark { position: absolute; top: -22px; left: 50%; transform: translateX(-50%); background: var(--blush); color: #fff; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; }
+  .card .msg { font-family: "Caveat", cursive; font-size: clamp(36px, 6.4vw, 130px); line-height: 1.2; }
+  .card .from { margin-top: 1em; letter-spacing: .2em; text-transform: uppercase; font-size: clamp(16px, 2.2vw, 40px); color: var(--silver-deep); }
+  .card .mark { display: none; }
 
   /* controls */
   .bar {
@@ -184,9 +167,13 @@
   .hint { color: var(--soft); font-size: 12px; white-space: nowrap; }
 
   @media (max-width: 760px) {
-    .photo-wrap { flex-direction: column; gap: 28px; text-align: center; }
-    .collage .polaroid img, .collage.n4 .polaroid img { height: 22vh; max-width: 42vw; }
-    .polaroid img, .polaroid .ph { height: 44vh; max-width: 80vw; }
+    .photo-wrap { flex-direction: column; gap: 2vh; text-align: center; }
+    .polaroid img, .polaroid .ph { height: auto; max-height: 62vh; max-width: 96vw; }
+    .photo-text { max-width: 96vw; }
+    .collage .grid { flex-direction: column; gap: 1.2vh; }
+    .collage .polaroid, .collage.n2 .polaroid, .collage.n3 .polaroid { max-width: 96vw; min-height: 0; flex: 1 1 0; height: auto; width: 100%; }
+    .collage.n4 .grid { display: flex; }
+    .collage.n4 .polaroid { justify-content: center !important; }
     .hint { display: none; }
     .dots { display: none; }
     .bar { padding: 10px 12px; gap: 8px; }
