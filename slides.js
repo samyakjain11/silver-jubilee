@@ -83,7 +83,7 @@ window.SHOW = {
 
     // ── POETRY ──
     { type: "chapter", number: "With love", title: "Blessings from the Elders", subtitle: "A few words from the heart" },
-    { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
+    { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Chhote Baba" },
 
     // ── WISHES & MEMORIES ──
     { type: "chapter", number: "From all of us", title: "Wishes & Memories", subtitle: "From the people who love them" },
