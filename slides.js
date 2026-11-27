@@ -91,7 +91,6 @@ window.SHOW = {
     // Click the video (or press Enter) to play with sound. Arrow keys still move slides.
     { type: "video", video: "videos/words-from-family.mp4", poster: "videos/words-from-family.jpg", caption: "Words from family" },
     { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by Pankaj uncle" },
-    { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
 
     // ── MOM & DAD SPEAK, THEN DAD SINGS ──
     { type: "chapter", number: "In their own words", title: "Mom & Dad", subtitle: "A few words from the two of them" },
