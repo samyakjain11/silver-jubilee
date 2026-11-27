@@ -71,7 +71,7 @@ window.SHOW = {
     { type: "chapter", number: "Rewind", title: "Retro Throwbacks", subtitle: "The old photo albums, opened up" },
     { type: "photo", photo: "photos/retro-beach.jpg", caption: "Beach days", detail: "" },
     { type: "photo", photo: "photos/retro-beach-collage.jpg", caption: "Sun, sand and a jet ski", detail: "" },
-    { type: "photo", photo: "photos/retro-baby.jpg", caption: "And then there were three", detail: "Add the year." },
+    { type: "photo", photo: "photos/retro-baby.jpg", caption: "And then there were three", detail: "" },
     { type: "collage", caption: "Throwback trips", detail: "", photos: ["photos/retro-1.jpg", "photos/retro-2.jpg", "photos/retro-3.jpg", "photos/retro-4.jpg"] },
     { type: "collage", caption: "More throwbacks", detail: "", photos: ["photos/retro-5.jpg", "photos/retro-6.jpg", "photos/retro-7.jpg", "photos/retro-8.jpg"] },
     { type: "collage", caption: "Good times", detail: "", photos: ["photos/retro-9.jpg", "photos/retro-10.jpg", "photos/retro-11.jpg", "photos/retro-12.jpg"] },
@@ -83,7 +83,7 @@ window.SHOW = {
 
     // ── POETRY ──
     { type: "chapter", number: "With love", title: "Blessings from the Elders", subtitle: "A few words from the heart" },
-    { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Uncle Grandpa (add his name)" },
+    { type: "chapter", number: "A few words of poetry", title: "From the Heart", subtitle: "Written and read by Chhote Baba" },
 
     // ── WISHES & MEMORIES ──
     { type: "chapter", number: "From all of us", title: "Wishes & Memories", subtitle: "From the people who love them" },
@@ -114,7 +114,7 @@ window.SHOW = {
     { type: "collage", caption: "Niagara Falls", detail: "", photos: ["photos/niagara-1.jpg", "photos/niagara-2.jpg"] },
 
     { type: "chapter", number: "Together", title: "Adventure", subtitle: "Trails and bike rides" },
-    { type: "photo", photo: "photos/trail-main.jpg", caption: "On the trail", detail: "Add where and when." },
+    { type: "photo", photo: "photos/trail-main.jpg", caption: "On the trail", detail: "" },
     { type: "collage", caption: "Outdoors", detail: "", photos: ["photos/trail-1.jpg", "photos/trail-2.jpg", "photos/trail-4.jpg"] },
     { type: "collage", caption: "On the bike", detail: "", photos: ["photos/bike-1.jpg", "photos/bike-2.jpg", "photos/bike-3.jpg", "photos/bike-4.jpg"] },
     { type: "collage", caption: "Riding together", detail: "", photos: ["photos/bike-5.jpg", "photos/bike-6.jpg", "photos/bike-7.jpg", "photos/bike-8.jpg"] },

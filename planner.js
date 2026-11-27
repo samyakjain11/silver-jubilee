@@ -35,7 +35,7 @@ window.PLAN = {
     { time: "7:27 PM", segment: "The Shaadi", what: "Dance · Gayatri & Hanisha's 2-minute dance: \"Maahi Vey\", \"Jhumka Gira Re\" and a third song (TBD)", length: "2 + 2 min", who: "Gayatri & Hanisha · Intro: Samyak & Anshi · Medley: tech helper" },
     { time: "7:31 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on. The Retro Throwbacks photos play on screen while people get their food.", length: "1 min", who: "Samyak & Anshi announce · Food ready: TBD" },
     { time: "7:32 PM", segment: "Game 2: Prop song game", what: "Game · Surbhi leads a prop song game (details to come)", length: "2 + 10 min", who: "Surbhi leads it · Intro: Samyak & Anshi · Props: games helper · Songs: tech helper" },
-    { time: "7:44 PM", segment: "Uncle Grandpa's poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min", who: "Uncle Grandpa · Intro: Samyak & Anshi · Music off, lights down, mic stand: tech helper" },
+    { time: "7:44 PM", segment: "Chhote Baba's poetry", what: "Poetry · Chhote Baba reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min", who: "Chhote Baba · Intro: Samyak & Anshi · Music off, lights down, mic stand: tech helper" },
     { time: "7:49 PM", segment: "Wishes & Memories", what: "Messages, speech, then song · Any short heartfelt messages or video messages (5 min), then a family speech from Ashoo Bua, Ajai Fufaji & Kartik Bhai together (1 min to get up + 4 min), then Pankaj uncle sings \"Tere Sang Yaara\" (2 min). No changeover buffers: the hosts introduce each straight away", length: "5 + 5 + 2 min", who: "Samyak & Anshi collect messages · Ashoo Bua, Ajai Fufaji & Kartik Bhai speak · Video messages & mic: tech helper · Song: Pankaj uncle" },
     { time: "8:01 PM", segment: "Mom & Dad speak, then Dad sings", what: "Speech, then song · Mom & Dad give a short speech together (2.5 min), then Dad sings \"Tum Se Hi Din Hota Hai\" to Mom while the home, travel, adventure and fitness photos play behind him (2 min)", length: "2 + 5 min", who: "Mom & Dad · Intro: Samyak & Anshi · Mic for two, track & photo slideshow: tech helper" },
     { time: "8:08 PM", segment: "Birthday cake for Ashoo Bua", what: "Cake · Surprise! \"Baar Baar Din Ye Aaye\" plays, everyone sings for Ashoo Bua and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Birthday song: tech helper" },
@@ -56,7 +56,7 @@ window.PLAN = {
     { chapter: "The Shaadi", act: "Dance: wedding medley, song 1", song: "Maahi Vey", film: "", who: "Gayatri & Hanisha" },
     { chapter: "The Shaadi", act: "Dance: wedding medley, song 2", song: "Jhumka Gira Re", film: "Mera Saaya", who: "Gayatri & Hanisha" },
     { chapter: "The Shaadi", act: "Dance: wedding medley, song 3", song: "TBD", film: "", who: "Gayatri & Hanisha" },
-    { chapter: "Blessings", act: "Poetry reading, very mellow", song: "His own poetry", film: "", who: "Uncle Grandpa (name TBD)" },
+    { chapter: "Blessings", act: "Poetry reading, very mellow", song: "His own poetry", film: "", who: "Chhote Baba" },
     { chapter: "Wishes & Memories", act: "Song for the couple", song: "Tere Sang Yaara", film: "Rustom", who: "Pankaj uncle" },
     { chapter: "Wishes & Memories", act: "Short speeches or video messages (optional)", song: "TBD", film: "", who: "TBD", open: true },
     { chapter: "Wishes & Memories", act: "Family speech, 4 minutes", song: "Speech", film: "", who: "Ashoo Bua, Ajai Fufaji & Kartik Bhai" },
@@ -78,7 +78,7 @@ window.PLAN = {
     { cue: "The Shaadi", track: "Maahi Vey, Jhumka Gira Re, third song TBD", note: "" },
     { cue: "Dinner is open", track: "No change", note: "The program carries on while people eat. Keep performance music loud enough over the chatter" },
     { cue: "Prop song game", track: "Song clips for Surbhi's game", note: "Get the song list from Surbhi ahead of time" },
-    { cue: "Uncle Grandpa's poetry", track: "Music off (or a very soft instrumental underneath)", note: "Dim the lights a little, mic on a stand so he can sit if he likes" },
+    { cue: "Chhote Baba's poetry", track: "Music off (or a very soft instrumental underneath)", note: "Dim the lights a little, mic on a stand so he can sit if he likes" },
     { cue: "Wishes & Memories", track: "Tere Sang Yaara", note: "Pankaj uncle sings. Karaoke track ready" },
     { cue: "Mom & Dad speak, then Dad sings", track: "Tum Se Hi Din Hota Hai", note: "Two mics for the speech. Start the photos with the song. About 30 photo slides for a 2-minute song, so click through every 4 to 5 seconds" },
     { cue: "Birthday cake", track: "Baar Baar Din Ye Aaye", note: "Birthday cake and candles ready. Keep the anniversary cake for right after the finale dance" },
@@ -159,11 +159,11 @@ window.PLAN = {
       "[Surbhi explains and runs the game. Details to come]",
       "Anshi: Thank you, Surbhi! And well played, everyone.",
     ] },
-    { cue: "7:44 PM · Uncle Grandpa's poetry", lines: [
+    { cue: "7:44 PM · Chhote Baba's poetry", lines: [
       "[Speak softly here, let the room settle]",
       "Samyak: Sab log thoda shaant ho jaiye, please. Just for a few minutes.",
-      "Anshi: Uncle Grandpa has written something for Mama and Mami. Uncle Grandpa, please.",
-      "Anshi: [After the poem, give it a moment] Thank you, Uncle Grandpa. That was really beautiful.",
+      "Anshi: Chhote Baba has written something for Mama and Mami. Chhote Baba, please.",
+      "Anshi: [After the poem, give it a moment] Thank you, Chhote Baba. That was really beautiful.",
     ] },
     { cue: "7:49 PM · Wishes & Memories", lines: [
       "Samyak: Kuch log Mom and Dad ko kuch kehna chahte the tonight.",
@@ -271,11 +271,11 @@ window.PLAN = {
       "[Surbhi explains and runs the game. Details to come]",
       "Anshi: Thank you, Surbhi! And well played, everyone.",
     ] },
-    { cue: "7:44 PM · Uncle Grandpa's poetry", lines: [
+    { cue: "7:44 PM · Chhote Baba's poetry", lines: [
       "[Speak softly here, let the room settle]",
       "Samyak: Can we all quiet down for a few minutes, please.",
-      "Anshi: Uncle Grandpa has written something for Mama and Mami. Uncle Grandpa, please.",
-      "Anshi: [After the poem, give it a moment] Thank you, Uncle Grandpa. That was really beautiful.",
+      "Anshi: Chhote Baba has written something for Mama and Mami. Chhote Baba, please.",
+      "Anshi: [After the poem, give it a moment] Thank you, Chhote Baba. That was really beautiful.",
     ] },
     { cue: "7:49 PM · Wishes & Memories", lines: [
       "Samyak: A few people wanted to say something to Mom and Dad tonight.",
@@ -376,11 +376,11 @@ window.PLAN = {
       "[Surbhi explains and runs the game. Details to come]",
       "Anshi: Thank you, Surbhi! And well played, everyone. Sab ne kamaal kar diya.",
     ] },
-    { cue: "7:44 PM · Uncle Grandpa's poetry", lines: [
+    { cue: "7:44 PM · Chhote Baba's poetry", lines: [
       "[Speak softly here, the room should settle down]",
       "Samyak: Okay, can we all quiet down for a few minutes please.",
-      "Anshi: Uncle Grandpa has been writing poetry for as long as we can remember, and he's written something for the two of them. Uncle Grandpa, please.",
-      "Anshi: [After the poem, let it sit for a moment] Thank you, Uncle Grandpa. That was beautiful.",
+      "Anshi: Chhote Baba has been writing poetry for as long as we can remember, and he's written something for the two of them. Chhote Baba, please.",
+      "Anshi: [After the poem, let it sit for a moment] Thank you, Chhote Baba. That was beautiful.",
     ] },
     { cue: "7:49 PM · Wishes & Memories", lines: [
       "Samyak: A few people wanted to say something to Mom and Dad tonight.",
