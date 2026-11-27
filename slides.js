@@ -34,7 +34,7 @@ window.SHOW = {
 
     // Dad's early photos, shown right before Samyak's dance for him. Add more early photos here.
     { type: "chapter", number: "Meet", title: "Dad", subtitle: "The early years" },
-    { type: "photo", photo: "", caption: "Little Dad", detail: "A childhood photo and where he grew up." },
+    { type: "photo", photo: "photos/dad-little.jpg", caption: "Dad, the early days", detail: "" },
     { type: "photo", photo: "photos/dad-young-bike.jpg", caption: "Young Dad", detail: "Him and his bike, even back then." },
     { type: "photo", photo: "photos/dad-today-bike.jpg", caption: "Dad as we know him", detail: "Some loves never change." },
     { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Samyak" },
