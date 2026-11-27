@@ -69,8 +69,8 @@ window.SHOW = {
     // ── RETRO THROWBACKS ──
     // Plays while dinner opens and people get their food.
     { type: "chapter", number: "Rewind", title: "Retro Throwbacks", subtitle: "The old photo albums, opened up" },
-    { type: "photo", photo: "photos/retro-beach.jpg", caption: "Beach days", detail: "Add where and when." },
-    { type: "photo", photo: "photos/retro-beach-collage.jpg", caption: "Sun, sand and a jet ski", detail: "Add where and when." },
+    { type: "photo", photo: "photos/retro-beach.jpg", caption: "Beach days", detail: "" },
+    { type: "photo", photo: "photos/retro-beach-collage.jpg", caption: "Sun, sand and a jet ski", detail: "" },
     { type: "photo", photo: "photos/retro-baby.jpg", caption: "And then there were three", detail: "Add the year." },
     { type: "collage", caption: "Throwback trips", detail: "", photos: ["photos/retro-1.jpg", "photos/retro-2.jpg", "photos/retro-3.jpg", "photos/retro-4.jpg"] },
     { type: "collage", caption: "More throwbacks", detail: "", photos: ["photos/retro-5.jpg", "photos/retro-6.jpg", "photos/retro-7.jpg", "photos/retro-8.jpg"] },
