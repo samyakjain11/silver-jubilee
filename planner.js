@@ -142,7 +142,7 @@ window.PLAN = {
       "Samyak: Okay, that was a lot more honest than we expected. Ghar jaate waqt car mein koi ladai nahi, please. Big hand for them!",
     ] },
     { cue: "7:23 PM · Song before the wedding", lines: [
-      "Anshi: Next, one of Dad's oldest friends has a song for them. Rajesh uncle is going to sing \"Loote Koi Mann Ka Nagar\". Rajesh uncle, please come up!",
+      "Anshi: Next, Dad's friend Rajesh uncle has a song for them. He's going to sing \"Loote Koi Mann Ka Nagar\". Rajesh uncle, please come up!",
       "Samyak: [After the song] Thank you so much, Rajesh uncle. Chalo, ab shaadi ki taraf chalte hain.",
     ] },
     { cue: "7:27 PM · The Shaadi", lines: [
@@ -254,7 +254,7 @@ window.PLAN = {
       "Samyak: Okay, that was a lot more honest than we expected. Please no fighting in the car on the way home. Big hand for them!",
     ] },
     { cue: "7:23 PM · Song before the wedding", lines: [
-      "Anshi: Next, one of Dad's oldest friends has a song for them. Rajesh uncle is going to sing \"Loote Koi Mann Ka Nagar\". Rajesh uncle, please come up!",
+      "Anshi: Next, Dad's friend Rajesh uncle has a song for them. He's going to sing \"Loote Koi Mann Ka Nagar\". Rajesh uncle, please come up!",
       "Samyak: [After the song] Thank you so much, Rajesh uncle. Chalo, ab shaadi ki taraf chalte hain.",
     ] },
     { cue: "7:27 PM · The Shaadi", lines: [
@@ -359,7 +359,7 @@ window.PLAN = {
       "Anshi: Okay, that was more honest than we expected. Ghar jaake koi ladai nahi, please. Big hand for them!",
     ] },
     { cue: "7:23 PM · Song before the wedding", lines: [
-      "Samyak: Next up, one of Dad's oldest friends has a song for them. Rajesh uncle, please come up!",
+      "Samyak: Next up, Dad's friend Rajesh uncle has a song for them. Rajesh uncle, please come up!",
       "Anshi: [After the song] Thank you so much, Rajesh uncle! Chalo, ab shaadi ki taraf chalte hain.",
     ] },
     { cue: "7:27 PM · The Shaadi", lines: [
