@@ -115,18 +115,17 @@ window.SHOW = {
 
     { type: "chapter", number: "Together", title: "Adventure", subtitle: "Trails and bike rides" },
     { type: "photo", photo: "photos/trail-main.jpg", caption: "On the trail", detail: "Add where and when." },
-    { type: "collage", caption: "Outdoors", detail: "", photos: ["photos/trail-1.jpg", "photos/trail-2.jpg", "photos/trail-3.jpg", "photos/trail-4.jpg"] },
+    { type: "collage", caption: "Outdoors", detail: "", photos: ["photos/trail-1.jpg", "photos/trail-2.jpg", "photos/trail-4.jpg"] },
     { type: "collage", caption: "On the bike", detail: "", photos: ["photos/bike-1.jpg", "photos/bike-2.jpg", "photos/bike-3.jpg", "photos/bike-4.jpg"] },
     { type: "collage", caption: "Riding together", detail: "", photos: ["photos/bike-5.jpg", "photos/bike-6.jpg", "photos/bike-7.jpg", "photos/bike-8.jpg"] },
     { type: "collage", caption: "More adventures", detail: "", photos: ["photos/adventure-1.jpg", "photos/adventure-2.jpg", "photos/adventure-3.jpg"] },
-    { type: "collage", caption: "Up in the air", detail: "", photos: ["photos/flight-1.jpg", "photos/flight-2.jpg"] },
 
     { type: "chapter", number: "Together", title: "Fitness", subtitle: "The couple that trains together" },
     { type: "photo", photo: "photos/gym.jpg", caption: "Gym buddies", detail: "The couple that trains together." },
 
 
     // ── BIRTHDAY CAKE ──
-    { type: "chapter", number: "One more celebration", title: "Happy Birthday!", subtitle: "Add your aunt's name here" },
+    { type: "chapter", number: "One more celebration", title: "Happy Birthday!", subtitle: "Ashoo Bua" },
 
     // ── FINALE ──
     { type: "chapter", number: "Finale", title: "Today", subtitle: "Still the best team we know" },

@@ -38,7 +38,7 @@ window.PLAN = {
     { time: "7:44 PM", segment: "Uncle Grandpa's poetry", what: "Poetry · Uncle Grandpa reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min", who: "Uncle Grandpa · Intro: Samyak & Anshi · Music off, lights down, mic stand: tech helper" },
     { time: "7:49 PM", segment: "Wishes & Memories", what: "Messages, speech, then song · Any short heartfelt messages or video messages (5 min), then a family speech from Ashoo Bua, Ajai Fufaji & Kartik Bhai together (1 min to get up + 4 min), then Pankaj uncle sings \"Tere Sang Yaara\" (2 min). No changeover buffers: the hosts introduce each straight away", length: "5 + 5 + 2 min", who: "Samyak & Anshi collect messages · Ashoo Bua, Ajai Fufaji & Kartik Bhai speak · Video messages & mic: tech helper · Song: Pankaj uncle" },
     { time: "8:01 PM", segment: "Mom & Dad speak, then Dad sings", what: "Speech, then song · Mom & Dad give a short speech together (2.5 min), then Dad sings \"Tum Se Hi Din Hota Hai\" to Mom while the home, travel, adventure and fitness photos play behind him (2 min)", length: "2 + 5 min", who: "Mom & Dad · Intro: Samyak & Anshi · Mic for two, track & photo slideshow: tech helper" },
-    { time: "8:08 PM", segment: "Birthday cake for [aunt]", what: "Cake · Surprise! \"Baar Baar Din Ye Aaye\" plays, everyone sings for [aunt] and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Birthday song: tech helper" },
+    { time: "8:08 PM", segment: "Birthday cake for Ashoo Bua", what: "Cake · Surprise! \"Baar Baar Din Ye Aaye\" plays, everyone sings for Ashoo Bua and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Birthday song: tech helper" },
     { time: "8:15 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min", who: "Mom & Dad · Intro: Samyak & Anshi · Anniversary cake: cake pickup person · Candles & knife: TBD · Song: tech helper" },
     { time: "8:32 PM", segment: "Game 3: Bollywood trivia", what: "Game · A quick Bollywood trivia round for everyone, scored by table", length: "2 + 10 min", who: "Samyak & Anshi run it · Scoring & prizes: games helper · Song clips: tech helper" },
     { time: "8:44 PM", segment: "Group photo, then DJ", what: "Everyone in for one big group photo, then the stage opens to the DJ", length: "open", who: "Samyak & Anshi wrap up · Photographer · Hand over to the DJ: tech helper" },
@@ -179,11 +179,11 @@ window.PLAN = {
       "Samyak: Dad, abhi baithna mat. Ek cheez aur baaki hai. He's going to sing \"Tum Se Hi Din Hota Hai\" for Mom. Dad, ho jaaye!",
       "[Photos of their home, trips, adventures and gym days play behind him]",
     ] },
-    { cue: "8:08 PM · Birthday cake for [aunt]", lines: [
-      "Anshi: Before the finale, there's one more thing to celebrate tonight. It's also [aunt]'s birthday!",
+    { cue: "8:08 PM · Birthday cake for Ashoo Bua", lines: [
+      "Anshi: Before the finale, there's one more thing to celebrate tonight. It's also Ashoo Bua's birthday!",
       "Samyak: Sab log saath mein gaao, please!",
       "[Bring out the birthday cake. \"Baar Baar Din Ye Aaye\" plays and everyone sings]",
-      "Anshi: [After she cuts the cake] Happy birthday, [aunt]! Okay, one last thing for Mama and Mami...",
+      "Anshi: [After she cuts the cake] Happy birthday, Ashoo Bua! Okay, one last thing for Mama and Mami...",
     ] },
     { cue: "8:15 PM · Finale", lines: [
       "Samyak: Mom, Dad, sab ne apna turn le liya. This last one is just for the two of you.",
@@ -288,11 +288,11 @@ window.PLAN = {
       "Samyak: Dad, don't sit down just yet. He has one more thing for Mom. He's going to sing \"Tum Se Hi Din Hota Hai\". Dad, all yours.",
       "[Photos of their home, trips, adventures and gym days play behind him]",
     ] },
-    { cue: "8:03 PM · Birthday cake for [aunt]", lines: [
-      "Anshi: Before the finale, there's one more thing to celebrate tonight. It's also [aunt]'s birthday!",
+    { cue: "8:03 PM · Birthday cake for Ashoo Bua", lines: [
+      "Anshi: Before the finale, there's one more thing to celebrate tonight. It's also Ashoo Bua's birthday!",
       "Samyak: Everyone, please sing along.",
       "[Bring out the birthday cake. \"Baar Baar Din Ye Aaye\" plays and everyone sings]",
-      "Anshi: [After she cuts the cake] Happy birthday, [aunt]! Okay, one last thing for Mama and Mami...",
+      "Anshi: [After she cuts the cake] Happy birthday, Ashoo Bua! Okay, one last thing for Mama and Mami...",
     ] },
     { cue: "8:10 PM · Finale", lines: [
       "Samyak: Mom, Dad, everyone has had their turn tonight. This last one is just for the two of you.",
