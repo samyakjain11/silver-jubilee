@@ -28,7 +28,7 @@ window.SHOW = {
     // Song not final yet (Wah Wah Ramji or Ae Dil Laaya Hai Bahaar). Add it to the subtitle once decided.
     { type: "chapter", number: "The grand entrance", title: "A Shaadi Welcome", subtitle: "The uncles & aunts lead the way for..." },
     { type: "chapter", number: "Please welcome", title: "The Jodi of the Night", subtitle: "Mom & Dad" },
-    { type: "chapter", number: "A song from Grandpa", title: "Hai Apna Dil To Awaara", subtitle: "From Solva Saal · sung by Grandpa" },
+    { type: "chapter", number: "A song from Grandpa", title: "Pyar Deewana Hota Hai", subtitle: "From Kati Patang · sung by Grandpa" },
 
     // ── BEFORE US: each of them on their own ──
     { type: "chapter", number: "Once upon a time", title: "Before Us", subtitle: "Two stories that started separately" },
