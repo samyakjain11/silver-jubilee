@@ -15,7 +15,7 @@ window.PLAN = {
 
   glance: [
     { label: "Timing", text: "Mingling from 6:00, program 6:30 to about 8:50 PM, then the DJ. Dinner opens after The Shaadi and people eat while the program carries on" },
-    { label: "Centerpieces", text: "Their story told through family performances, with the shoe game, a prop song game and Bollywood trivia as breathers" },
+    { label: "Centerpieces", text: "Their story told through family performances, with the belan & dumbbell game, a prop song game and Bollywood trivia as breathers" },
     { label: "Rule of thumb", text: "No segment longer than 20 minutes, so energy stays up. Every solo song is kept to 2 minutes, except Grandpa's (4 min). Each act has 2 minutes before it for the changeover and the host's intro (shown as \"2 + 5 min\")" },
   ],
 
@@ -30,7 +30,7 @@ window.PLAN = {
     { time: "6:48 PM", segment: "Dad's early photos, then Samyak's dance", what: "Photos, then dance · Dad's early photos on screen, then Samyak dances to \"O O Jaane Jaana\" for Dad (1 min)", length: "2 + 2 min", who: "Samyak dances · Photos & intro: Ajai Fufaji · Song: tech helper" },
     { time: "6:52 PM", segment: "Mom's early photos, then Anshi & Yashi's dance", what: "Photos, then dance · Host clicks through Mom's younger-years photos, then Anshi & Yashi dance to \"Mere Khwabon Mein Jo Aaye\" for Mom (1 to 2 min)", length: "2 + 3 min", who: "Anshi & Yashi dance · Photos & intro: Samyak · Song: tech helper" },
     { time: "6:57 PM", segment: "The Rishta", what: "Photos, then dance · Host walks through the first meeting and engagement photos, then Kake & Surbhi perform \"Tum Se Mil Ke Dil Ka Hai Jo Haal\"", length: "2 + 7 min", who: "Kake & Surbhi · Photos & intro: Samyak & Anshi · Song: tech helper" },
-    { time: "7:06 PM", segment: "Game 1: Shoe game", what: "Game · The headline game. Mom & Dad back to back, 15 to 20 questions", length: "2 + 15 min", who: "Samyak & Anshi run it, Mom & Dad play · Chairs & questions: games helper" },
+    { time: "7:06 PM", segment: "Game 1: Belan & Dumbbell game", what: "Game · The headline game. Mom & Dad back to back, each holding a belan (= Mom) and a dumbbell (= Dad), and raise one for each answer. 15 to 20 questions", length: "2 + 15 min", who: "Samyak & Anshi run it, Mom & Dad play · Chairs, 2 belans, 2 dumbbells & questions: games helper" },
     { time: "7:23 PM", segment: "Song before the wedding", what: "Song · Dad's friend Rajesh sings \"Loote Koi Mann Ka Nagar\", leading into The Shaadi", length: "2 + 2 min", who: "Rajesh uncle · Intro: Samyak & Anshi · Track & mic: tech helper" },
     { time: "7:27 PM", segment: "The Shaadi", what: "Dance · Gayatri & Hanisha's 2-minute dance: \"Maahi Vey\", \"Jhumka Gira Re\" and a third song (TBD)", length: "2 + 2 min", who: "Gayatri & Hanisha · Intro: Samyak & Anshi · Medley: tech helper" },
     { time: "7:31 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on. The Retro Throwbacks photos play on screen while people get their food.", length: "1 min", who: "Samyak & Anshi announce · Food ready: TBD" },
@@ -73,7 +73,7 @@ window.PLAN = {
     { cue: "Dad's early photos, then Samyak's dance", track: "O O Jaane Jaana", note: "After Dad's early photos. Samyak's dance" },
     { cue: "Mom's early photos, then Anshi & Yashi's dance", track: "Mere Khwabon Mein Jo Aaye", note: "Anshi & Yashi's dance" },
     { cue: "The Rishta", track: "Tum Se Mil Ke Dil Ka Hai Jo Haal", note: "Slideshow on the first meeting and engagement photos first" },
-    { cue: "Shoe game", track: "Short sting or drumroll between questions (optional)", note: "" },
+    { cue: "Belan & Dumbbell game", track: "Short sting or drumroll between questions (optional)", note: "" },
     { cue: "Rajesh sings", track: "Loote Koi Mann Ka Nagar", note: "Karaoke track ready if he sings over one" },
     { cue: "The Shaadi", track: "Maahi Vey, Jhumka Gira Re, third song TBD", note: "" },
     { cue: "Dinner is open", track: "No change", note: "The program carries on while people eat. Keep performance music loud enough over the chatter" },
@@ -87,8 +87,8 @@ window.PLAN = {
     { cue: "DJ", track: "DJ takes over", note: "Hand over the sound system after the group photo" },
   ],
 
-  // Shoe game questions, encrypted so they stay a surprise. Only the password
-  // (ask Samyak) unlocks them in the "Shoe game questions" tab.
+  // Belan & Dumbbell game questions (was the shoe game), encrypted so they stay a surprise. Only the password
+  // (ask Samyak) unlocks them in the "Game questions" tab.
   shoeSecret: { salt: "AwEe7hxXpDKucNGmGIvxVg==", iv: "zk06Ka7dgZD2evKM", data: "yqW/SY6lYgIbWMJMrgIgxAZIEzBzNm9+AJpgtpS2Ixa7DY2+ittiXk4YkV9lCmX2wGS4K4xfIpoYGSmnMDF26qxVT9DFFTwWTja4Ug09Dz4jJTr6tpc3bvN+bNUNAQL/V2jozImJIiifqklxNkAnyDk0gPdlWpgaKoYKHSRaz1Fz2MLyK4uKsxnsMEsr8ZXlDo4OQkYZXdd1sZZY52AAWZQiUeq7EWxloIpFX8gO2zZ/CdEQcKS9cXFM29nUqYRp7d87iyUnFjETgTO1fsN2X7ZOl8c//EoxY2OpHD3i9KJWccmU0mEy2DjhbmMyQxbq7cEZei+YqONI39d3K8ULu0PgRz4gvjM8Bktf+Tu/tbJf6+qJE56LRl7QLB2kipHdjqRlfto2/D2NMHMs825835mrLiBBZSze/66vbs7KHVRsKtx45UcjP0h6EP8CpFOkOvXJ+JElFqOe2NgnwqL6itCGyfTo26Jm4csUOSA1jp8+FpHLiXb2XosiPPQz/rBGMm1MVbgLhksYOCRjkDNdmEP7p7FTL4+c70EuIC4CWGUg9VVo6NmODuogvC6KYa+2turdiB9tBFm3NAhgmYueh1RjfIAzQQzEheQ2Bk7/SQkJEgxjIxqFEygnfem+gHrypFh+pQYVDw+Hm31to170+DD+/4s4CnSQpI8vjiifQXLKPTRJf3E/WZTKnASdCpYyHrOe05pRDm06BSJP6PimcXrw8AqReK+nFnrIOtZB2Hmpn9aqFDvLhW0xMof1MStTtQRfwzlm/6XG2Ep0slmwdY8pqPAZfjJSwE8ksOIL2fwlgjTwGY7L72gSyYqVA37bftN+4fSHmMdj7dCt8gcxJKwd5sNqK1CLGODQrHDoez/93MMYOOaThSmd7Gp728I2XzEVxtVTX3lKCFFzAeXka7USgOi6PJx3AntJVvmiCz6uy3e8BoYLM1LmEpj7XB+iXC8RPg==" },
 
   // Emcee script v3: v2 with more Hinglish, mostly in Samyak's lines.
@@ -133,12 +133,12 @@ window.PLAN = {
       "Samyak: Kake and Surbhi are going to show us how that first meeting might have gone. Kake, Surbhi, aa jao!",
       "Anshi: [After the dance] Thank you both, that was so sweet!",
     ] },
-    { cue: "7:06 PM · Game 1: Shoe game", lines: [
+    { cue: "7:06 PM · Game 1: Belan & Dumbbell game", lines: [
       "Samyak: Okay, game time! Mom, Dad, idhar aa jaiye, back to back baithna hai.",
-      "Anshi: Take off your shoes, and hold one of yours and one of each other's.",
-      "Samyak: We'll ask a question, and you raise the shoe of whoever the answer is. No peeking, aur ek doosre se koi baat nahi. Everyone else, aap judges ho, so keep them honest.",
-      "Anshi: Mama, a small tip. If you're not sure, just hold up Mami's shoe. Ghar pe bhi toh wahi karte ho.",
-      "[21 questions in the Shoe game questions tab (password needed). Take turns asking.]",
+      "Anshi: You each get a belan and a dumbbell. Belan means Mami, dumbbell means Mama.",
+      "Samyak: Pretty fitting, na? We'll ask a question, and you raise the belan or the dumbbell for whoever the answer is. No peeking, aur ek doosre se koi baat nahi. Everyone else, aap judges ho, so keep them honest.",
+      "Anshi: Mama, a small tip. If you're not sure, just hold up the belan. Ghar pe bhi toh wahi karte ho.",
+      "[21 questions in the Game questions tab (password needed). Take turns asking.]",
       "Samyak: Okay, that was a lot more honest than we expected. Ghar jaate waqt car mein koi ladai nahi, please. Big hand for them!",
     ] },
     { cue: "7:23 PM · Song before the wedding", lines: [
@@ -245,12 +245,12 @@ window.PLAN = {
       "Samyak: Kake and Surbhi are going to show us how that first meeting might have gone. Kake, Surbhi, come on up!",
       "Anshi: [After the dance] Thank you both, that was so sweet!",
     ] },
-    { cue: "7:06 PM · Game 1: Shoe game", lines: [
+    { cue: "7:06 PM · Game 1: Belan & Dumbbell game", lines: [
       "Samyak: Okay, game time! Mom, Dad, come sit here back to back, please.",
-      "Anshi: Take off your shoes, and hold one of yours and one of each other's.",
-      "Samyak: We'll ask a question, and you raise the shoe of whoever the answer is. No peeking, no talking to each other. Everyone else, you're the judges, so keep them honest.",
-      "Anshi: Mama, a small tip. If you're not sure, just hold up Mami's shoe. Ghar pe bhi toh wahi karte ho.",
-      "[21 questions in the Shoe game questions tab (password needed). Take turns asking.]",
+      "Anshi: You each get a belan and a dumbbell. Belan means Mami, dumbbell means Mama.",
+      "Samyak: We'll ask a question, and you raise the belan or the dumbbell for whoever the answer is. No peeking, no talking to each other. Everyone else, you're the judges, so keep them honest.",
+      "Anshi: Mama, a small tip. If you're not sure, just hold up the belan. Ghar pe bhi toh wahi karte ho.",
+      "[21 questions in the Game questions tab (password needed). Take turns asking.]",
       "Samyak: Okay, that was a lot more honest than we expected. Please no fighting in the car on the way home. Big hand for them!",
     ] },
     { cue: "7:23 PM · Song before the wedding", lines: [
@@ -418,7 +418,7 @@ window.PLAN = {
   roles: [
     { role: "Hosts / MCs", does: "Welcome, story narration, run the games (script in the Emcee script tab). An uncle introduces Samyak's dance, and Samyak introduces Anshi & Yashi's", who: "Samyak & Anshi" },
     { role: "Tech helper", does: "Runs the slideshow and music, cues each act's song", who: "TBD" },
-    { role: "Games helper", does: "Sets up the shoe game chairs and the props for Surbhi's prop song game, keeps score in Bollywood trivia, gives prizes", who: "TBD" },
+    { role: "Games helper", does: "Sets up the belan & dumbbell game chairs, 2 belans and 2 dumbbells, and the props for Surbhi's prop song game, keeps score in Bollywood trivia, gives prizes", who: "TBD" },
     { role: "Performance lead", does: "Collects the lineup, runs a rehearsal, keeps acts short", who: "TBD" },
     { role: "Decorations crew (2 to 3 people)", does: "Decorate the venue the morning of the party: decorations, backdrop and photo corner", who: "TBD" },
     { role: "Cake pickup", does: "Collect both cakes before the party (the birthday cake and the anniversary cake) and keep them hidden until their moments", who: "TBD" },
