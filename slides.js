@@ -52,7 +52,7 @@ window.SHOW = {
     { type: "chapter", number: "The first meeting", title: "Tum Se Mil Ke Dil Ka Hai Jo Haal", subtitle: "From Main Hoon Na · performed by Kake & Surbhi" },
 
     // ── GAME 1 ──
-    { type: "chapter", number: "Game time", title: "Belan vs Dumbbell", subtitle: "Belan for Mom, dumbbell for Dad. Back to back, no peeking!" },
+    { type: "chapter", number: "Game time", title: "Tie vs Flower", subtitle: "Tie for Dad, flower for Mom. Back to back, no peeking!" },
 
     // ── SONG BEFORE THE WEDDING ──
     { type: "chapter", number: "A song for the couple", title: "Loote Koi Mann Ka Nagar", subtitle: "From Abhimaan · sung by Rajesh uncle" },
