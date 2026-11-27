@@ -39,7 +39,7 @@ window.SHOW = {
     { type: "photo", photo: "photos/dad-today-bike.jpg", caption: "Dad as we know him", detail: "Some loves never change." },
     { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Samyak" },
 
-    { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
+    { type: "chapter", number: "Meet", title: "Mom", subtitle: "The early years" },
     { type: "photo", photo: "photos/mom-young-portrait.jpg", caption: "Young Mom", detail: "Add a sweet line about Mom here." },
     { type: "photo", photo: "photos/mom-young-bike.jpg", caption: "Young Mom", detail: "Already ready for the road." },
     { type: "photo", photo: "photos/mom-today-bike.jpg", caption: "Mom as we know her", detail: "And now she rides too!" },
@@ -48,7 +48,7 @@ window.SHOW = {
     // ── THE RISHTA ──
     { type: "chapter", number: "Then came", title: "The Rishta", subtitle: "Two families, one very good idea" },
     { type: "photo", photo: "photos/rishta-1.jpg", caption: "The rishta", detail: "Who was more nervous? We'll find out in the game." },
-    { type: "collage", caption: "The engagement", detail: "Add the year here.", photos: ["photos/engagement-1.jpg", "photos/engagement-2.jpg", "photos/engagement-3.jpg", "photos/engagement-4.jpg"] },
+    { type: "collage", caption: "The engagement", detail: "2001", photos: ["photos/engagement-1.jpg", "photos/engagement-2.jpg", "photos/engagement-3.jpg", "photos/engagement-4.jpg"] },
     { type: "chapter", number: "The first meeting", title: "Tum Se Mil Ke Dil Ka Hai Jo Haal", subtitle: "From Main Hoon Na · performed by Kake & Surbhi" },
 
     // ── GAME 1 ──
