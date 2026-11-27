@@ -39,7 +39,7 @@ window.SHOW = {
     { type: "photo", photo: "photos/dad-today-bike.jpg", caption: "Dad as we know him", detail: "Some loves never change." },
     { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Samyak" },
 
-    { type: "chapter", number: "Meet", title: "Mom", subtitle: "Add a sweet one-liner about Mom" },
+    { type: "chapter", number: "Meet", title: "Mom", subtitle: "The early years" },
     { type: "photo", photo: "photos/mom-young-portrait.jpg", caption: "Young Mom", detail: "Add a sweet line about Mom here." },
     { type: "photo", photo: "photos/mom-young-bike.jpg", caption: "Young Mom", detail: "Already ready for the road." },
     { type: "photo", photo: "photos/mom-today-bike.jpg", caption: "Mom as we know her", detail: "And now she rides too!" },
