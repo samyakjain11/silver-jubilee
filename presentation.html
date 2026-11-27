@@ -47,7 +47,7 @@
   }
 
   /* slides */
-  .deck { position: relative; z-index: 1; height: 100%; }
+  .deck { position: relative; z-index: 1; height: 100%; touch-action: pan-y pinch-zoom; }
   .slide {
     position: absolute; inset: 0;
     display: flex; align-items: center; justify-content: center;
@@ -188,6 +188,8 @@
     .collage .polaroid img, .collage.n4 .polaroid img { height: 22vh; max-width: 42vw; }
     .polaroid img, .polaroid .ph { height: 44vh; max-width: 80vw; }
     .hint { display: none; }
+    .dots { display: none; }
+    .bar { padding: 10px 12px; gap: 8px; }
   }
   @media (prefers-reduced-motion: reduce) {
     .heart { display: none; }
@@ -323,18 +325,32 @@
       else if (e.key === "End") go(slides.length - 1);
     });
 
+    var lastSwipe = 0;
     deck.addEventListener("click", function (e) {
+      if (Date.now() - lastSwipe < 500) return; // a swipe just moved the slide
       go(e.clientX > window.innerWidth / 3 ? cur + 1 : cur - 1);
     });
 
-    var tx = null;
-    deck.addEventListener("touchstart", function (e) { tx = e.touches[0].clientX; }, { passive: true });
-    deck.addEventListener("touchend", function (e) {
+    // Swipe left = next, swipe right = previous. Ignores short, slow,
+    // mostly-vertical and multi-finger (pinch) gestures.
+    var tx = null, ty = 0, tt = 0;
+    document.addEventListener("touchstart", function (e) {
+      if (e.touches.length !== 1) { tx = null; return; }
+      tx = e.touches[0].clientX; ty = e.touches[0].clientY; tt = Date.now();
+    }, { passive: true });
+    document.addEventListener("touchmove", function (e) {
+      if (e.touches.length !== 1) tx = null;
+    }, { passive: true });
+    document.addEventListener("touchend", function (e) {
       if (tx === null) return;
-      var dx = e.changedTouches[0].clientX - tx;
-      if (Math.abs(dx) > 40) go(dx < 0 ? cur + 1 : cur - 1);
+      var t = e.changedTouches[0];
+      var dx = t.clientX - tx, dy = t.clientY - ty;
       tx = null;
-    });
+      if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.5 || Date.now() - tt > 1000) return;
+      lastSwipe = Date.now();
+      go(dx < 0 ? cur + 1 : cur - 1);
+    }, { passive: true });
+    document.addEventListener("touchcancel", function () { tx = null; }, { passive: true });
 
     var hideTimer;
     document.addEventListener("mousemove", function () {
