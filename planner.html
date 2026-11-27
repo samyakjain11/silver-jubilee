@@ -166,15 +166,13 @@
           }).join("") + '</div>';
         }).join("");
       }
-      var ver = "v2";
-      try { if (localStorage.getItem("scriptVersion") === "v1") ver = "v1"; } catch (e) {}
-      if (!p.scriptV2) ver = "v1";
-      html += panel("script", "Emcee script", '<p class="film" style="margin-bottom:10px">What the hosts say, in order. Samyak and Anshi take turns. In v2 an uncle introduces Samyak&#39;s dance and Samyak introduces Anshi &amp; Yashi&#39;s. Lines in [brackets] are notes or names to fill in.</p>' +
-        (p.scriptV2 ? '<div class="ver-toggle" id="verToggle" role="group" aria-label="Script version">' +
-          '<button data-ver="v1"' + (ver === "v1" ? ' class="on"' : '') + '>v1 · original</button>' +
-          '<button data-ver="v2"' + (ver === "v2" ? ' class="on"' : '') + '>v2 · new</button></div>' : '') +
-        '<div class="script-ver" data-ver="v1"' + (ver === "v1" ? '' : ' hidden') + '>' + cues(p.script) + '</div>' +
-        (p.scriptV2 ? '<div class="script-ver" data-ver="v2"' + (ver === "v2" ? '' : ' hidden') + '>' + cues(p.scriptV2) + '</div>' : ''));
+      var vers = [["v1", "v1 · original", p.script], ["v2", "v2", p.scriptV2], ["v3", "v3 · more Hindi", p.scriptV3]].filter(function (x) { return x[2]; });
+      var ver = vers[vers.length - 1][0];
+      try { var saved = localStorage.getItem("emceeScriptVer"); if (saved && vers.some(function (x) { return x[0] === saved; })) ver = saved; } catch (e) {}
+      html += panel("script", "Emcee script", '<p class="film" style="margin-bottom:10px">What the hosts say, in order. Samyak and Anshi take turns. In v2 and v3 an uncle introduces Samyak&#39;s dance and Samyak introduces Anshi &amp; Yashi&#39;s. Lines in [brackets] are notes or names to fill in.</p>' +
+        (vers.length > 1 ? '<div class="ver-toggle" id="verToggle" role="group" aria-label="Script version">' +
+          vers.map(function (x) { return '<button data-ver="' + x[0] + '"' + (ver === x[0] ? ' class="on"' : '') + '>' + x[1] + '</button>'; }).join("") + '</div>' : '') +
+        vers.map(function (x) { return '<div class="script-ver" data-ver="' + x[0] + '"' + (ver === x[0] ? '' : ' hidden') + '>' + cues(x[2]) + '</div>'; }).join(""));
 
       html += panel("roles", "Who does what", table(["Role", "Responsibilities", "Who"], p.roles, function (r) {
         return '<td class="seg">' + esc(r.role) + '</td><td>' + esc(r.does) + '</td><td class="who">' + val(r.who) + '</td>';
@@ -197,7 +195,7 @@
         var v = b.getAttribute("data-ver");
         Array.prototype.forEach.call(vt.children, function (x) { x.classList.toggle("on", x === b); });
         Array.prototype.forEach.call(out.querySelectorAll(".script-ver"), function (d) { d.hidden = d.getAttribute("data-ver") !== v; });
-        try { localStorage.setItem("scriptVersion", v); } catch (err) {}
+        try { localStorage.setItem("emceeScriptVer", v); } catch (err) {}
       });
 
       document.getElementById("tabs").addEventListener("click", function (e) {
