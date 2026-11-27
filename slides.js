@@ -25,8 +25,7 @@ window.SHOW = {
 
     // ── OPENING ──
     { type: "chapter", number: "To begin", title: "With Blessings", subtitle: "A few words from Grandpa & Grandma" },
-    // Song not final yet (Wah Wah Ramji or Ae Dil Laaya Hai Bahaar). Add it to the subtitle once decided.
-    { type: "chapter", number: "The grand entrance", title: "A Shaadi Welcome", subtitle: "The uncles & aunts lead the way for..." },
+        { type: "chapter", number: "The grand entrance", title: "A Shaadi Welcome", subtitle: "The uncles & aunts lead the way for..." },
     { type: "chapter", number: "Please welcome", title: "The Jodi of the Night", subtitle: "Mom & Dad" },
     { type: "chapter", number: "A song from Grandpa", title: "Pyar Deewana Hota Hai", subtitle: "From Kati Patang · sung by Grandpa" },
 
@@ -44,7 +43,7 @@ window.SHOW = {
     { type: "photo", photo: "photos/mom-young-portrait.jpg", caption: "Young Mom", detail: "Add a sweet line about Mom here." },
     { type: "photo", photo: "photos/mom-young-bike.jpg", caption: "Young Mom", detail: "Already ready for the road." },
     { type: "photo", photo: "photos/mom-today-bike.jpg", caption: "Mom as we know her", detail: "And now she rides too!" },
-    { type: "chapter", number: "A dance for Mom", title: "Mere Khwabon Mein Jo Aaye", subtitle: "From Dilwale Dulhania Le Jayenge · performed by Anshi" },
+    { type: "chapter", number: "A dance for Mom", title: "Mere Khwabon Mein Jo Aaye", subtitle: "From Dilwale Dulhania Le Jayenge · performed by Anshi & Yashi" },
 
     // ── THE RISHTA ──
     { type: "chapter", number: "Then came", title: "The Rishta", subtitle: "Two families, one very good idea" },
