@@ -97,8 +97,8 @@ window.PLAN = {
     { cue: "6:30 PM · Welcome", lines: [
       "Samyak: Hi everyone, namaste, and thank you so much for coming tonight. I'm Samyak.",
       "Anshi: And I'm Anshi, Samyak's cousin. We're your hosts tonight, so please be nice to us.",
-      "Samyak: Mom and Dad have been married for 25 years now. That's longer than I've been alive, which is honestly a little crazy to think about.",
-      "Anshi: Main toh sirf 19 ki hoon, so for me 25 years is basically forever. Mama, Mami, you two make it look easy.",
+      "Samyak: Mom and Dad have been married for 25 years now. 25 saal, and Dad still asks Mom where his keys are. Every single day.",
+      "Anshi: And Mami still knows exactly where they are. Honestly, I think that's the whole secret.",
       "Anshi: We've got dances, songs, a few games and a lot of old photos tonight. Some of them are very cute, and some of them are a little embarrassing. Sorry in advance, Mama.",
       "Samyak: And yes, we know everyone's waiting for the food. It opens after The Shaadi, so please stay with us till then.",
       "Samyak: But first, the people who started it all. Grandpa, Grandma, please come up and say a few words.",
@@ -146,8 +146,8 @@ window.PLAN = {
       "Samyak: [After the song] Thank you so much, Rajesh uncle. Chalo, ab shaadi ki taraf chalte hain.",
     ] },
     { cue: "7:27 PM · The Shaadi", lines: [
-      "Samyak: Here are some photos from the big day. [Click through] Look how young they look!",
-      "Anshi: Honestly, pehchaan mein hi nahi aa rahe. And to bring back a bit of that shaadi feeling, here are Gayatri and Hanisha!",
+      "Samyak: Here are some photos from the big day. [Click through]",
+      "Anshi: Mami, you look exactly the same. Mama... no comment. Okay, to bring back a bit of that shaadi feeling, here are Gayatri and Hanisha!",
     ] },
     { cue: "7:31 PM · Dinner is open", lines: [
       "Anshi: Okay everyone, the moment you've actually been waiting for. Khana lag gaya hai!",
