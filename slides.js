@@ -40,7 +40,7 @@ window.SHOW = {
     { type: "chapter", number: "A dance for Dad", title: "O O Jaane Jaana", subtitle: "From Pyaar Kiya To Darna Kya · performed by Samyak" },
 
     { type: "chapter", number: "Meet", title: "Mom", subtitle: "The early years" },
-    { type: "photo", photo: "photos/mom-young-portrait.jpg", caption: "Young Mom", detail: "Add a sweet line about Mom here." },
+    { type: "photo", photo: "photos/mom-young-portrait.jpg", caption: "Young Mom", detail: "Her and her smile, even back then." },
     { type: "photo", photo: "photos/mom-young-bike.jpg", caption: "Young Mom", detail: "Already ready for the road." },
     { type: "photo", photo: "photos/mom-today-bike.jpg", caption: "Mom as we know her", detail: "And now she rides too!" },
     { type: "chapter", number: "A dance for Mom", title: "Mere Khwabon Mein Jo Aaye", subtitle: "From Dilwale Dulhania Le Jayenge · performed by Anshi & Yashi" },
