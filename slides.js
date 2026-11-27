@@ -89,7 +89,7 @@ window.SHOW = {
     { type: "chapter", number: "From all of us", title: "Wishes & Memories", subtitle: "From the people who love them" },
     { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
     { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
-    { type: "chapter", number: "A few words from family", title: "From the Family", subtitle: "A few words from our aunt, uncle & cousin" },
+    { type: "chapter", number: "A few words from family", title: "From the Family", subtitle: "Ashoo Bua, Ajai Fufaji & Kartik Bhai" },
     { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by Pankaj uncle" },
     { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
 
