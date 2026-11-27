@@ -97,7 +97,6 @@ window.SHOW = {
     { type: "chapter", number: "In their own words", title: "Mom & Dad", subtitle: "A few words from the two of them" },
     { type: "chapter", number: "Dad sings for Mom", title: "Tum Se Hi Din Hota Hai", subtitle: "From Jab We Met" },
     // The photos below play behind Dad's song.
-    { type: "photo", photo: "photos/home-window.jpg", caption: "Home sweet home", detail: "Add the city and year." },
     { type: "collage", caption: "Growing up together", detail: "", photos: ["photos/home-1.jpg", "photos/home-2.jpg", "photos/home-3.jpg", "photos/home-4.jpg"] },
     { type: "collage", caption: "Family trips", detail: "", photos: ["photos/home-5.jpg", "photos/home-6.jpg", "photos/home-7.jpg", "photos/home-8.jpg"] },
     { type: "collage", caption: "Along the way", detail: "", photos: ["photos/home-9.jpg", "photos/home-10.jpg", "photos/home-11.jpg", "photos/home-12.jpg"] },
