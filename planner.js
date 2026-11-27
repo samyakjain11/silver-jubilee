@@ -107,7 +107,7 @@ window.PLAN = {
       "Anshi: Thank you, Grandpa and Grandma. Bahut pyaari baat boli aapne.",
       "Samyak: Chalo, sab log khade ho jao for this one. Our uncles and aunts have been practising for weeks, toh thoda shor machao!",
       "[Uncles & aunts dance in to \"Wah Wah Ramji\". As it ends, the Flipperachi track starts]",
-      "Both: And here they are, the reason we're all here. Mama and Mami!",
+      "Both: Taaliyan, everyone! Silver jubilee wale, Mama and Mami!",
     ] },
     { cue: "6:41 PM · Grandpa sings for the couple", lines: [
       "Samyak: Mom, Dad, aap baith jaiye. Aaj aapko kuch nahi karna, bas sit back and enjoy.",
