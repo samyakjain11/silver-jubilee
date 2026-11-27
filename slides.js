@@ -90,6 +90,8 @@ window.SHOW = {
     { type: "message", from: "Name of a relative", text: "Write a short message from a family member or friend here." },
     { type: "message", from: "Another friend", text: "Messages can be two or three sentences. Keep them sweet and short." },
     { type: "chapter", number: "A few words from family", title: "From the Family", subtitle: "Ashoo Bua, Ajai Fufaji & Kartik Bhai" },
+    // Click the video (or press Enter) to play with sound. Arrow keys still move slides.
+    { type: "video", video: "videos/words-from-family.mp4", poster: "videos/words-from-family.jpg", caption: "Words from family" },
     { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by Pankaj uncle" },
     { type: "quote", text: "Twenty-five years of chai, patience and showing up for each other.", by: "From all of us" },
 

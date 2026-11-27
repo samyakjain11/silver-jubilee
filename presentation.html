@@ -146,6 +146,18 @@
   .card .from { margin-top: 1em; letter-spacing: .2em; text-transform: uppercase; font-size: clamp(16px, 2.2vw, 40px); color: var(--silver-deep); }
   .card .mark { display: none; }
 
+  /* video slide: fills the screen, never cropped, native controls */
+  .video-wrap { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+  .video-wrap video { display: block; width: 100%; height: 100%; max-height: 96vh; object-fit: contain; background: #000; outline: none; }
+  .video-wrap .play-big {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: clamp(90px, 12vw, 200px); height: clamp(90px, 12vw, 200px); border-radius: 50%;
+    border: 0; background: rgba(201,111,131,.88); color: #fff; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 40px rgba(0,0,0,.25);
+  }
+  .video-wrap .play-big svg { width: 45%; height: 45%; margin-left: 8%; }
+  .video-wrap.playing .play-big { display: none; }
+
   /* controls */
   .bar {
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 3;
@@ -244,6 +256,11 @@
         case "quote":
           return '<div class="center"><blockquote>“' + esc(s.text) + '”</blockquote>' +
             '<p class="by">' + esc(s.by) + '</p></div>';
+        case "video":
+          return '<div class="video-wrap"><video src="' + esc(s.video) + '"' +
+            (s.poster ? ' poster="' + esc(s.poster) + '"' : "") +
+            ' controls playsinline preload="metadata" aria-label="' + esc(s.caption) + '"></video>' +
+            '<button class="play-big" aria-label="Play video"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l15 8-15 8z"/></svg></button></div>';
         case "message":
           return '<div class="card"><span class="mark">' + heartSvg.replace('<svg', '<svg width="20" height="20"') + '</span>' +
             '<p class="msg">' + esc(s.text) + '</p><p class="from">— ' + esc(s.from) + '</p></div>';
@@ -264,12 +281,33 @@
 
     var slides = deck.children, dots = dotsEl.children, cur = 0, timer = null;
 
+    function videoIn(i) { return slides[i] ? slides[i].querySelector("video") : null; }
+    function toggleVideo(v) { if (v.paused || v.ended) v.play(); else v.pause(); }
+
+    Array.prototype.forEach.call(deck.querySelectorAll(".video-wrap"), function (wrap) {
+      var v = wrap.querySelector("video");
+      // Clicks/taps on the video work its controls; they don't change slides.
+      wrap.addEventListener("click", function (e) { e.stopPropagation(); });
+      wrap.querySelector(".play-big").onclick = function () { v.play(); };
+      v.addEventListener("play", function () { wrap.classList.add("playing"); });
+      v.addEventListener("pause", function () { wrap.classList.remove("playing"); });
+      v.addEventListener("ended", function () { wrap.classList.remove("playing"); });
+    });
+
     function go(i) {
       if (i < 0 || i >= slides.length) return;
       if (timer && i === slides.length - 1) togglePlay();
       slides[cur].classList.remove("active"); dots[cur].classList.remove("on");
+      var leaving = videoIn(cur);
+      if (leaving) leaving.pause();
       cur = i;
       slides[cur].classList.add("active"); dots[cur].classList.add("on");
+      // Start buffering a video a couple of slides early so it plays smoothly.
+      for (var k = cur; k <= cur + 2 && k < slides.length; k++) {
+        var near = videoIn(k);
+        if (near && near.preload !== "auto") near.preload = "auto";
+      }
+      if (timer && videoIn(cur)) togglePlay(); // don't auto-advance past a video
       try { history.replaceState(null, "", "#" + (cur + 1)); } catch (e) {}
       if (timer) restartProgress();
     }
@@ -304,6 +342,8 @@
     document.getElementById("full").onclick = function (e) { e.stopPropagation(); fullscreen(); };
 
     document.addEventListener("keydown", function (e) {
+      var v = videoIn(cur);
+      if (v && (e.key === "Enter" || e.key === "k" || e.key === "K")) { e.preventDefault(); toggleVideo(v); return; }
       if (e.key === "ArrowRight" || e.key === " " || e.key === "PageDown") { e.preventDefault(); go(cur + 1); }
       else if (e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); go(cur - 1); }
       else if (e.key === "f" || e.key === "F") fullscreen();
