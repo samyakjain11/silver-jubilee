@@ -125,7 +125,7 @@ window.SHOW = {
 
 
     // ── BIRTHDAY CAKE ──
-    { type: "chapter", number: "One more celebration", title: "Happy Birthday!", subtitle: "Add your aunt's name here" },
+    { type: "chapter", number: "One more celebration", title: "Happy Birthday!", subtitle: "Ashoo Bua" },
 
     // ── FINALE ──
     { type: "chapter", number: "Finale", title: "Today", subtitle: "Still the best team we know" },
