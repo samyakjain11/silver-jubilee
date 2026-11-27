@@ -36,7 +36,7 @@ window.PLAN = {
     { time: "7:31 PM", segment: "Dinner is open", what: "Quick announcement from the host. Guests help themselves and eat while the program carries on. The Retro Throwbacks photos play on screen while people get their food.", length: "1 min", who: "Samyak & Anshi announce · Food ready: TBD" },
     { time: "7:32 PM", segment: "Game 2: Prop song game", what: "Game · Surbhi leads a prop song game (details to come)", length: "2 + 10 min", who: "Surbhi leads it · Intro: Samyak & Anshi · Props: games helper · Songs: tech helper" },
     { time: "7:44 PM", segment: "Chhote Baba's poetry", what: "Poetry · Chhote Baba reads his poem (2 to 3 min). A quiet, mellow moment: lights down, music off, no clapping cue until he finishes", length: "2 + 3 min", who: "Chhote Baba · Intro: Samyak & Anshi · Music off, lights down, mic stand: tech helper" },
-    { time: "7:49 PM", segment: "Wishes & Memories", what: "Messages, speech, then song · Any short heartfelt messages or video messages (5 min), then a family speech from Ashoo Bua, Ajai Fufaji & Kartik Bhai together (1 min to get up + 4 min), then Pankaj uncle sings \"Tere Sang Yaara\" (2 min). No changeover buffers: the hosts introduce each straight away", length: "5 + 5 + 2 min", who: "Samyak & Anshi collect messages · Ashoo Bua, Ajai Fufaji & Kartik Bhai speak · Video messages & mic: tech helper · Song: Pankaj uncle" },
+    { time: "7:49 PM", segment: "Wishes & Memories", what: "Messages, speech, then song · The family video plays on the slideshow (3 min, click or Enter to play; up to 5 min with any other short messages), then a family speech from Ashoo Bua, Ajai Fufaji & Kartik Bhai together (1 min to get up + 4 min), then Pankaj uncle sings \"Tere Sang Yaara\" (2 min). No changeover buffers: the hosts introduce each straight away", length: "5 + 5 + 2 min", who: "Samyak & Anshi collect messages · Ashoo Bua, Ajai Fufaji & Kartik Bhai speak · Video messages & mic: tech helper · Song: Pankaj uncle" },
     { time: "8:01 PM", segment: "Mom & Dad speak, then Dad sings", what: "Speech, then song · Mom & Dad give a short speech together (2.5 min), then Dad sings \"Tum Se Hi Din Hota Hai\" to Mom while the home, travel, adventure and fitness photos play behind him (2 min)", length: "2 + 5 min", who: "Mom & Dad · Intro: Samyak & Anshi · Mic for two, track & photo slideshow: tech helper" },
     { time: "8:08 PM", segment: "Birthday cake for Ashoo Bua", what: "Cake · Surprise! \"Baar Baar Din Ye Aaye\" plays, everyone sings for Ashoo Bua and she cuts her birthday cake", length: "2 + 5 min", who: "Samyak & Anshi · Cake: cake pickup person · Candles & knife: TBD · Birthday song: tech helper" },
     { time: "8:15 PM", segment: "Finale", what: "Dance · Mom & Dad dance together to \"Tere Bina Nahi Lagda Dil\", then the anniversary cake", length: "2 + 15 min", who: "Mom & Dad · Intro: Samyak & Anshi · Anniversary cake: cake pickup person · Candles & knife: TBD · Song: tech helper" },
@@ -58,7 +58,7 @@ window.PLAN = {
     { chapter: "The Shaadi", act: "Dance: wedding medley, song 3", song: "TBD", film: "", who: "Gayatri & Hanisha" },
     { chapter: "Blessings", act: "Poetry reading, very mellow", song: "His own poetry", film: "", who: "Chhote Baba" },
     { chapter: "Wishes & Memories", act: "Song for the couple", song: "Tere Sang Yaara", film: "Rustom", who: "Pankaj uncle" },
-    { chapter: "Wishes & Memories", act: "Short speeches or video messages (optional)", song: "TBD", film: "", who: "TBD", open: true },
+    { chapter: "Wishes & Memories", act: "Family video (3 min, on the slideshow)", song: "Video", film: "", who: "Tech: press play" },
     { chapter: "Wishes & Memories", act: "Family speech, 4 minutes", song: "Speech", film: "", who: "Ashoo Bua, Ajai Fufaji & Kartik Bhai" },
     { chapter: "Before the cakes", act: "Mom & Dad speak (2.5 min), then Dad sings to Mom with the photo slideshow behind", song: "Tum Se Hi Din Hota Hai", film: "Jab We Met", who: "Dad" },
     { chapter: "Finale", act: "Mom & Dad dance together, then cake", song: "Tere Bina Nahi Lagda Dil", film: "", who: "Mom & Dad" },
@@ -384,7 +384,7 @@ window.PLAN = {
     ] },
     { cue: "7:49 PM · Wishes & Memories", lines: [
       "Samyak: A few people wanted to say something to Mom and Dad tonight.",
-      "[Any short speeches or video messages first]",
+      "[Play the family video on the slideshow (3 min), then any short speeches]",
       "Anshi: And Pankaj uncle has a song for them. Pankaj uncle, please come up!",
     ] },
     { cue: "7:56 PM · Mom & Dad speak, then Dad sings", lines: [

@@ -87,9 +87,9 @@ window.SHOW = {
 
     // ── WISHES & MEMORIES ──
     { type: "chapter", number: "From all of us", title: "Wishes & Memories", subtitle: "From the people who love them" },
-    { type: "chapter", number: "A few words from family", title: "From the Family", subtitle: "Ashoo Bua, Ajai Fufaji & Kartik Bhai" },
     // Click the video (or press Enter) to play with sound. Arrow keys still move slides.
     { type: "video", video: "videos/words-from-family.mp4", poster: "videos/words-from-family.jpg", caption: "Words from family" },
+    { type: "chapter", number: "A few words from family", title: "From the Family", subtitle: "Ashoo Bua, Ajai Fufaji & Kartik Bhai" },
     { type: "chapter", number: "A song for the couple", title: "Tere Sang Yaara", subtitle: "From Rustom · sung by Pankaj uncle" },
 
     // ── MOM & DAD SPEAK, THEN DAD SINGS ──
