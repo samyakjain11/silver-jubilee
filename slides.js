@@ -48,7 +48,7 @@ window.SHOW = {
     // ── THE RISHTA ──
     { type: "chapter", number: "Then came", title: "The Rishta", subtitle: "Two families, one very good idea" },
     { type: "photo", photo: "photos/rishta-1.jpg", caption: "The rishta", detail: "Who was more nervous? We'll find out in the game." },
-    { type: "collage", caption: "The engagement", detail: "Add the year here.", photos: ["photos/engagement-1.jpg", "photos/engagement-2.jpg", "photos/engagement-3.jpg", "photos/engagement-4.jpg"] },
+    { type: "collage", caption: "The engagement", detail: "2001", photos: ["photos/engagement-1.jpg", "photos/engagement-2.jpg", "photos/engagement-3.jpg", "photos/engagement-4.jpg"] },
     { type: "chapter", number: "The first meeting", title: "Tum Se Mil Ke Dil Ka Hai Jo Haal", subtitle: "From Main Hoon Na · performed by Kake & Surbhi" },
 
     // ── GAME 1 ──
