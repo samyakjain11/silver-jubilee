@@ -10,7 +10,7 @@
 
 window.SHOW = {
   couple: "Mom & Dad",
-  since: "",                         // their wedding date, e.g. "12 February 2001"
+  since: "26 November 2001",                      // their wedding date, e.g. "12 February 2001"
   autoplaySeconds: 8,                // seconds per slide when autoplay is on
 
   slides: [
@@ -59,7 +59,7 @@ window.SHOW = {
 
     // ── THE SHAADI ──
     { type: "chapter", number: "And then", title: "The Shaadi", subtitle: "Where it all began" },
-    { type: "photo", photo: "photos/shaadi-main.jpg", caption: "The big day", detail: "Add the wedding date and place." },
+    { type: "photo", photo: "photos/shaadi-main.jpg", caption: "The big day", detail: "26 November 2001" },
     { type: "collage", caption: "Shaadi moments", detail: "", photos: ["photos/shaadi-1.jpg", "photos/shaadi-2.jpg", "photos/shaadi-3.jpg"] },
     { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
 
