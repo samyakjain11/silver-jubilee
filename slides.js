@@ -10,7 +10,7 @@
 
 window.SHOW = {
   couple: "Mom & Dad",
-  since: "",                         // their wedding date, e.g. "12 February 2001"
+  since: "26 November 2001",                      // their wedding date, e.g. "12 February 2001"
   autoplaySeconds: 8,                // seconds per slide when autoplay is on
 
   slides: [
@@ -59,7 +59,7 @@ window.SHOW = {
 
     // ── THE SHAADI ──
     { type: "chapter", number: "And then", title: "The Shaadi", subtitle: "Where it all began" },
-    { type: "photo", photo: "photos/shaadi-main.jpg", caption: "The big day", detail: "Add the wedding date and place." },
+    { type: "photo", photo: "photos/shaadi-main.jpg", caption: "The big day", detail: "26 November 2001" },
     { type: "collage", caption: "Shaadi moments", detail: "", photos: ["photos/shaadi-1.jpg", "photos/shaadi-2.jpg", "photos/shaadi-3.jpg"] },
     { type: "chapter", number: "The wedding medley", title: "Maahi Vey · Jhumka Gira Re", subtitle: "Performed by Gayatri & Hanisha" },
 
@@ -69,8 +69,8 @@ window.SHOW = {
     // ── RETRO THROWBACKS ──
     // Plays while dinner opens and people get their food.
     { type: "chapter", number: "Rewind", title: "Retro Throwbacks", subtitle: "The old photo albums, opened up" },
-    { type: "photo", photo: "photos/retro-beach.jpg", caption: "Beach days", detail: "Add where and when." },
-    { type: "photo", photo: "photos/retro-beach-collage.jpg", caption: "Sun, sand and a jet ski", detail: "Add where and when." },
+    { type: "photo", photo: "photos/retro-beach.jpg", caption: "Beach days", detail: "" },
+    { type: "photo", photo: "photos/retro-beach-collage.jpg", caption: "Sun, sand and a jet ski", detail: "" },
     { type: "photo", photo: "photos/retro-baby.jpg", caption: "And then there were three", detail: "Add the year." },
     { type: "collage", caption: "Throwback trips", detail: "", photos: ["photos/retro-1.jpg", "photos/retro-2.jpg", "photos/retro-3.jpg", "photos/retro-4.jpg"] },
     { type: "collage", caption: "More throwbacks", detail: "", photos: ["photos/retro-5.jpg", "photos/retro-6.jpg", "photos/retro-7.jpg", "photos/retro-8.jpg"] },
